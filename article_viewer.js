@@ -1,3 +1,3 @@
-$(document).ready(function(e) {
-    $('#viewer').load('2040/tryout2.html');
-});
+$("button").click(function(){
+    $("iframe").attr("src","2040/italytrad.html");
+  });
