@@ -30,6 +30,7 @@ html {
 .backimage {
     background-image: url(column.gif), url(column.gif), url(column.gif);
     background-repeat: no-repeat;
+    background-size: 30%;
     background-position: 5% top, 50% top, 95% top;
     padding: 2% 0;
 }
@@ -38,6 +39,7 @@ html {
         background-image: url(column.gif);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 55%;
     }
 }
 
