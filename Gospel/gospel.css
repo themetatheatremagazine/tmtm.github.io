@@ -1,8 +1,9 @@
+html, body {
+    height:100%;
+} 
+
 body {
-    margin: 10%;
-    border: 10%;
-    border-color: gold;      
+    background-color: #F5DDB7;
     text-align: center;
 }
-
 
