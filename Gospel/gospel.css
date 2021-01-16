@@ -23,6 +23,13 @@ header {
 	margin-right: 32%;
 }
 
+@media screen and (max-width: 800px) {
+	header {
+	margin-left: 25%;
+	margin-right: 25%; 
+	}
+}
+
 header h1 {
 	text-align: center;
 }
@@ -42,8 +49,15 @@ header h1 {
     overflow-x: hidden;
 	word-break: break-word;
 	line-height: 1.6;
-
 }
+@media screen and (max-width: 800px) {
+	.article {
+		column-count: 1;
+		line-height: normal;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+  }
 
 .article p {
 	display: inline-block;
