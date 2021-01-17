@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script src="article_viewer.js"></script>
-    <link rel="stylesheet" href="2040/2040col.css">
     <link rel="stylesheet" href="article_viewer.css">
     <title>Hello, world!</title>
   </head>
   <body>
     
     <div class="first-row">
-      <h1>Article viewer</h1>
-      <button onclick="prevArticle()"> Italy Tradition </button>
+      <h1>Issue 1</h1>
+      <button onclick="postArticle('2040/2040pt2/italytrad.html')"> Italian puppet tradition </button>
+      <button onclick="postArticle('2040/2040pt2/tryout2.html')"> Tryout2 </button>
+      <button onclick="postArticle('2040/2040pt2/italytrad.html')"> Italian puppet tradition </button>
+      <button onclick="postArticle('2040/2040pt2/italytrad.html')"> Italian puppet tradition </button>
       <p>Some text</p>
       <p>And some more text</p>
     </div>
     <div class="second-row">
-      <iframe src="2040/tryout2.html" frameborder="0" cellspacing="0"></iframe>
+      <div id="articleshower"></div>
     </div>  </body>
 </html>

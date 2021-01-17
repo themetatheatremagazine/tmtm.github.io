@@ -1,4 +1,5 @@
-function prevArticle() {
-$("button").click(function(){
-    $("iframe").attr("src","2040/italytrad.html");
-  })};
+function postArticle(articleName) {
+  $.ajax({url: articleName, success: function(result){
+    $("#articleshower").html(result);
+}});
+}

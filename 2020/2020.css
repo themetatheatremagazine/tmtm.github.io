@@ -1,0 +1,44 @@
+body {
+    background-color: #f7f7f7;
+    color: #333333; 
+}
+
+
+
+header h1 {
+    text-align: center; 
+    font-size: 15rem; 
+}
+
+header {
+    text-align: center; 
+    font-size: 2rem; 
+}
+.article {
+    position: center;
+    column-count: 2;
+    column-gap: 5rem;
+    column-fill: balance;
+    margin: 1% 5%;
+}
+
+.article p {
+    display: inline-block; 
+    text-align: justify;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}
+
+
+img {
+    width: 75%;
+    transition: transform .5s;
+}
+img:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
