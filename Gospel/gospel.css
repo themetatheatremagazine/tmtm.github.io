@@ -1,8 +1,8 @@
-#filerequest html {
+html {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-image: url(oldpaper.jpg);
+	background-image: url(images/oldpaper.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 
@@ -13,14 +13,14 @@
 	background: #8b0000;
   }
 
-#filerequest .background {
+  .background {
 	background-image: url(images/border-left.png), url(images/border-right.png);
 	background-position: top left, top right;
 	background-repeat: no-repeat;
 	background-size: 40%, 40%; 
 }
 
-#filerequest .header {
+.header {
 	text-align: justify;
 	display: inline-block;
 	margin-top: 10%;
@@ -29,17 +29,17 @@
 }
 
 @media screen and (max-width: 800px) {
-	#filerequest .header {
+	.header {
 	margin-left: 27%;
 	margin-right: 27%; 
 	}
 }
 
-#filerequest .header h1 {
+.header h1 {
 	text-align: center;
 }
 
-#filerequest .article {
+.article {
 	margin-top: 1%;
 	margin-left: 15%;
 	margin-right: 15%;
@@ -56,7 +56,7 @@
 	line-height: 1.6;
 }
 @media screen and (max-width: 800px) {
-	#filerequest .article {
+	.article {
 		column-count: 1;
 		line-height: normal;
 		margin-left: 5%;
@@ -64,24 +64,24 @@
 	}
   }
 
-  #filerequest .article p {
+  .article p {
 	display: inline-block;
 	position: relative;
   }
 
 
-  #filerequest .figure {
+.figure {
 display: inline-block;
 text-align: justify;
 }
 
-#filerequest .figure figcaption {
+.figure figcaption {
   display: transparent;  
   font-size: 80%;    
   font-style: italic;
   line-height: 0.8;
 }
 
-#filerequest .image {
+.image {
 	width: 90%;
 }
