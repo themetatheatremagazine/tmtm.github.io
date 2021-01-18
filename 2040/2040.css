@@ -1,9 +1,7 @@
-@font-face {
-    font-family: 'Atami Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('atami/Atami-Regular.woff') format('woff');
-    }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root {
     --text: white; /* Blue */
     --shadow: #E485F8; /* Pink */
@@ -13,19 +11,42 @@
   background: #c8a2c8;
 }
 
-.body {
-    font-family: 'Atami Regular';
-    font-weight: lighter;
-    color: white;
+#filerequest html {
+    margin: 0 auto; 
+    padding: 0;
 }
+
 
 /*TITLE*/
-.header {
+#filerequest .backimageheader {
+    background-image: url(images/column.gif), url(images/column.gif), url(images/column.gif);
+    background-repeat: no-repeat;
+    background-size: 50vh;
+    background-position: 5% top, 50% top, 95% top;
+    padding: 2% 0;
     text-align: center;
-    margin: 5% auto;
+    width: auto;
+    height: 45vh;
+    margin: auto;
+}
+@media (max-width: 800px) {
+    #filerequest .backimageheader {
+        background-image: url(images/column.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 55%;
+        width: auto;
+        height: 60vh;
+    }
 }
 
-.playful { 
+
+
+#filerequest .playful {
+        font-family: 'Montserrat';
+        font-size: 3rem;
+        letter-spacing: -5px;
+        font-weight: bold;
         color: var(--text);
         text-shadow: 
           6px 6px        var(--shadow), 
@@ -54,8 +75,11 @@
           0.25px 0.25px  var(--shadow);
       }
 
+#filerequest .byline .publicationDate p {
+    font-family: 'Montserrat', sans-serif;
+}
 /*BACKGROUND*/
-.background {
+#filerequest .background {
         background: linear-gradient(-45deg, #711C91, #EA01D9, #123E7B, #091933);
         background-size: 400% 400%;
         animation: gradient 10s linear infinite;
@@ -73,16 +97,17 @@
         }
     }
     
-.background-shadow {
+#filerequest .background-shadow {
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
 /*COLUMNS*/
-.article {
-    /*margin: 5%;
+#filerequest .article {
+    margin: auto; /*
     column-gap: 10%;*/
     font-family: 'Atami Regular';
     font-weight: bold;
+    font-size: 2em;
     color: white;
     text-align: justify;
     column-count: 3;
@@ -94,39 +119,50 @@
     overflow-x: hidden;
     word-break: break-word;
 }
-
+  
 @media screen and (max-width: 800px) {
-  .article {
+  #filerequest .article {
     column-count: 1;
+    font-size: 1.5rem;
   }
  }
 
-.article p {
+  
+@media screen and (max-width: 400px) {
+  #filerequest .article {
+    font-size: 1rem;
+  }
+ }
+
+ #filerequest .article p {
   display: inline-block;
   position: relative;
-  border-bottom: 5px dotted gold;
-  margin: 2% 7%;
+  margin: 0 5% 7% 7%;
   /*width: 200px;*/
+}
+
+#filerequest .article p:nth-child(odd) {
+    border-bottom: 5px dotted gold;
 }
 
 
 /*FIGURES*/
-.figure {
+#filerequest .figure {
     display: inline-block;
     text-align: center;
 }
 
-figcaption {
+#filerequest figcaption {
   display: transparent;  
   font-size: 80%;    
   font-style: italic;
 }
 
-.image {
+#filerequest .image {
     width: 75%;
     transition: transform .5s;
 }
-.image:hover {
+#filerequest .image:hover {
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2); 
