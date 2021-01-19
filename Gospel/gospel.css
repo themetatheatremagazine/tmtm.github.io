@@ -1,4 +1,4 @@
-html {
+.articlestyle html {
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -8,19 +8,19 @@ html {
 
 }
 
-*::selection {
+.articlestyle *::selection {
 	color: gold; 
 	background: #8b0000;
   }
 
-  .background {
+  .articlestyle, .background {
 	background-image: url(images/border-left.png), url(images/border-right.png);
 	background-position: top left, top right;
 	background-repeat: no-repeat;
 	background-size: 40%, 40%; 
 }
 
-.header {
+.articlestyle .backimageheader {
 	text-align: justify;
 	display: inline-block;
 	margin-top: 6%;
@@ -29,17 +29,17 @@ html {
 }
 
 @media screen and (max-width: 800px) {
-	.header {
+	.articlestyle .backimageheader {
 	margin-left: 20%;
 	margin-right: 20%; 
 	}
 }
 
-.header h1 {
+.articlestyle .backimageheader h1 {
 	text-align: center;
 }
 
-.article {
+.articlestyle .article {
 	margin-top: 1%;
 	margin-left: 20%;
 	margin-right: 20%;
@@ -53,7 +53,7 @@ html {
 	line-height: 1.6;
 }
 @media screen and (max-width: 800px) {
-	.article {
+	.articlestyle .article {
 		column-count: 1;
 		line-height: normal;
 		margin-left: 5%;
@@ -61,26 +61,26 @@ html {
 	}
   }
 
-  .article p {
+  .articlestyle .article p {
 	display: inline-block;
 	position: relative;
   }
 
 
 
-.figure {
+  .articlestyle .figure {
 display: inline-block;
 text-align: justify;
 }
 
-.figure figcaption {
+.articlestyle .figure figcaption {
   display: transparent;  
   font-size: 80%;    
   font-style: italic;
   line-height: 0.8;
 }
 
-.image {
+.articlestyle .image {
 	width: 90%;
 }
 

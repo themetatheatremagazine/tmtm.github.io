@@ -16,7 +16,9 @@
     padding: 0;
 }
 
-
+.articlestyle * {
+    cursor: url('dark-matter/darkMatterNormal.cur'), auto;
+}
 /*TITLE*/
 .articlestyle .backimageheader {
     background-image: url(images/column.gif), url(images/column.gif), url(images/column.gif) !important;
@@ -28,7 +30,16 @@
     width: auto;
     height: 45vh;
     margin: auto;
+    transition-duration: 1s;
+
 }
+.articlestyle .backimageheader:hover {
+    background-image: url(images/peoplecolumn.gif), url(images/peoplecolumn.gif), url(images/peoplecolumn.gif) !important;
+    background-size: 45vh;
+    transition-duration: 1s;
+}
+
+
 
 @media (max-width: 700px) {
     .articlestyle .backimageheader {
