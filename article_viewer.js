@@ -1,4 +1,5 @@
 function postArticle(articleName) {
   $.ajax({url: articleName, success: function(result){
-    $("#filerequest").html(result);
+    $("#style2040").html(result);
 }});};
+

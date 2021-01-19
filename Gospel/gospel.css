@@ -67,6 +67,7 @@ html {
   }
 
 
+
 .figure {
 display: inline-block;
 text-align: justify;
@@ -82,3 +83,5 @@ text-align: justify;
 .image {
 	width: 90%;
 }
+
+/*border-image 
