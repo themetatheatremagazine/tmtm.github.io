@@ -4,16 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <link href="2040/2040.css" rel="stylesheet">
+    <link href="" rel="stylesheet">
     <title>Hello, world!</title>
   </head>
   <body>
-    
-    <div class="first-row">
       <h1>Issue 1</h1>
+<!--STYLE SELECTOR-->
+      <div> 
+      <button onclick="toggleTheme('2040/2040.css')"> 2040 </button>
+      <button onclick="toggleTheme('Gospel/gospel.css')"> Gospel </button>
+      </div>
+<!--Articles-->
       <button onclick="postArticle('italianTradition/italytrad.html')"> Italian puppet tradition </button>
-    </div>
-      <div id="style2040"></div>
+
+<!--FILE REQUEST VIA AJAX-->
+      <div id="filerequest" class="articlestyle"></div>
+<!--SCRIPT-->
       <script src="article_viewer.js"></script>
+      <script src="style_toggler.js"></script>
     </body>
 </html>

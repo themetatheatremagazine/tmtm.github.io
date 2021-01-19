@@ -1,21 +1,13 @@
-function toggleTheme() { 
-    // Obtains an array of all <link> 
-    // elements. 
-    // Select your element using indexing. 
+/*function toggleTheme2040() { 
     var theme = document.getElementsByTagName('link')[0]; 
+    if (theme.getAttribute('href') ==! '2040.css') { 
+        theme.setAttribute('href', '2040.css'); 
+    } else {
+        theme.setAttribute('href', '');
+    }
+} */
 
-    // Change the value of href attribute  
-    // to change the css sheet. 
-    if (theme.getAttribute('href') == 'light.css') { 
-        theme.setAttribute('href', 'dark.css'); 
-    } else { 
-        theme.setAttribute('href', 'light.css'); 
-    } 
-} 
-
-//Toggle theme toglie e mette il tema 
 function toggleTheme(value) { 
-
     // Obtain the name of stylesheet  
     // as a parameter and set it  
     // using href attribute. 
