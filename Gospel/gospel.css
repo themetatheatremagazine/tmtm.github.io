@@ -23,15 +23,15 @@ html {
 .header {
 	text-align: justify;
 	display: inline-block;
-	margin-top: 10%;
+	margin-top: 6%;
 	margin-left: 32%;
 	margin-right: 32%;
 }
 
 @media screen and (max-width: 800px) {
 	.header {
-	margin-left: 27%;
-	margin-right: 27%; 
+	margin-left: 20%;
+	margin-right: 20%; 
 	}
 }
 
@@ -41,15 +41,12 @@ html {
 
 .article {
 	margin-top: 1%;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 20%;
+	margin-right: 20%;
 	font-weight: bold;
     text-align: justify;
     column-count: 2;
     column-fill: auto;
-    column-rule-width: 5px;
-    column-rule-style: line;
-    column-rule-color: gold;
     column-span: all;
     overflow-x: hidden;
 	word-break: break-word;

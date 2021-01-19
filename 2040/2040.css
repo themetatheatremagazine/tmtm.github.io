@@ -19,7 +19,7 @@
 
 /*TITLE*/
 #filerequest .backimageheader {
-    background-image: url(images/column.gif), url(images/column.gif), url(images/column.gif);
+    background-image: url(images/column.gif), url(images/column.gif), url(images/column.gif) !important;
     background-repeat: no-repeat;
     background-size: 50vh;
     background-position: 5% top, 50% top, 95% top;
@@ -29,22 +29,23 @@
     height: 45vh;
     margin: auto;
 }
-@media (max-width: 800px) {
+
+@media (max-width: 700px) {
     #filerequest .backimageheader {
-        background-image: url(images/column.gif);
+        background-image: url(images/column.gif) !important;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 55%;
         width: auto;
-        height: 60vh;
+        height: 55vh;
     }
 }
 
 
 
-#filerequest .playful {
+#filerequest .playful { 
         font-family: 'Montserrat';
-        font-size: 3rem;
+        font-size: 300%;
         letter-spacing: -5px;
         font-weight: bold;
         color: var(--text);
@@ -75,14 +76,16 @@
           0.25px 0.25px  var(--shadow);
       }
 
-#filerequest .byline .publicationDate p {
+#filerequest .byline, .publicationDate {
     font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 75%;
 }
 /*BACKGROUND*/
 #filerequest .background {
         background: linear-gradient(-45deg, #711C91, #EA01D9, #123E7B, #091933);
         background-size: 400% 400%;
-        animation: gradient 10s linear infinite;
+        animation: gradient 7s linear infinite;
     }
     
     @keyframes gradient {
@@ -107,23 +110,22 @@
     column-gap: 10%;*/
     font-family: 'Atami Regular';
     font-weight: bold;
-    font-size: 2em;
+    font-size: 4vh;
     color: white;
-    text-align: justify;
+    text-align: justify;    
+    word-break: break-word;
     column-count: 3;
     column-fill: auto;
     column-rule-width: 5px;
     column-rule-style: dotted;
     column-rule-color: gold;
-    column-span: all;
     overflow-x: hidden;
-    word-break: break-word;
 }
   
 @media screen and (max-width: 800px) {
   #filerequest .article {
     column-count: 1;
-    font-size: 1.5rem;
+    font-size: 3vh;
   }
  }
 
@@ -161,6 +163,10 @@
 #filerequest .image {
     width: 75%;
     transition: transform .5s;
+    border-radius: 100%; 
+    margin: 20px; 
+    padding: 5px; 
+    border:  5px dotted gold;
 }
 #filerequest .image:hover {
     -ms-transform: scale(1.2); /* IE 9 */
