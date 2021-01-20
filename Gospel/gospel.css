@@ -1,13 +1,29 @@
-.articlestyle html {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background-image: url(images/oldpaper.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+@font-face {
+	font-family: 'camelot';
+	src: url("capFont/camelot-webfont.woff2") format("woff2"), 
+	url("capFont/camelot-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal; }
+@font-face {
+	font-family: 'kremlin';
+	src: url("capFont/KremlinOrthodoxChurchRegular.woff2") format("woff2"), 
+	url("capFont/KremlinOrthodoxChurch.woff") format("woff");
+	font-weight: normal;
+	font-style: normal; }
+@font-face {
+	font-family: 'onciale';
+	src: url("capFont/onciale.woff2") format("woff2"), 
+	url("capFont/onciale.woff") format("woff");
+	font-weight: normal;
+	font-style: normal; }	  
+	
+  
+.articlestyle, .wrapper {
+	background-image: url(images/oldpaper.jpg)!important; 
+	background-repeat: repeat !important;
+	background-size: 100% !important;
 
 }
-
 .articlestyle *::selection {
 	color: gold; 
 	background: #8b0000;
@@ -18,12 +34,15 @@
 	background-position: top left, top right;
 	background-repeat: no-repeat;
 	background-size: 40%, 40%; 
+	padding: 3%;
+	border-style: double;
+
 }
 
 .articlestyle .backimageheader {
 	text-align: justify;
 	display: inline-block;
-	margin-top: 6%;
+	margin-top: 4%;
 	margin-left: 32%;
 	margin-right: 32%;
 }
@@ -37,40 +56,66 @@
 
 .articlestyle .backimageheader h1 {
 	text-align: center;
+	color: #D4AF37;
+	font-family: 'onciale';
+	font-size: 300%;
+	text-shadow: 0 0 3px black, 0 0 5px #440000;
 }
 
 .articlestyle .article {
 	margin-top: 1%;
-	margin-left: 20%;
-	margin-right: 20%;
-	font-weight: bold;
-    text-align: justify;
+	margin-left: 15%;
+	margin-right: 15%;
     column-count: 2;
-    column-fill: auto;
-    column-span: all;
-    overflow-x: hidden;
-	word-break: break-word;
-	line-height: 1.6;
+	column-fill: balance;
+	-moz-column-fill: balance;
+	-webkit-column-fill: balance;
+	text-align: justify;    
+    word-break: break-word;
+	overflow-x: hidden;
+	font-family: 'onciale', serif;
+	letter-spacing: -2px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+	.articlestyle .article {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+  }
+  @media screen and (max-width: 700px) {
 	.articlestyle .article {
 		column-count: 1;
-		line-height: normal;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+  }
+@media screen and (max-width: 500px) {
+	.articlestyle .article {
+		column-count: 1;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
   }
 
-  .articlestyle .article p {
+.articlestyle .article p {
 	display: inline-block;
 	position: relative;
   }
 
+.articlestyle .article .capital:first-letter{
+	float:left;
+	font-family: "camelot", serif;
+    margin-bottom:10px;
+    font-size:500%;
+	margin-right:5px;
+	color: #D4AF37;
+	text-shadow: 2px 2px 5px #404040;
+}
 
 
-  .articlestyle .figure {
-display: inline-block;
-text-align: justify;
+.articlestyle .figure {
+	display: inline-block;
+	text-align: justify;
 }
 
 .articlestyle .figure figcaption {
