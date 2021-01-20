@@ -5,9 +5,9 @@
 	font-weight: normal;
 	font-style: normal; }
 @font-face {
-	font-family: 'kremlin';
-	src: url("capFont/KremlinOrthodoxChurchRegular.woff2") format("woff2"), 
-	url("capFont/KremlinOrthodoxChurch.woff") format("woff");
+	font-family: 'titlefont';
+	src: url("capFont/angelRhapsody.woff2") format("woff2"), 
+	url("capFont/angelRhapsodyRegular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal; }
 @font-face {
@@ -30,10 +30,10 @@
   }
 
   .articlestyle, .background {
-	background-image: url(images/border-left.png), url(images/border-right.png);
-	background-position: top left, top right;
+	background-image: url(images/border-left.png), url(images/border-right.png), url(images/dog.png), url(images/dog_right.png);
+	background-position: top left, top right, bottom left, bottom right;
 	background-repeat: no-repeat;
-	background-size: 40%, 40%; 
+	background-size: 45%, 45%, 12%, 12%; 
 	padding: 3%;
 	border-style: double;
 
@@ -46,7 +46,15 @@
 	margin-left: 32%;
 	margin-right: 32%;
 }
-
+/*
+@media screen and (max-width: 700px) {
+	.articlestyle .backimageheader {
+	margin-top: 5%;
+	margin-left: 30%; 
+	margin-right: 30%;
+	}
+  }
+*/
 @media screen and (max-width: 800px) {
 	.articlestyle .backimageheader {
 	margin-left: 20%;
@@ -57,11 +65,18 @@
 .articlestyle .backimageheader h1 {
 	text-align: center;
 	color: #D4AF37;
-	font-family: 'onciale';
+	font-family: 'titlefont';
 	font-size: 300%;
+	font-weight: lighter;
 	text-shadow: 0 0 3px black, 0 0 5px #440000;
+/**/
 }
 
+@media screen and (max-width: 700px) {
+	.articlestyle .backimageheader h1 {
+	font-size: 200%;
+	}
+  }
 .articlestyle .article {
 	margin-top: 1%;
 	margin-left: 15%;
@@ -111,7 +126,13 @@
 	color: #D4AF37;
 	text-shadow: 2px 2px 5px #404040;
 }
-
+.articlestyle .article p:last-child {
+	background-image: url(images/footer.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 100px;
+  }
 
 .articlestyle .figure {
 	display: inline-block;
