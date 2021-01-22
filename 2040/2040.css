@@ -90,6 +90,7 @@
 .articlestyle .byline, .publicationDate {
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
+    font-weight: bolder;
     font-size: 75%;
 }
 /*BACKGROUND*/
@@ -120,7 +121,6 @@
     margin: auto; /*
     column-gap: 10%;*/
     font-family: 'Atami Regular';
-    font-weight: bold;
     font-size: 4vh;
     color: white;
     text-align: justify;    
