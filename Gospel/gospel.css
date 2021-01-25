@@ -17,29 +17,31 @@
 	font-weight: normal;
 	font-style: normal; }	  
 	
-  
-.articlestyle, .wrapper {
-	background-image: url(images/oldpaper.jpg)!important; 
-	background-repeat: repeat !important;
-	background-size: 100% !important;
-
+.articlestyle html {
+	margin: 0 auto; 
+	padding: 0;
 }
+
 .articlestyle *::selection {
 	color: gold; 
 	background: #8b0000;
   }
-
-  .articlestyle, .background {
-	background-image: url(images/border-left.png), url(images/border-right.png), url(images/dog.png), url(images/dog_right.png);
-	background-position: top left, top right, bottom left, bottom right;
+.articlestyle, div > body {
+	background-image: url(images/oldpaper.jpg); 
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-size: 45%, 45%, 12%, 12%; 
-	padding: 3%;
-	border-style: double;
 
 }
+.articlestyle div {
+	background-image: url(images/border-left.png), url(images/border-right.png), url(images/dog.png), url(images/dog_right.png);
+	background-position: top left, top right, bottom left, bottom right;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 45%, 45%, 12%, 12%; 
+	padding: 7%;
+	border-style: double;
+}
 
-.articlestyle .backimageheader {
+.articlestyle header {
 	text-align: justify;
 	display: inline-block;
 	margin-top: 4%;
@@ -56,13 +58,13 @@
   }
 */
 @media screen and (max-width: 800px) {
-	.articlestyle .backimageheader {
+	.articlestyle header {
 	margin-left: 20%;
 	margin-right: 20%; 
 	}
 }
 
-.articlestyle .backimageheader h1 {
+.articlestyle header h1 {
 	text-align: center;
 	color: #D4AF37;
 	font-family: 'titlefont';
@@ -73,11 +75,13 @@
 }
 
 @media screen and (max-width: 700px) {
-	.articlestyle .backimageheader h1 {
+	.articlestyle header h1 {
 	font-size: 200%;
 	}
   }
-.articlestyle .article {
+
+
+.articlestyle article {
 	margin-top: 1%;
 	margin-left: 15%;
 	margin-right: 15%;
@@ -92,32 +96,32 @@
 	letter-spacing: -2px;
 }
 @media screen and (max-width: 900px) {
-	.articlestyle .article {
+	.articlestyle article {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
   }
   @media screen and (max-width: 700px) {
-	.articlestyle .article {
+	.articlestyle article {
 		column-count: 1;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
   }
 @media screen and (max-width: 500px) {
-	.articlestyle .article {
+	.articlestyle article {
 		column-count: 1;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
   }
 
-.articlestyle .article p {
+.articlestyle article p {
 	display: inline-block;
 	position: relative;
   }
 
-.articlestyle .article .capital:first-letter{
+.articlestyle article .capital:first-letter{
 	float:left;
 	font-family: "camelot", serif;
     margin-bottom:10px;
@@ -126,27 +130,27 @@
 	color: #D4AF37;
 	text-shadow: 2px 2px 5px #404040;
 }
-.articlestyle .article p:last-child {
+.articlestyle article p:last-child {
 	background-image: url(images/footer.png);
 	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	height: 100px;
+	height: 120px;
   }
 
-.articlestyle .figure {
+.articlestyle figure {
 	display: inline-block;
 	text-align: justify;
 }
 
-.articlestyle .figure figcaption {
+.articlestyle figure figcaption {
   display: transparent;  
   font-size: 80%;    
   font-style: italic;
   line-height: 0.8;
 }
 
-.articlestyle .image {
+.articlestyle img {
 	width: 90%;
 }
 
