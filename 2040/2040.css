@@ -188,3 +188,18 @@
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2); 
   }
+
+.articlestyle table, th, td {
+    border: 2px solid white;
+    border-style: solid;
+    text-align: justify;
+    font-size: 70%;
+  }
+
+.articlestyle #References {
+    color: white;
+    text-align: justify; 
+    font-size: 80%;
+    margin: 0 10%;
+    word-break: break-all;
+}

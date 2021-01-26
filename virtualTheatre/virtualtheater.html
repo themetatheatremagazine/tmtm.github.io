@@ -13,15 +13,18 @@
         <meta name="DCTERMS.bibliographicCitation" content="Research Gate, October 2010" />
     </head>
     <body>
-            <section id="information">
+        <div>
+            <header id="information">
                 <h1>A Real-time Performance System for Virtual Theater</h1>
-                <p class="byline">Qiong Wu, Computing Science, University of Alberta (Edmonton, Canada); qiong@cs.alberta.ca</p>
-                <p class="byline">Maryia Kazakevich, AICT, University of Alberta (Edmonton, Canada); maryia@ualberta.ca</p>
-                <p class="byline">Pierre Boulanger, Computing Science, University of Alberta (Edmonton, Canada); pierreb.alberta.ca</p>
-                <p class="byline">Robyn Taylor, Computing Science, University of Alberta (Edmonton, Canada);rltaylor.alberta.ca</p>
+            </header>
+            <article>
+                <p class="byline"><span class="person">Qiong Wu</span>, Computing Science, <span class="place">University of Alberta</span> (<span class="place">Edmonton, Canada</span>); qiong@cs.alberta.ca</p>
+                <p class="byline"><span class="person">Maryia Kazakevich</span>, AICT, <span class="place">University of Alberta</span> (<span class="place">Edmonton, Canada</span>); maryia@ualberta.ca</p>
+                <p class="byline"><span class="person">Pierre Boulanger</span>, Computing Science, <span class="place">University of Alberta</span> (<span class="place">Edmonton, Canada</span>); pierreb@ualberta.ca</p>
+                <p class="byline"><span class="person">Robyn Taylor</span>, Computing Science, <span class="place">University of Alberta</span> (<span class="place">Edmonton, Canada</span>); rltaylor@ualberta.ca</p>
             </section>
             <section id="summary">
-                <p id="abstract">The idea of combining virtual reality technology and theatrical tradition
+                <p id="abstract" class="capital">The idea of combining virtual reality technology and theatrical tradition
                     to create virtual plays has captured artists’ imaginations for
                     some time. Using conventional technology, the use of virtual characters
                     in a theatrical performance often integrates the predefined
@@ -39,10 +42,10 @@
                     are responsive to their actions. 
                     The system integrates display peripherals, networked cameras,
                     real-time motion capture system, gesture recognition, and a virtual
-                    environment development suite (Virtools) to create a true virtual
+                    environment development suite (<span class="entity">Virtools</span>) to create a true virtual
                     theatrical performance environment. In the paper, we will present
                     the various concepts developed so far and an example of a virtual
-                    theatrical performance called Trickster at the Intersection that was
+                    theatrical performance called <span class="entity">Trickster</span> at the Intersection that was
                     presented during Smart Graphics 2010 at <span class="place">Canada’s Banff Centre</span>.</p>
                 <p id="descriptors"><span class="label">H.5.1 <strong>[Information interfaces and Presentation]</strong></span>: <span class="subject">Multimedia Information
                     Systems—Artificial, augmented, and virtual realities</span>;
@@ -95,10 +98,10 @@
                     the illusion of responsiveness. This new system opens the door to
                     new forms of theatrical expression as well as standard theatrical
                     plays. For example, plays that require imaginary characters, such
-                    as Shakespeare’s Macbeth, The Tempest, and Midsummer Night’s
-                    Dream, could use this technology to add realistic personifications
-                    of magic characters like the witches in Macbeth.</p>
-                    <figure><img src="a.png" alt="a"><img src="b.png" alt="b"><img src="c.png" alt="c">
+                    as <span class="person">Shakespeare</span>’s <span class="entity">Macbeth</span>, <span class="entity">The Tempest</span>, and <span class="entity">Midsummer Night’s
+                    Dream</span>, could use this technology to add realistic personifications
+                    of magic characters like the witches in <span class="entity">Macbeth</span>.</p>
+                    <figure><img src="virtualTheatre/images/a.png" alt="a"><img src="virtualTheatre/images/b.png" alt="b"><img src="virtualTheatre/images/c.png" alt="c">
                     <figcaption> Virtual theatrical performance of the Trickster at the Intersection: (a) The AMMI CAVE is used to display the trickster
                         and its virtual world immersively; (b) A performer in a motion capture suit who is responsible to drive the embodied trickster and to
                         create his magic world using gesture recognition; A video camera located in the CAVE allows the performer to monitor the audience
@@ -117,14 +120,14 @@
                     3, we will describe the system architecture and its application to
                     virtual theater. In Section 4, we will describe a virtual theatrical
                     performance called Trickster at the Intersection that was presented
-                    during Smart Graphics 2010 at Canada’s Banff Centre. We will
+                    during Smart Graphics 2010 at <span class="place">Canada’s Banff Centre</span>. We will
                     then conclude and discuss future work in Section 5.</p>
         </section>  
         <section id="related">
             <h2>2. Related Work</h2>
             <p>Virtual plays have been around for decades. However, it has
             never been thought as a replacement of real theatrical performance.
-            Reeve [15] pointed that key features of a typical theatrical rehearsal
+            Reeve <a class="biblioRef" href="#b15">[15]</a> pointed that key features of a typical theatrical rehearsal
             process can significantly improve the sense of presence for participants
             within a shared virtual environment. In <a class="biblioRef" href="#b15">[15]</a>, it is demonstrated
             that traditional shared Virtual Environments (VEs) for the
@@ -144,7 +147,7 @@
                 systems, once the input is interpreted, a pre-defined animation is
                 played, during which a user has no control over its execution. Other
                 systems use speech and gesture inputs instead. For example, Dow
-                et al.<a class="biblioRef" href="#b4">[4]</a> proposes to use remote human operators to play "behindthe-
+                et al.<a class="biblioRef" href="#b4">[4]</a> proposes to use remote human operators to play "behind-the-
                 scenes" roles (type player’s spoken utterances) to control a live
                 embodied character, so that it is able to recognize user speech and
                 gesture inputs. In such systems, users still passively play the prescripted
@@ -153,7 +156,7 @@
             <p>Higher level of interactions allow characters in a virtual theater
                 to be treated as virtual actors and the novice user can construct narratives
                 in which they appear <a class="biblioRef" href="#b8">[8]</a>. For example, the “Virtual Theater"
-                project of Barbara Hayes-Roth <a class="biblioRef" href="#b7">[7]</a> and the IMPROV virtual actors
+                project of <span class="person">Barbara Hayes-Roth</span> <a class="biblioRef" href="#b7">[7]</a> and the IMPROV virtual actors
                 system <a class="biblioRef" href="#b14">[14]</a>. These systems allow users who would normally be
                 excluded from the creation of play to be involved at different levels
                 ranging from choosing their viewpoint to defining dynamic behavior
@@ -198,7 +201,7 @@
         </section>
         <section id="architecture">
             <h2>3. System Architecture</h2>
-            <figure><img src="figure2.png" alt="Natnet schema">
+            <figure><img src="virtualTheatre/images/figure2.png" alt="Natnet schema">
                 <figcaption> Figure 2: System architecture for the virtual performance: <em>Trickster at the Intersection</em></figcaption>
                 </figure>
             <p>The system is basically composed of the following components.
@@ -290,7 +293,7 @@
                 “root" node and then rotate other body joints relative to "root".</p>
                 <h3>3.1.2 Behavior Specification</h3>
                 <figure>
-                    <img src="figure3.png" alt="script of virtual character"
+                    <img src="virtualTheatre/images/figure3.png" alt="script of virtual character"
                     <figcaption>Figure 3: The script of the virtual character is linked to the
                     motion capture data client.</figcaption>
                 </figure>
@@ -343,28 +346,28 @@
                             <th>Action</th> 
                         </tr>
                         <tr>
-                            <td><img src="table_1.png"></td>
+                            <td><img src="virtualTheatre/images/table_1.png"></td>
                             <td>Lower head, head is close to chest</td>
                             <td>A bunch of plants appear and grow at back</td>
                         </tr>
                         <tr>
-                            <td><img src="table_2.png"></td>
+                            <td><img src="virtualTheatre/images/table_2.png"></td>
                             <td>Left leg is picked up, left wrist is close to left knee (distance is less than 5), and right wrist is above left wrist.</td>
                             <td>A bunch of plants appear and grow on right-hand side, stop grow after certain threshold</td>
 
                         </tr>
                         <tr>
-                            <td><img src="table_3.png"></td>
+                            <td><img src="virtualTheatre/images/table_3.png"></td>
                             <td>Right leg is picked up, right wrist is close to right knee (distance is less than 5), and left wrist is above right wrist.</td>
                             <td>A bunch of plants appear and grow on left-hand side, stop grow after certain threshold</td>
                         </tr>
                         <tr>
-                            <td><img src="table_4.png"></td>
+                            <td><img src="virtualTheatre/images/table_4.png"></td>
                             <td>Two hands close up (trigger actions when distance < 3)</td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td><img src="table_5.png"></td>
+                            <td><img src="virtualTheatre/images/table_5.png"></td>
                             <td>Body turn left/right more than 90 degree</td>
                             <td>Everything disappears and reset to beginning</td>
                         </tr>
@@ -392,10 +395,10 @@
                     plots of the narrative.</p>
         </section>
                     <figure>
-                        <img src="5_a.png" alt="model and actor tracing">                       
-                        <img src="5_b.png" alt="model and actor tracing">
-                        <img src="5_c.png" alt="model and actor tracing">
-                        <img src="5_d.png" alt="model and actor tracing">
+                        <img src="virtualTheatre/images/5_a.png" alt="model and actor tracing">                       
+                        <img src="virtualTheatre/images/5_b.png" alt="model and actor tracing">
+                        <img src="virtualTheatre/images/5_c.png" alt="model and actor tracing">
+                        <img src="virtualTheatre/images/5_d.png" alt="model and actor tracing">
                         <figcaption>Figure 5: Dynamic virtual world driven by the actor’s performance. In each sub image, left is the skeleton computed from motion
                             capture system, right is the rendered virtual play. Red body parts of the skeleton is caused by occlusion or movement of markers. (a)
                             Hands close-up gesture triggers sparkles. (b) Lifting left hand and left foot triggers plants grow on left-hand side. (c) More plants
@@ -462,90 +465,87 @@
                 part of the performance and creating a truly interactive and collaborative
                 version of virtual theater.</p>
         </section>
-
+        </article>
 
         <section id="References">
             <h2>References</h2>
-            <p class="biblioItem" id="b01"><span class="biblioMarker">1. </span>S. C. Ahn, I.-J. Kim, H.-G. Kim, Y.-M. Kwon, and H. Ko.
-            Audience interaction for virtual reality theater and its
-            implementation. In VRST ’01: Proceedings of the ACM
-            symposium on Virtual reality software and technology, pages
-            41–45, New York, NY, USA, 2001. ACM.</p>
-            <p class="biblioItem" id="b02"><span class="biblioMarker">2. </span>J. Chai and J. K. Hodgins. Performance animation from
+            <p class="biblioItem" id="b01"><span class="biblioMarker">1. </span><span class="person">S. C. Ahn</span>, <span class="person">I.-J. Kim</span, <span class="person">H.-G. Kim</span>, <span class="person">Y.-M. Kwon</span>, and <span class="person">H. Ko</span>.
+            Audience interaction for virtual reality theater and its implementation. In VRST ’01: Proceedings of the ACM symposium on Virtual reality software and technology, pages 41–45, New York, NY, USA, 2001. ACM.</p>
+            <p class="biblioItem" id="b02"><span class="biblioMarker">2. </span><span class="person">J. Chai</span> and <span class="person">J. K. Hodgins</span>. Performance animation from
             low-dimensional control signals. ACM Trans. Graph.,
             24(3):686–696, 2005.</p>
-            <p class="biblioItem" id="b03"><span class="biblioMarker">3. </span>A. D. Cheok, W. Weihua, X. Yang, S. Prince, F. S. Wan,
+            <p class="biblioItem" id="b03"><span class="biblioMarker">3. </span><span class="person">A. D. Cheok</span>, <span class="person">W. Weihua</span>, <span class="person">X. Yang</span>, <span class="person">S. Prince</span>, <span class="person">F. S. Wan</span>,
             M. Billinghurst, and H. Kato. Interactive theatre experience
             in embodied + wearable mixed reality space. In ISMAR ’02:
             Proceedings of the 1st International Symposium on Mixed
             and Augmented Reality, page 59, Washington, DC, USA,
             2002. IEEE Computer Society.</p>
-            <p class="biblioItem" id="b04"><span class="biblioMarker">4. </span>S. P. Dow, M. Mehta, B. MacIntyre, and M. Mateas. Eliza
+            <p class="biblioItem" id="b04"><span class="biblioMarker">4. </span><span class="person">S. P. Dow</span>, <span class="person">M. Mehta</span>, <span class="person">B. MacIntyre</span>, and <span class="person">M. Mateas</span>. Eliza
             meets the wizard-of-oz: evaluating social acceptability. In
             CHI ’10: Proceedings of the 28th international conference
             on Human factors in computing systems, pages 547–556,
             New York, NY, USA, 2010. ACM.</p>
-            <p class="biblioItem" id="b05"><span class="biblioMarker">5. </span>L. Engler and C. Fijan. Making puppets come alive: how to
+            <p class="biblioItem" id="b05"><span class="biblioMarker">5. </span><span class="person">L. Engler</span> and <span class="person">C. Fijan</span>. Making puppets come alive: how to
             learn and teach hand puppetry. Dover Publications, 1997.</p>
-            <p class="biblioItem" id="b06"><span class="biblioMarker">6. </span>G. Giesekam. staging the screen: the use of film an video in
+            <p class="biblioItem" id="b06"><span class="biblioMarker">6. </span><span class="person">G. Giesekam</span>. staging the screen: the use of film an video in
             theatre. Palgrave Macmillan, 2008.</p>
-            <p class="biblioItem" id="b07"><span class="biblioMarker">7. </span>B. Hayes-Roth and L. Brownston. Multiagent collaboration
+            <p class="biblioItem" id="b07"><span class="biblioMarker">7. </span><span class="person">B. Hayes-Roth</span> and <span class="person">L. Brownston</span>. Multiagent collaboration
             in directed improvisation. In Proceedings of the First
             International Conference on Multi-Agent Systems, pages
             148–154, 1995.</p>
-            <p class="biblioItem" id="b08"><span class="biblioMarker">8. </span>Z. Hendricks, G. Marsden, and E. Blake. A meta-authoring
+            <p class="biblioItem" id="b08"><span class="biblioMarker">8. </span><span class="person">Z. Hendricks</span>, <span class="person">G. Marsden</span>, and <span class="person">E. Blake</span>. A meta-authoring
             tool for specifying interactions in virtual reality
             environments. In AFRIGRAPH ’03: Proceedings of the 2nd
             international conference on Computer graphics, virtual
             Reality, visualisation and interaction in Africa, pages
             171–180, New York, NY, USA, 2003. ACM.</p>
-            <p class="biblioItem" id="b09"><span class="biblioMarker">9. </span>M. Mateas and A. Stern. Facade: An experiment in building
+            <p class="biblioItem" id="b09"><span class="biblioMarker">9. </span><span class="person">M. Mateas</span> and <span class="person">A. Stern</span>. Facade: An experiment in building
             a fully-realized interactive drama. In Game developer’s
             Conference: Game Design Track, 2003.</p>
-            <p class="biblioItem" id="b10"><span class="biblioMarker">10. </span> M. v. d. P. Matthew Thorne, David Burke. Motion doodle:
+            <p class="biblioItem" id="b10"><span class="biblioMarker">10. </span> <span class="person">M. v. d. P. Matthew Thorne</span>, <span class="person">David Burke</span>. Motion doodle:
             An interface for sketching character motion. In Proc. of
             SIGGRAPH ’04 (Special issue of ACM Transactions on
             Graphics), 2004.</p>
-            <p class="biblioItem" id="b11"><span class="biblioMarker">11. </span> W. S. Meador, T. J. Rogers, K. O’Neal, E. Kurt, and
-            C. Cunningham. Mixing dance realities: collaborative
+            <p class="biblioItem" id="b11"><span class="biblioMarker">11. </span> <span class="person">W. S. Meador</span>, <span class="person">T. J. Rogers</span>, <span class="person">K. O’Neal</span>, <span class="person">E. Kurt</span>, and
+            <span class="person">C. Cunningham</span>. Mixing dance realities: collaborative
             development of live-motion capture in a performing arts
             environment. Comput. Entertain., 2(2):12–12, 2004.</p>
-            <p class="biblioItem" id="b12"><span class="biblioMarker">12. </span>C. P. N. Badler. Simulating Humans: Computer Graphics,
+            <p class="biblioItem" id="b12"><span class="biblioMarker">12. </span><span class="person">C. P. N. Badler</span>. Simulating Humans: Computer Graphics,
             Animation and Control. Oxford University Press, 1993.</p>
-            <p class="biblioItem" id="b13"><span class="biblioMarker">13. </span> D. Ninomiya, K. Miyazaki, and R. Nakatsu. Networked
+            <p class="biblioItem" id="b13"><span class="biblioMarker">13. </span> <span class="person">D. Ninomiya</span>, <span class="person">K. Miyazaki</span>, and <span class="person">R. Nakatsu</span>. Networked
             virtual marionette theater. In KES ’08: Proceedings of the
             12th international conference on Knowledge-Based
             Intelligent Information and Engineering Systems, Part I,
             pages 440–447, Berlin, Heidelberg, 2008. Springer-Verlag.</p>
-            <p class="biblioItem" id="b14"><span class="biblioMarker">14. </span> K. Perlin and A. Goldberg. Improv: a system for scripting
+            <p class="biblioItem" id="b14"><span class="biblioMarker">14. </span> <span class="person">K. Perlin</span> and <span class="person">A. Goldberg</span>. Improv: a system for scripting
             interactive actors in virtual worlds. In SIGGRAPH ’96:
             Proceedings of the 23rd annual conference on Computer
             graphics and interactive techniques, pages 205–216, New
             York, NY, USA, 1996. ACM.</p>
-            <p class="biblioItem" id="b15"><span class="biblioMarker">15. </span> C. Reeve. Presence in virtual theater. Presence: Teleoper.
+            <p class="biblioItem" id="b15"><span class="biblioMarker">15. </span> <span class="person">C. Reeve</span>. Presence in virtual theater. Presence: Teleoper.
             Virtual Environ., 9(2):209–213, 2000.</p>
-            <p class="biblioItem" id="b16"><span class="biblioMarker">16. </span>M. Shiba, A. Soga, and J. Salz. A virtual performance
+            <p class="biblioItem" id="b16"><span class="biblioMarker">16. </span><span class="person">M. Shiba</span>, <span class="person">A. Soga</span>, and <span class="person">J. Salz</span>. A virtual performance
             system and its application on a noh stage. In VRST ’09:
             Proceedings of the 16th ACM Symposium on Virtual Reality
             Software and Technology, pages 267–268, New York, NY,
             USA, 2009. ACM.</p>
-            <p class="biblioItem" id="b17"><span class="biblioMarker">17. </span>T. Shiratori and J. K. Hodgins. Accelerometer-based user
+            <p class="biblioItem" id="b17"><span class="biblioMarker">17. </span><span class="person">T. Shiratori</span> and <span class="person">J. K. Hodgins</span>. Accelerometer-based user
             interfaces for the control of a physically simulated character.
             ACM Transactions on Graphics (SIGGRAPH Asia 2008),
             27(5), 2008.</p>
-            <p class="biblioItem" id="b18"><span class="biblioMarker">18. </span> S. Strassman. Desktop Theater: Automatic generation of
+            <p class="biblioItem" id="b18"><span class="biblioMarker">18. </span> <span class="person">S. Strassman</span>. Desktop Theater: Automatic generation of
             Expressive Animation, PhD thesis. MIT Media Lab, 1991.</p>
-            <p class="biblioItem" id="b19"><span class="biblioMarker">19. </span>S. Ullrich, H. Prendinger, and M. Ishizuka. Mpml3d: agent
+            <p class="biblioItem" id="b19"><span class="biblioMarker">19. </span><span class="person">S. Ullrich</span>, <span class="person">H. Prendinger</span>, and <span class="person">M. Ishizuka</span>. Mpml3d: agent
             authoring language for virtual worlds. In ACE ’08:
             Proceedings of the 2008 International Conference on
             Advances in Computer Entertainment Technology, pages
             134–137, New York, NY, USA, 2008. ACM.</p>
-            <p class="biblioItem" id="b20"><span class="biblioMarker">20. </span> K. Yin and D. K. Pai. Footsee: an interactive animation
+            <p class="biblioItem" id="b20"><span class="biblioMarker">20. </span> <span class="person">K. Yin</span> and <span class="person">D. K. Pai</span>. Footsee: an interactive animation
             system. In SCA ’03: Proceedings of the 2003 ACM
             SIGGRAPH/Eurographics symposium on Computer
             animation, pages 329–338, Aire-la-Ville, Switzerland,
             Switzerland, 2003. Eurographics Association.</p>
-            <p class="biblioItem" id="b21"><span class="biblioMarker">21. </span>P. Zhao and M. van de Panne. User interfaces for interactive
+            <p class="biblioItem" id="b21"><span class="biblioMarker">21. </span><span class="person">P. Zhao</span> and <span class="person">M. van de Panne</span>. User interfaces for interactive
             control of physics-based 3d characters. In I3D ’05:
             Proceedings of the 2005 symposium on Interactive 3D
             graphics and games, pages 87–94, New York, NY, USA,

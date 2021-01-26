@@ -4,13 +4,13 @@ const capitalize = (s) => {
   return s.charAt(0).toUpperCase() + s.slice(1);
 };
 
-function extract_tag(tag_name, target)
+function extract_tag(tag_name)//, target)
 { var x = $("."+tag_name).map(function(){return this.innerHTML}).get();
   var x_unique = [...new Set(x)];
   var list_inside = x_unique.join('</li><li onclick = "onClick_tag(this)">');
   content = "<h5>" + capitalize(tag_name) + ":" + '</h5> <li onclick = "onClick_tag(this)">' + list_inside + "</li>";
-  $(target).append(content);
-  return x_unique;
+  //$(target).append(content);
+  return content;
 };
 
 var lastTagName = "";
@@ -37,7 +37,7 @@ function postArticle(articleName, issueJsonPath) {
     $("#filerequest").empty();
     $("#filerequest").html(result);
     $("#metadata").empty();
-    $("#metadata").append('<h4>Metadata</h4><ul id="metadataList"></ul> <h4>Class List</h4><ul id="classList"></ul> <h4>Metadata Issue</h4><div id="accordion"></div>');
+    $("#metadata").append('<h4>Metadata</h4><ul id="metadataList"></ul> <h4>Class List</h4><div id="accordionEntities"></div> <h4>Metadata Issue</h4><div id="accordion"></div>');
     $("#metadataList").empty();
     //get meta tags AFTER article has been loaded 
     var title = $("meta[name='DC.title']").attr('content');
@@ -92,10 +92,31 @@ function postArticle(articleName, issueJsonPath) {
           counter = counter+1;
         });
       });
-      //
-      var person = extract_tag('person', "#classList");
-      var entity = extract_tag('entity', "#classList");
-      var place = extract_tag('place', "#classList");
+      //var person = extract_tag('person', "#classList");
+      //var entity = extract_tag('entity', "#classList");
+      //var place = extract_tag('place', "#classList");
+      namedEntities = ['person', 'entity', 'place'];
+      var counterNames = 0;
+      $.each(namedEntities, function() {
+          var contents = [];
+          contents.push('<div class="card">');
+          contents.push('<div class="card-header" id="heading' + counterNames + '">');
+          contents.push('<h5 class="mb-0">');
+          contents.push('<button class="btn btn-link" data-toggle="collapse" data-target="#collapse' + counterNames + '" aria-expanded="true" aria-controls="collapse' + counterNames + '">');
+          contents.push(capitalize(namedEntities[counterNames]));
+          contents.push('</button></h5></div>');
+          contents.push('<div id="collapse' + counterNames + '" class="collapse show" aria-labelledby="heading' + counterNames + '" data-parent="#accordionEntities">')
+          contents.push('<div class="card-body">');
+          contents.push('<ul>');
+          contents.push(x = extract_tag(namedEntities[counterNames]));
+          console.log(contents);
+          contents.push('</ul>');
+          contents.push('</div>');
+          contents.push('</div>');
+          contents.push('</div>');
+          $('#accordionEntities').append(contents.join(""));
+              counterNames = counterNames+1;});
+     
 }});};
 
 
@@ -123,3 +144,38 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+/*
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+   namedEntities = [0, 'Person', 'Entity', 'Place'];
+      var counterNames = 1;
+      $.each(namedEntities, function() {
+          var contents = [];
+          contents.push('<div class="card">');
+          contents.push('<div class="card-header" id="heading' + counterNames + '">');
+          contents.push('<h5 class="mb-0">');
+          contents.push('<button class="btn btn-link" data-toggle="collapse" data-target="#collapse' + counterNames + '" aria-expanded="true" aria-controls="collapse' + counterNames + '">');
+          contents.push('"'+ namedEntities[counterNames] + '"');
+          contents.push('</button></h5></div>');
+          contents.push('<div id="collapse' + counterNames + '" class="collapse show" aria-labelledby="heading' + counterNames + '" data-parent="#accordionEntities">')
+          contents.push('<div class="card-body">');
+          contents.push('</div>');
+          contents.push('</div>');
+          contents.push('</div>');
+          $('#accordionEntities').append(contents.join(""));
+          extract_tag(namedEntities[counterNames], "#classList");
+              counterNames = counterNames+1;});*/
