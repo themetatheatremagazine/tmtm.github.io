@@ -1,0 +1,45 @@
+﻿[Arrow]
+Path=Dark Matter Normal.cur
+
+[UpArrow]
+Path=Dark Matter Alternate.cur
+
+[Wait]
+Path=Dark Matter Busy.ani
+
+[SizeNWSE]
+Path=Dark Matter Diagonal1.cur
+
+[SizeNESW]
+Path=Dark Matter Diagonal2.cur
+
+[Hand]
+Path=Dark Matter Link.cur
+
+[Help]
+Path=Dark Matter HelpSelect.cur
+
+[SizeAll]
+Path=Dark Matter Move.cur
+
+[NWPen]
+Path=Dark Matter Handwriting.cur
+
+[Crosshair]
+Path=Dark Matter PrecisionSelect.cur
+
+[SizeWE]
+Path=Dark Matter ResizeRL.cur
+
+[SizeNS]
+Path=Dark Matter ResizeUD.cur
+
+[IBeam]
+Path=Dark Matter TextSelect.cur
+
+[No]
+Path=Dark Matter Unavailable.cur
+
+[AppStarting]
+Path=Dark Matter WorkingInBackground.ani
+

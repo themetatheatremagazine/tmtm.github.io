@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'edd';
+  src: url('edda/EddaNarrow-rxAL.woff2') format('woff2');
+  src: url('edda/EddaNarrow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'berol';
+    src: url('berolina/Berolina.woff2') format('woff2');
+    src: url('berolina/Berolina.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.articlestyle body {
+  margin-top: 0;
+  background-image: url(background.jpg);
+  background-repeat: repeat;
+  background-size: 70%;
+}
+
+.articlestyle div {
+  background-image: url(border-leftright.png),  url(border-leftright.png);
+  background-repeat: repeat-y, repeat-y;
+  background-position: left, right;
+  background-size: 10%, 10%;
+}
+
+.articlestyle  h3, h4 {
+  color: #b6470d;
+  font-family: 'berol';
+  font-size: large;
+  text-align: center;
+}
+
+.articlestyle  h2 {
+  color: #b6470d;
+  text-align: center;
+}
+
+.articlestyle  blockquote {
+  font-family: 'berol';
+  font-style: italic;
+  text-align: center;
+}
+
+.articlestyle  header {
+background-image: url(mini-border-left.png), url(mini-border-left.png), url(mini-border-right.png), url(mini-border-right.png);
+background-position: top left, top right, bottom left, bottom right;
+background-repeat: no-repeat;
+background-size: 5%;
+border: 8px solid #d4b425;
+border-spacing: 20px;
+border-style: solid;
+margin-left: 10%;
+margin-right: 10%;
+text-align: center;
+color: #83aa6b;
+text-shadow: 3px 3px 3px #808080;
+font-family: 'edd';
+font-size: 2rem;
+}
+
+/*.block {
+  background-image: url(border.png);
+  background-repeat: no-repeat;
+  background-size: 600px 300px;
+  padding: 50px;
+  text-align: center;
+}*/
+
+.articlestyle  article {
+font-family: 'berol';
+font-weight: bolder;
+color: black;
+text-shadow: 2px 4px 2px white;
+column-count: 2;
+column-gap: 0px;
+column-fill: balance;
+text-align: justify;
+word-break: break-word;
+overflow-x: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .articlestyle  article {
+      column-count: 1;
+    }
+}
+
+.articlestyle  article, p {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  /*background-image: url(mini-border-left.png);
+  background-position: bottom right;*/
+}
+
+/*p {
+  background-image: url(bottom-border-right2.png), url(bottom-border-left.png);
+  background-position: bottom left, bottom right;
+  background-repeat: repeat-y;
+  background-size: 50px;
+}
+
+figure {
+  display: inline-block;
+  text-align: center;
+}*/
+
+.articlestyle  img {
+    width: 75%;
+    transition: transform .5s;
+    border: 2px solid;
+}

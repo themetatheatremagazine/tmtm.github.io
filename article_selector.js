@@ -179,3 +179,7 @@ btn.on('click', function(e) {
           $('#accordionEntities').append(contents.join(""));
           extract_tag(namedEntities[counterNames], "#classList");
               counterNames = counterNames+1;});*/
+
+
+              
+          

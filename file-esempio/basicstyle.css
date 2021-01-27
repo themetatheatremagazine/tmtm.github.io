@@ -1,0 +1,45 @@
+.articlestyle img {
+    width: 20%;
+    height: 20%;
+    border: 1px solid black;
+    margin: 2%;
+}
+.articlestyle table img {
+    size: 100%;
+    border: 1px solid black;
+    margin: 2%;
+}
+.articlestyle img {
+    text-align: justify;
+}
+
+.articlestyle table, th {
+    border: 2px solid black;
+    border-style: solid;
+    text-align: justify;
+  }
+
+.articlestyle td {
+    border: 2px solid black;
+    border-style: solid;
+    text-align: justify;
+  }
+
+.articlestyle header {
+    text-align: center;
+    margin: 0 10%;
+    font-size: 110%;
+    margin: 5% 0;
+}
+.articlestyle article {
+    text-align: justify;
+    margin: 0 10%;
+}
+
+.articlestyle figure {
+    text-align: center;
+}
+
+.articlestyle .person, .place, .date, .entity {
+    text-decoration: underline;
+}

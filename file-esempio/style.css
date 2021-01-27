@@ -1,0 +1,283 @@
+.issue_style body {
+    font-family: arial, sans-serif;
+    background-color: #D3D3D3;
+}
+
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background:#D3D3D3;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    WRAPPER
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #961D07;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    z-index: 999;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #961D07;
+    text-align: center;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    color: #961D07;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #961D07;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #961D07;
+}
+
+
+/* ---------------------------------------------------
+    PAGE CONTENT
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+/* ---------------------------------------------------
+    OVERLAY
+----------------------------------------------------- */
+
+#overlay {
+    position:fixed;
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    opacity: 0;
+}
+
+#overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* ---------------------------------------------------
+    DISMISS STYLE
+----------------------------------------------------- */
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #7386D5;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+
+/* ---------------------------------------------------
+    MEDIA QUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+
+/* previous style*/
+#accordionEntities li:hover {
+    color: blue; 
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+#button_scroll {
+    display: inline-block;
+    background-image: url(button_up.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid gold; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button_scroll::after {
+    font-size: 3em;
+    color: #fff;
+  }
+  #button_scroll:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button_scroll:active {
+    background-color: #555;
+  }
+  #button_scroll.show {
+    opacity: 1;
+    visibility: visible;
+  }
+@media (min-width: 500px) {
+    #button {
+      margin: 30px;
+    }
+  }
+
+/*ACCORDION STYLE
+style of every dinamic html that is created via js*/
+.accordionStyle {
+    min-width: 250px;
+    max-width: 250px;
+    background: #961D07;
+    color: #fff;
+    transition: all 0.3s;}
+.card-body {
+    background: #961D07 !important;
+}
+
+#metadatalist h4 {
+    margin: 2px;
+}
+
+
+.styleButtons {
+    background-color: #CF6F4C;
+    padding: 10px;
+    color: #D3D3D3;
+    text-shadow: 1px 1px 1px  #961D07 ;
+
+}
+
+    
+.articleButtons {
+    background-color: #CF6F4C;
+    padding: 10px;
+    color: #D3D3D3;
+    text-shadow: 1px 1px 1px  #961D07 ;
+
+}
+
+h2 {
+    color: #D3D3D3;
+    text-shadow: 1px 1px 1px  #961D07 ;
+
+}
+
+button {
+    color: #D3D3D3;
+    text-shadow: 1px 1px 1px  #961D07 ;
+
+}
+
+#logo {
+    width: 120px;
+    border-bottom: 1px solid white;
+}
