@@ -238,15 +238,12 @@ style of every dinamic html that is created via js*/
     max-width: 250px;
     background: #961D07;
     color: #fff;
-    transition: all 0.3s;}
+    transition: all 0.3s;
+    text-align: justify;
+}
 .card-body {
     background: #961D07 !important;
 }
-
-#metadatalist h4 {
-    margin: 2px;
-}
-
 
 .styleButtons {
     background-color: #CF6F4C;
@@ -265,7 +262,7 @@ style of every dinamic html that is created via js*/
 
 }
 
-h2 {
+.sitestyle h2 {
     color: #D3D3D3;
     text-shadow: 1px 1px 1px  #961D07 ;
 
@@ -281,3 +278,17 @@ button {
     width: 120px;
     border-bottom: 1px solid white;
 }
+
+#metadataList {
+    text-align: justify;
+    padding: 10px;
+}
+#metadataList h6 {
+    text-align: center;
+    display: block;
+}
+
+.list-unstyled h6 {
+    padding: 0 9px;
+    font-size: 120%;
+} 

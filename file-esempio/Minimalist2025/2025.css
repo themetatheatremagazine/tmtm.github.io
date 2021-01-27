@@ -1,81 +1,191 @@
 @font-face {
-  font-family: 'North';
-  src: url('font/North Avellion.woff2') format('woff2');
-  src: url('font/North-Avellion.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ranking';
-  src: url('font/Rankings Caps.woff2') format('woff2');
-  src: url('font/Rankings-Caps.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'fiorina';
-  src: url('font_body/fiorinatext-light.woff2') format('woff2');
-  src: url('font_body/fiorinatext-light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-.articlestyle body {
-    background-color: #f7f7f7;
-    color: #333333;
-    font-family: 'fiorina';
-}
-.articlestyle  h1 {
-    text-align: center;
-    font-family: 'ranking';
-}
-
-.articlestyle, header {
-    text-align: center;
     font-family: 'North';
-}
-/*
-@media screen and (min-width: 300px) {
-  .articlestyle article {
+    src: url('font/North Avellion.woff2') format('woff2');
+    src: url('font/North-Avellion.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
-}*/
-
-
-.articlestyle article {
+  @font-face {
+    font-family: 'ranking';
+    src: url('font/Rankings Caps.woff2') format('woff2');
+    src: url('font/Rankings-Caps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
     font-family: 'fiorina';
-    font-size: 80%;
-    text-align: justify;
-    column-count: 3;
-    column-gap: 1rem;
-    column-fill: balance;
-
-}
-
-.articlestyle article p {
-    display: inline-block;
-    text-align: center;
-}
-@media screen and (max-width: 500px) {
-  .articlestyle article {
-      column-count: 1;
-    }
-}
-.articlestyle figure {
-    display: inline-block;
-    text-align: center;
-}
-
-
-.articlestyle img {
-    width: 75%;
-    transition: transform .5s;
-    filter: grayscale(100%);
-}
-.articlestyle img:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
+    src: url('font_body/fiorinatext-light.woff2') format('woff2');
+    src: url('font_body/fiorinatext-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
+  
+  :root {
+    --text: #333333;
+    --backcolor: #f7f7f7;
+  }
+  .articlestyle html {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  .articlestyle body {
+    background: var(--backcolor);  
+    padding: 5rem;
+    font-size: 2em;
+  }
+  
+  .articlestyle div {
+    background: var(--backcolor);  
+    padding: 5rem;
+    font-size: 1.2em;
+  }
+  
+  .articlestyle div header {
+    margin-bottom: 20%;
+    padding-bottom: 3rem;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    /*border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);*/
+    border-image-slice: 1;
+  }
+
+
+  .articlestyle div > header h1 {
+    font-family: 'ranking';
+    font-size: 350%;
+    text-align: center;
+    color: var(--text);
+  }
+  
+  .articlestyle div > header h2, h3, h4 {
+    font-family: 'North';
+    color: #333333;
+    font-size: 300%; 
+    text-align: center;
+    color: var(--text);
+  }
+  
+  .articlestyle article  h2 {
+    border-top: 3px solid transparent; 
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    border-image-slice: 1;
+    font-family: 'North';
+    font-size: 300%; 
+    text-align: center;
+    color: var(--text);
+  }
+  .articlestyle article  h4 {
+    border-top: 3px solid transparent; 
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    border-image-slice: 1;
+    font-family: 'North';
+    font-size: 300%; 
+    text-align: center;
+    color: var(--text);
+  }
+  .articlestyle article  h3 {
+    border-top: 3px solid transparent; 
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    border-image-slice: 1;
+    font-family: 'North';
+    font-size: 300%; 
+    text-align: center;
+    color: var(--text);
+  }
+  
+  .articlestyle article {
+    font-family: 'fiorina';
+    text-align: justify;
+  }
+    
+  .articlestyle figure {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20%;
+}
+  
+  
+  .articlestyle figure figcaption {
+    font-size: 80%;
+    font-weight: bold;
+    margin: 1% 10%;
+  }
+  
+  
+  .articlestyle figure img {
+    width: 50%;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    border-image-slice: 1;
+  }
+  
+  .articlestyle table, th, td {
+    border: 3px solid #BBBBBB;
+    border-style: solid;
+
+  }
+  
+  
+  
+  /*
+  .articlestyle body {
+      background-color: #f7f7f7;
+      color: #333333;
+      font-family: 'fiorina';
+  }
+  .articlestyle  h1 {
+      text-align: center;
+      font-family: 'ranking';
+  }
+  
+  .articlestyle, header {
+      text-align: center;
+      font-family: 'North';
+  }
+  
+  @media screen and (min-width: 300px) {
+    .articlestyle article {
+    }
+  }
+  
+  
+  .articlestyle article {
+      font-family: 'fiorina';
+      font-size: 80%;
+      text-align: justify;
+      column-count: 3;
+      column-gap: 1rem;
+      column-fill: balance;
+  
+  }
+  
+  .articlestyle article p {
+      display: inline-block;
+      text-align: center;
+  }
+  @media screen and (max-width: 500px) {
+    .articlestyle article {
+        column-count: 1;
+      }
+  }
+  .articlestyle figure {
+      display: inline-block;
+      text-align: center;
+  }
+  
+  
+  .articlestyle img {
+      width: 75%;
+      transition: transform .5s;
+      filter: grayscale(100%);
+  }
+  .articlestyle img:hover {
+      -ms-transform: scale(1.2); 
+      -webkit-transform: scale(1.2); 
+      transform: scale(1.2);
+    }
+  */

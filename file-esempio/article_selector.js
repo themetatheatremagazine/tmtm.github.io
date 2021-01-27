@@ -37,7 +37,7 @@ function postArticle(articleName, issueJsonPath) {
     $("#filerequest").empty();
     $("#filerequest").html(result);
     $("#metadata").empty();
-    $("#metadata").append('<h4>Metadata</h4><ul id="metadataList"></ul> <h4>Class List</h4><div id="accordionEntities"></div> <h4>Metadata Issue</h4><div id="accordion"></div>');
+    $("#metadata").append('<h6>Metadata</h6><ul id="metadataList"></ul> <h6>Class List</h4><div id="accordionEntities"></div> <h6>Metadata Issue</h6><div id="accordion"></div>');
     $("#metadataList").empty();
     //get meta tags AFTER article has been loaded 
     var title = $("meta[name='DC.title']").attr('content');
@@ -93,10 +93,10 @@ function postArticle(articleName, issueJsonPath) {
           var contents = [];
           contents.push('<div class="card">');
           contents.push('<div class="card-header" id="heading' + counterNames + '">');
-          contents.push('<h5 class="mb-0">');
+          contents.push('<h6 class="mb-0">');
           contents.push('<button class="btn btn-link" data-toggle="collapse" data-target="#collapse' + counterNames + '" aria-expanded="true" aria-controls="collapse' + counterNames + '">');
           contents.push(capitalize(namedEntities[counterNames]));
-          contents.push('</button></h5></div>');
+          contents.push('</button></h6></div>');
           contents.push('<div id="collapse' + counterNames + '" class="collapse show" aria-labelledby="heading' + counterNames + '" data-parent="#accordionEntities">')
           contents.push('<div class="card-body">');
           contents.push('<ul>');
