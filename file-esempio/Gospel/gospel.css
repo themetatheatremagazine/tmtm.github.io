@@ -1,3 +1,12 @@
+/*overlay background and images, also in phone 
+text overlay 
+footer image repeats and overlays on text
+immagini non centrate 
+768
+fix h2, 3 and 4 in header 
+
+
+*/
 @font-face {
 	font-family: 'camelot';
 	src: url("capFont/camelot-webfont.woff2") format("woff2"), 
@@ -45,8 +54,9 @@
 	text-align: justify;
 	display: inline-block;
 	margin-top: 4%;
-	margin-left: 32%;
-	margin-right: 32%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 4%;
 }
 /*
 @media screen and (max-width: 700px) {
@@ -57,29 +67,73 @@
 	}
   }
 */
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
+	.articlestyle header {
+	margin-top: 5%;
+	margin-left: 20%;
+	margin-right: 20%; 
+	margin-bottom: 4%;
+	}
+}
+
+@media (max-width: 700) {
+	.articlestyle header {
+	margin-left: 15%;
+	margin-right: 15%; 
+	}
+}
+@media (max-width: 600) {
 	.articlestyle header {
 	margin-left: 20%;
 	margin-right: 20%; 
 	}
 }
 
+
 .articlestyle header h1 {
-	text-align: center;
+	text-align: center !important;
 	color: #D4AF37;
 	font-family: 'titlefont';
-	font-size: 300%;
+	font-size: 400%;
 	font-weight: lighter;
 	text-shadow: 0 0 3px black, 0 0 5px #440000;
 /**/
 }
 
-@media screen and (max-width: 700px) {
+.articlestyle header h2 {
+	text-align: center;
+	color: #D4AF37;
+	font-family: 'titlefont';
+	font-size: 250%;
+	font-weight: lighter;
+	text-shadow: 0 0 3px black, 0 0 5px #440000;}
+
+
+@media (max-width: 700px) {
 	.articlestyle header h1 {
-	font-size: 200%;
+	font-size: 230%;
+	text-align: center !important;
+
+	}
+	.articlestyle header h2 {
+		font-size: 180%;
+		text-align: center !important;
+
 	}
   }
 
+  @media (max-width: 480px) {
+	.articlestyle header h1 {
+	  font-size: 180%;
+	  text-align: center !important;
+
+	}
+	.articlestyle header h2 {
+		font-size: 140%;
+		text-align: center !important;
+
+	}
+  }
 
 .articlestyle article {
 	margin-top: 1%;
@@ -104,8 +158,8 @@
   @media screen and (max-width: 700px) {
 	.articlestyle article {
 		column-count: 1;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
   }
 @media screen and (max-width: 500px) {
@@ -116,7 +170,8 @@
 	}
   }
 
-.articlestyle article p {
+
+.articlestyle article p,.articlestyle article blockquote {
 	display: inline-block;
 	position: relative;
   }
@@ -130,17 +185,21 @@
 	color: #D4AF37;
 	text-shadow: 2px 2px 5px #404040;
 }
-.articlestyle article p:last-child {
+
+.articlestyle .footer{
+	padding-bottom: 50px;
 	background-image: url(images/footer.png);
-	background-size: 70%;
+	background-size: 60%;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	height: 120px;
   }
 
 .articlestyle figure {
 	display: inline-block;
-	text-align: justify;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
 }
 
 .articlestyle figure figcaption {
@@ -151,9 +210,14 @@
 }
 
 .articlestyle img {
-	width: 90%;
+width: 70%;
 }
 
+@media(max-width: 500px) {
+	.articlestyle img {
+	width: 70%;
+	}
+  }
 
 .articlestyle table, th {
     border: 2px solid gold;

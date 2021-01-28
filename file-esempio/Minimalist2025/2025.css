@@ -27,6 +27,13 @@
     --text: #333333;
     --backcolor: #f7f7f7;
   }
+
+  .articlestyle *::selection {
+    color: var(--backcolor); 
+    background: var(--text);
+  }
+
+  
   .articlestyle html {
     margin: 0; 
     padding: 0;
@@ -35,28 +42,35 @@
   .articlestyle body {
     background: var(--backcolor);  
     padding: 5rem;
-    font-size: 2em;
+    font-size: 50rem;
   }
-  
+  @media(max-width: 700) {
+    .articlestyle body {
+    padding: 1%;
+    font-size: 20rem;
+    }
+  }
   .articlestyle div {
     background: var(--backcolor);  
-    padding: 5rem;
-    font-size: 1.2em;
+    padding: 2%;
   }
   
   .articlestyle div header {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     padding-bottom: 3rem;
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
-    /*border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);*/
     border-image-slice: 1;
   }
-
+  @media(max-width: 500) {
+    .articlestyle div header{
+      margin-bottom: 2%;
+    }
+  }
 
   .articlestyle div > header h1 {
     font-family: 'ranking';
-    font-size: 350%;
+    font-size: 300%;
     text-align: center;
     color: var(--text);
   }
@@ -104,23 +118,32 @@
     
   .articlestyle figure {
     display: inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
-    margin: 0 20%;
+
 }
   
   
   .articlestyle figure figcaption {
     font-size: 80%;
     font-weight: bold;
-    margin: 1% 10%;
   }
   
   
   .articlestyle figure img {
-    width: 50%;
+    filter: grayscale(100%);
+    width: 70%;
     border: 3px solid transparent;
     border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
     border-image-slice: 1;
+  }
+
+
+  @media(max-width: 700) {
+    .articlestyle figure img {
+    width: 300%;
+    }
   }
   
   .articlestyle table, th, td {
@@ -129,6 +152,15 @@
 
   }
   
+ .articlestyle .capital:first-letter{
+    float:left;
+    font-family: 'ranking';
+    margin-bottom:10px;
+    font-size:500%;
+    margin-right:5px;
+    color: #EEEEEE;
+    text-shadow: 2px 2px 5px #404040;
+  }
   
   
   /*

@@ -51,7 +51,6 @@ function postArticle(articleName, issueJsonPath) {
     $("#metadataList").append("<li> <strong>Publisher:</strong> " + publisher + "</li>");
     $("#metadataList").append("<li> <strong>Date:</strong> " + date + "</li>");
     $("#metadataList").append("<a id='linkToSource' href=" + uri + "> Link to source </a>");
-
       $.getJSON(issueJsonPath, function( data ) {
         $("#accordion").empty();
         var counter = 1;
@@ -115,10 +114,19 @@ function postArticle(articleName, issueJsonPath) {
 function toggleTheme(value) { 
   //css as a parameter; takes the FIRST link tag, so the switching css anchor must always be on top of the head. 
   var sheets = $('link'); 
-  sheets[0].href = value; 
-} 
-
-
+  sheets[0].href = value;
+}
+/*
+  if (value !== "2040/2040.css") {
+    sheets[0].href = value;
+  $('iframe').empty();
+  }
+  else { console.log("correct style");
+    $('header').attr('id', 'header');
+    $('#header').after("<iframe src='https://open.spotify.com/embed/playlist/4pjbEJfUe0OX8c8AAObGXX' width='300' height='80' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>")
+  }
+}*/
+  
 //on top button
 var btn = $('#button_scroll');
 
@@ -147,3 +155,6 @@ $(document).ready(function () {
       $('#sidebar').removeClass('active');
   });
 });
+
+
+
