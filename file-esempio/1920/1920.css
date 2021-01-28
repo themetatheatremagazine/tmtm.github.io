@@ -1,0 +1,205 @@
+h1 {
+  font-family: 'Bauhaus';
+  text-align:center;
+  font-size: 2.5em;
+    /*font-weight: bolder;
+    text-transform: uppercase;
+    width: 60%; */
+    /*transform: rotate(-5deg);*/
+    /*padding: 7%;
+    padding-left: 3%;
+    padding-top: 10%; */
+}
+h2 {
+  text-align: right;
+  font-family: 'Bauhaus'
+}
+@font-face {
+    font-family: 'Bauhaus';
+    src: url('Bauhaus-Bold.eot');
+    src: url('Bauhaus-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Bauhaus-Bold.woff2') format('woff2'),
+        url('Bauhaus-Bold.woff') format('woff'),
+        url('Bauhaus-Bold.ttf') format('truetype'),
+        url('Bauhaus-Bold.svg#Bauhaus-Bold') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+.header {
+    background-image: url("logo5def.jpg");
+    background-color: #f9f7de;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: 100% left;
+    /*border-top: solid 20px black;*/
+    border-bottom: solid 40px black;
+    padding: 4%;
+}
+body {
+  font-family: 'Futura Bk BT';
+  font-size: 1.2em;
+  padding: 10px 15px;
+  background-color: #f9f7de;
+
+
+}
+.article p {
+  border-bottom: 30px solid red
+
+}
+
+
+
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: url('FuturaBT-Book.eot');
+    src: url('FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
+        url('FuturaBT-Book.woff2') format('woff2'),
+        url('FuturaBT-Book.woff') format('woff'),
+        url('FuturaBT-Book.ttf') format('truetype'),
+        url('FuturaBT-Book.svg#FuturaBT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*COLUMNS*/
+.article {
+    /*margin: 5%;
+    column-gap: 10%;*/
+    font-weight: bold;
+    color: black;
+    text-align: justify;
+
+    word-break: break-word;
+}
+
+@media screen and (max-width: 800px) {
+  .article {
+    column-count: 1;
+  }
+ }
+ @chart-width:650px;
+ @chart-height:300px;
+
+ @grid-color:#aaa;
+ @bar-color:#F16335;
+ @bar-thickness:50px;
+ @bar-rounded: 3px;
+ @bar-spacing:30px;
+
+
+
+ .chart-wrap{
+   margin-left:50px;
+   font-family:sans-serif;
+   .title{
+     font-weight:bold;
+     font-size:1.62em;
+     padding:0.5em 0 1.8em 0;
+     text-align:center;
+     white-space:nowrap;
+   }
+   &.vertical .grid{
+     transform:translateY(@chart-height/2 - @chart-width/2) translateX(@chart-width/2 - @chart-height/2) rotate(-90deg);
+
+
+     .bar::after{
+       transform: translateY(-50%) rotate(45deg);
+       display: block;
+     }
+     &::before,&::after{
+       transform:translateX(-0.2em) rotate(90deg);
+     }
+   }
+
+   height:@chart-width;
+   width:@chart-height;
+   .grid{
+     position:relative;
+     padding:5px 0 5px 0;
+     height:100%;
+     width:100%;
+     border-left:2px solid @grid-color;
+
+     background:repeating-linear-gradient(90deg,transparent,transparent 19.5%,fadeout(@grid-color,30%) 20%);
+
+     &::before{
+       font-size:0.8em;
+       font-weight:bold;
+       content:'0%';
+       position:absolute;
+       left:-0.5em;
+       top:-1.5em;
+     }
+     &::after{
+       font-size:0.8em;
+       font-weight:bold;
+       content:'100%';
+       position:absolute;
+       right:-1.5em;
+       top:-1.5em;
+     }
+    }
+
+
+
+   .bar {
+     width: var(--bar-value);
+     height:@bar-thickness;
+     margin:@bar-spacing 0;
+     background-color:@bar-color;
+     border-radius:0 @bar-rounded @bar-rounded 0;
+
+     &:hover{
+       opacity:0.7;
+     }
+
+     &::after{
+       content:attr(data-name);
+       margin-left:100%;
+       //line-height:@bar-thickness;
+       padding:10px;
+       display:inline-block;
+       white-space:nowrap;
+     }
+   }
+
+
+ }
+
+body {
+  display: inline-block;
+  position: relative;
+  border-right: 70px solid #0424cf;
+  text-align: center;
+  border-left: 70px solid #fb4d34;
+
+  /*margin: 2% 7%;
+  width: 200px;*/
+}
+/*FIGURES*/
+.figure {
+    display: inline-block;
+    text-align: left;
+}
+
+figcaption {
+  display: transparent;
+  font-size: 80%;
+  font-style: italic;
+}
+
+.image {
+    width: 75%;
+    transition: transform 5s;
+}
+.image:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+.footer{
+  border-bottom: solid 50px #ada3a1;
+}

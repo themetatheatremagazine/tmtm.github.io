@@ -78,7 +78,6 @@ padding: 10px;
 border-image: url(frame.png);
 border-image-slice: 30;
 border-image-repeat:round;
-/*8px solid #d4b425*/;
 border-spacing: 20px;
 margin-left: 10%;
 margin-right: 10%;
@@ -139,9 +138,16 @@ margin-right: 10%;
 }
 
 .articlestyle  img {
+  border: 15px solid transparent;
+  padding: 1px;   
+  border-image: url(frame2.png);
+  border-image-slice: 30;
+  border-image-repeat:round;
+  border-spacing: 20px;
     width: 75%;
-    transition: transform .5s;
-    border: 2px solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;    
 }
 
 .articlestyle .capital:first-letter{
