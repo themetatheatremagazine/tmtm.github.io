@@ -169,7 +169,8 @@
     column-rule-width: 5px;
     column-rule-style: dotted;
     column-rule-color: gold;
-    overflow-x: hidden;
+    overflow: visible;
+
 }
   
 
@@ -180,6 +181,11 @@
     }
 }
 
+@media (max-width: 480px) {
+    .articlestyle article {
+        overflow: visible;
+    }
+}
 
 .articlestyle article p, article blockquote {
   display: inline-block;

@@ -107,26 +107,36 @@ function postArticle(articleName, issueJsonPath) {
           contents.push('</div>');
           $('#accordionEntities').append(contents.join(""));
               counterNames = counterNames+1;});
+      var sheets = $('link');
+      var style = sheets[0].href;
+      console.log(style);
+      if (style.includes("2040/2040.css")) {
+        $('#spotifyFrame').remove();
+        addSpotify();
+      }
+
      
 }});};
+
+function addSpotify() {
+  $('header').attr('id', 'header');
+  $('#header').after("<iframe id='spotifyFrame'src='https://open.spotify.com/embed/playlist/4pjbEJfUe0OX8c8AAObGXX' width='300' height='80' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>")
+}
+
 
 
 function toggleTheme(value) { 
   //css as a parameter; takes the FIRST link tag, so the switching css anchor must always be on top of the head. 
   var sheets = $('link'); 
   sheets[0].href = value;
+  $('#spotifyFrame').remove();
+  if (value == "2040/2040.css") {
+    addSpotify();
+  }
 }
-/*
-  if (value !== "2040/2040.css") {
-    sheets[0].href = value;
-  $('iframe').empty();
-  }
-  else { console.log("correct style");
-    $('header').attr('id', 'header');
-    $('#header').after("<iframe src='https://open.spotify.com/embed/playlist/4pjbEJfUe0OX8c8AAObGXX' width='300' height='80' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>")
-  }
-}*/
   
+
+
 //on top button
 var btn = $('#button_scroll');
 

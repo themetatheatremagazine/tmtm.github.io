@@ -5,7 +5,7 @@
             <link rel="stylesheet" href="basicstyle.css">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Curtain Today - TMT</title>
+            <title>Living the Stage Issue - TMT </title>
             <!-- Bootstrap CSS CDN -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
             <!-- Custom CSS -->
@@ -25,9 +25,9 @@
                     <li><a href="#">Home</a></li>
                     <li>
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Issues</a><ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Issue 1</a></li>
                             <li><a href="#">Issue 2</a></li>
                             <li><a href="#">Issue 3</a></li>
+                            <li><a href="#">Issue 4</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Documentation</a></li>
@@ -49,8 +49,8 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-dark d-md-none">
                     <i class="fas fa-align-justify"></i>
                 </button>
-                <div class="sitestyle styleButtons">
-                    <h4 class="sitestyle">Styles</h4>
+                <div class="styleButtons">
+                    <h4>Styles</h4>
                     <button onclick="toggleTheme('basicstyle.css')"> Default </button>
                     <button onclick="toggleTheme('2040/2040.css')"> 2040 </button>
                     <button onclick="toggleTheme('Gospel/gospel.css')"> Gospel </button>
@@ -58,16 +58,18 @@
                     <button onclick="toggleTheme('Minimalist2025/2025.css')"> 2025 </button>
                     <button onclick="toggleTheme('1920/1920.css')"> Bauhaus </button>
                     <button onclick="toggleTheme('2000/2000.css')"> 31.12.1999 </button>
+                    <button onclick="toggleTheme('1920/1920.css')">  </button>
+                    <button onclick="toggleTheme('2000/2000.css')">  </button>
                 </div>
-                <div class="sitestyle articleButtons">
-                    <h4 class="sitestyle">Select an article</h4>
-                    <button onclick="postArticle('Issue_Today/TheatreInclusivity/inclusivity.html', 'Issue_Today/curtaintoday.json')"> Diversity in theatre casting </button>
-                    <button onclick="postArticle('Issue_Today/TheatreOfRobots/robots.html', 'Issue_Today/curtaintoday.json')"> Sociable Robots </button>
-                    <button onclick="postArticle('Issue_Today/TheatreOfAbsurd/Theater-of-absurd.html', 'Issue_Today/curtaintoday.json')"> Theatre of absurd </button>
-                    <button onclick="postArticle('Issue_Today/TheatreReport/report.html', 'Issue_Today/curtaintoday.json')"> Impact of COVID-19 on the performing arts </button>
+                <div class="articleButtons">
+                    <h4>Select an article</h4>
+                    <button onclick="postArticle('Issue_Stage/Stage_Ballerina/correctingABallerinaStory.html', 'Issue_Stage/stage.json')"> A Ballerina's Story </button>
+                    <button onclick="postArticle('Issue_Stage/Stage_Injuries/injuries.html', 'Issue_Unusual/unusual.json')"> Theatre injuries </button>
+                    <button onclick="postArticle('Issue_Stage/Stage_Levine/levineshabit.html', 'Issue_Unusual/unusual.json')"> Levine's 'Habit'</button>
+                    <button onclick="postArticle('Issue_Stage/Stage_Magdalena/MagdalenaExperiment.html', 'Issue_Unusual/unusual.json')"> The Magdalena Experiment </button>
                 </div>
-                    <h2>Curtain Today</h2>
-                    <div id="filerequest" class="articlestyle">
+                    <h2>Living the Stage</h2>
+                    <div id="filerequest" class="articlestyle filerequestStyle">
                         <p id="static">
                             <!--this disappears after the ajax-->
                             <h4>Here you can view an article!</h4>

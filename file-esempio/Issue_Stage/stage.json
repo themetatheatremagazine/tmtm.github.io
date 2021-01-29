@@ -1,0 +1,30 @@
+{	
+		"article1" : {
+			"title": "Correcting a Ballerina's Story: The Truth Behind Makletzova v. Diaghileff",
+			"author": "Vanessa Banni-Viñas",
+			"issued": "2013-07",
+			"publisher": "Oxford University Press",
+			"source": "https://www.jstor.org/stable/24465399"
+	},
+		"article2" : {
+			"title": "Survey of Injuries among West End Performers",
+			"author": "Randolph W. Evans, Richard I. Evans, Scott Carvajal",
+			"issued": "1998-09",
+			"publisher": "BMJ",
+			"source": "http://www.jstor.com/stable/27730987"
+	}, 
+		"article3" : {
+			"title": "Making Theatre Art: David Levine's 'Habit'",
+			"author": "Sarah Kozinn",
+			"issued": "2014",
+			"publisher": "The MIT Press",
+			"source": "https://www.jstor.org/stable/24584876"
+	},
+		"article4" : {
+			"title": "The Magdalena Experiment. New Directions in Women's Theatre",
+			"author": "Susan Bassnett",
+			"issued": "1987",
+			"publisher": "The MIT Press",
+			"source": "https://www.jstor.org/stable/1145831"
+	}
+}
