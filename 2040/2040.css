@@ -41,7 +41,7 @@
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .articlestyle header {
         background-image: url(images/column.gif) !important;
         background-repeat: no-repeat;
@@ -51,7 +51,6 @@
         height: 55vh;
     }
 }
-
 
 
 .articlestyle h1 { 
@@ -87,14 +86,79 @@
           0.25px 0.25px  var(--shadow);
       }
 
+.articlestyle h2, .articlestyle h3, .articlestyle h4, .articlestyle header p, .articlestyle header > .byline  {
+        display: block;
+        font-family: 'Montserrat';
+        font-size: 200%;
+        font-weight: bold;
+        color: var(--text);
+        text-align: center;
+        font-style: normal;
+        text-shadow: 
+          6px 6px        var(--shadow), 
+          5.75px 5.75px  var(--shadow), 
+          5.5px 5.5px    var(--shadow), 
+          5.25px 5.25px  var(--shadow),
+          5px 5px        var(--shadow), 
+          4.75px 4.75px  var(--shadow), 
+          4.5px 4.5px    var(--shadow), 
+          4.25px 4.25px  var(--shadow),
+          4px 4px        var(--shadow),
+          3.75px 3.75px  var(--shadow),
+          3.5px 3.5px    var(--shadow),
+          3.25px 3.25px  var(--shadow),
+          3px 3px        var(--shadow),
+          2.75px 2.75px  var(--shadow),
+          2.5px 2.5px    var(--shadow),
+          2.25px 2.25px  var(--shadow),
+          2px 2px        var(--shadow),
+          1.75px 1.75px  var(--shadow),
+          1.5px 1.5px    var(--shadow),
+          1.25px 1.25px  var(--shadow),
+          1px 1px        var(--shadow),
+          0.75px 0.75px  var(--shadow),
+          0.5px 0.5px    var(--shadow),
+          0.25px 0.25px  var(--shadow);
+      }
+
+
+
+
 .articlestyle .byline, .publicationDate {
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: bolder;
     font-size: 75%;
 }
-/*BACKGROUND*/
-.articlestyle div {
+
+#articlebody div {
+    margin: 1% 1%;
+    background: linear-gradient(171deg, #711c91, #ea01d9, #1e95cc, #123e7b, #091933);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+}
+
+/*
+#articlebody div {
+        margin: 1% 1%;
         background: linear-gradient(-45deg, #711C91, #EA01D9, #123E7B, #091933);
         background-attachment: fixed;
         background-position: center;
@@ -116,8 +180,8 @@
         100% {
             background-position: 0% 50%;
         }
-    }*/
-    
+    }
+*/
 /*COLUMNS*/
 .articlestyle article {
     margin: auto; /*
@@ -132,24 +196,25 @@
     column-rule-width: 5px;
     column-rule-style: dotted;
     column-rule-color: gold;
-    overflow-x: hidden;
+    overflow: visible;
+
 }
   
-@media screen and (max-width: 800px) {
-  .articlestyle article {
+
+@media (max-width: 800px) {
+    .articlestyle article {
     column-count: 1;
-    font-size: 3vh;
-  }
- }
+    font-size: 2vh;
+    }
+}
 
-  
-@media screen and (max-width: 400px) {
-  .articlestyle article {
-    font-size: 1rem;
-  }
- }
+@media (max-width: 480px) {
+    .articlestyle article {
+        overflow: visible;
+    }
+}
 
- .articlestyle article p {
+.articlestyle article p, article blockquote {
   display: inline-block;
   position: relative;
   margin: 0 5% 7% 7%;
@@ -203,3 +268,31 @@
     margin: 0 10%;
     word-break: break-all;
 }
+
+.articlestyle div > iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.articlestyle article .capital:first-letter{
+	float:left;
+    margin-right:5px;
+    font-family: 'Montserrat';
+    font-size: 700%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-image: url(images/sun.gif);
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+
+
+.articlestyle .footer{
+	background-image: url(images/footer-cat.gif);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+  }

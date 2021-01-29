@@ -1,0 +1,488 @@
+
+body{
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+
+#item{
+    min-height:450px; 
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(images/background_homepage/BoredPanda2.png);
+}
+
+.btn-secondary{
+    background-color: #961D07 !important;
+    border-color: #961D07 !important;
+    font-size: 13px !important;
+}
+#butrow{
+    margin-top: 35px;
+    max-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5vw;
+    padding-right:5vw;
+}
+
+/*#provaissues{
+    color: salmon;
+    background-color: salmon;
+}
+*/
+
+.navbar-toggleable-md .navbar-collapse {         
+       -webkit-justify-content: flex-end;
+       justify-content: flex-end;  
+} 
+.navbar{
+    background-color:#CF6F4C;
+}
+
+.navbar-header{
+    align-content: flex-start;    
+}
+
+
+#divfacciata{
+    background-color: #420001;
+    color: honeydew;
+    font-size: 110%;
+    padding-left: 12%;
+    padding-right: 12%;
+    text-align: justify;
+    min-height:150px; 
+}
+
+#item1{
+    align-content: center;
+    min-height:15em; 
+    background-size:cover;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+
+
+
+#item2{
+    min-height:10em; 
+    background-size:cover;
+    margin-top: 1em;
+    margin: 1em;
+    
+}
+
+#item4{
+    align-content: center;
+    min-height:15em; 
+    background-size:cover;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding: 2em;
+    
+}
+
+#item5{
+    align-content: center;
+    min-height:15em; 
+    background-size:cover;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding: 2em;
+    
+}
+
+.nav-item.active> a:hover, .dropdown> a:hover {
+    color:wheat; /*ma perché sta roba non funziona?*/
+    background-color: #B6433E;
+    
+}
+
+.dropdown-menu> a:hover{
+    background-color: #B6433E;
+}
+
+.navbar-custom{
+    background-color: #CF6F4C;
+    color: antiquewhite;
+}
+
+.nav-item{
+    color:aliceblue; 
+    background-color: #CF6F4C;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    color: #420001;
+    background-color: #ff9370;}
+
+#covertextbox{
+    color: honeydew;
+    margin: 5em;
+    margin-left: 0em;
+    padding: 1em;
+
+}
+
+#covertitle{
+    text-align:center;
+    font-family: 'Satisfy', cursive;
+    font-size: 6vw;
+}
+
+.pagetitle{
+    text-align:center;
+    font-family: 'Satisfy', cursive;
+    font-size: 150%;
+}
+
+.pagetitlecontainer{
+    margin-top: 3em;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+.pagesubtitlecontainer{
+    margin-top: 0em;
+    padding-top: 1em;
+    font-size: 30px;
+}
+
+.pagesubtitle{
+    text-align:center;
+    font-family: 'Satisfy', cursive;
+    font-size: 100%;
+}
+
+#coversubtitle{
+    text-align: center;
+    font-size: 3vw;
+    align-content: flex-end;
+    color: #f9a589;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+    font-weight: bolder;
+
+}
+#coversubtitle a{
+    text-align: center;
+    font-size: 3vw;
+    align-content: flex-end;
+    color: #f9a589;
+}
+
+/*non riesco a cambiare il clore del testo nella navbar*/
+
+.navbar-brand{
+    object-position: center;
+    color: white;
+    background-color: #CF6F4C;
+    border-radius: 4%;
+    margin:0px;
+    padding: 3px;
+}
+
+.navbar-light{
+    color: aliceblue;
+}
+
+.dropdown-menu{
+    color: black;
+}
+
+.nav.navbar-nav li a{
+color: white;
+}
+
+.navbar-nav{
+    color: aliceblue; 
+}
+/*!!!!!!! nessuno di questi funziona*/
+p{
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.card-text{
+    padding: 0em;
+    max-height:inherit;
+    margin:0em;
+    text-align:center;
+    font-size: 90%;
+    max-width: inherit;
+    font-stretch: extra-condensed;
+    font-style: normal;
+    flex-wrap: wrap;
+    
+}
+
+.card-title{
+    font-family: Satisfy, cursive;
+    display: inline-block;
+    margin: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 25px;
+}
+
+a {
+    color: honeydew;
+}
+a:hover{
+    color: #7f3434;
+}
+
+#cardUT{
+    padding: 1em;
+    margin: 1em;
+    color: #E9D4D8;
+    background-color: #B6433E;
+    border-radius: 10px;
+    height: 7em;
+    width: 80%;
+    
+}
+
+#cardLTS{
+    padding: 1em;
+    margin: 1em;
+    color: #D8CAC2;
+    background-color: #CF6F4C;
+    border-radius: 10px;
+    height: 7em;
+    width: 80%;
+}
+
+#cardAS{
+    padding: 1em;
+    margin: 1em;
+    color: #E1DED4;
+    background-color: #420001;
+    border-radius: 10px;
+    height: 7em;
+    width: 80%;
+}
+
+#cardCT{
+    padding: 1em;
+    margin: 1em;
+    color: #CBD4DA;
+    background-color: #335A61;
+    border-radius: 10px;
+    height: 7em;
+    width: 80%;
+}
+
+#cardAndrea{
+    padding: 1em;
+    margin: 1em;
+    color: #E9D4D8;
+    background-color: #B6433E;
+    border-radius: 10px;
+    
+}
+
+#cardArianna{
+    padding: 1em;
+    margin: 1em;
+    color: #D8CAC2;
+    background-color: #CF6F4C;
+    border-radius: 10px;
+    
+}
+
+#cardBenedetta{
+    padding: 1em;
+    margin: 1em;
+    color: #E1DED4;
+    background-color: #420001;
+    border-radius: 10px;
+    
+}
+
+
+#cardAmanda{
+    padding: 1em;
+    margin: 1em;
+    color: #CBD4DA;
+    background-color: #335A61;
+    border-radius: 10px;
+    
+}
+
+
+#footerdiv{
+    background-color: #CF6F4C;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#footercol1{
+    align-content: center;
+}
+
+#footercol2{
+    align-content: center;
+    padding:1em;
+    margin: 1em;
+}
+
+#footercol3{
+    align-content: center;
+    padding:1em;
+    margin: 1em;
+}
+
+.footercoltext{
+    font-size: 85%
+}
+
+
+/*così immagini non superano dimensione loro div*/
+div img {
+    height: 100%;
+    width: 100%;
+}
+
+#logo{
+    max-height:100px;
+    max-width: 130px;
+}
+
+}
+footer{
+    max-height: 200px;
+}
+
+.crnotice{
+    text-align:center;
+    font-family: 'Satisfy', cursive;
+    color: honeydew;
+    font-size: 85%;
+}
+
+.footersectionheader{
+    color: honeydew;
+    text-align:center;
+
+}
+
+#footercol1{
+    margin-top: 20px;
+    padding-top:20px;    
+}
+
+.pagination {
+    display: inline-block;
+    margin: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.pagination a {
+  color: black;
+  float:left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #CF6F4C;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #EDCABD;}
+
+.pagination a {
+  border-radius: 5px;
+}
+
+.pagination a.active {
+  border-radius: 5px;
+}
+
+.card-body{
+    padding:0.25rem;
+}
+
+
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
