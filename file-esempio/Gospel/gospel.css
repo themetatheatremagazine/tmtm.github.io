@@ -35,13 +35,13 @@ fix h2, 3 and 4 in header
 	color: gold; 
 	background: #8b0000;
   }
-.articlestyle, div > body {
+.articlestyle #articlebody {
 	background-image: url(images/oldpaper.jpg); 
 	background-size: cover;
 	background-repeat: no-repeat;
 
 }
-.articlestyle div {
+.articlestyle #articlebody > div {
 	background-image: url(images/border-left.png), url(images/border-right.png), url(images/dog.png), url(images/dog_right.png);
 	background-position: top left, top right, bottom left, bottom right;
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;

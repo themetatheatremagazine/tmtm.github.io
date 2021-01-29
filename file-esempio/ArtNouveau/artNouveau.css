@@ -22,7 +22,7 @@
 }
 
 
-.articlestyle, div > body {
+#articlebody {
   margin-top: 0;
   background-image: url(background.jpg);
   background-repeat: repeat;
