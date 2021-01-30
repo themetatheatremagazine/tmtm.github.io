@@ -532,3 +532,8 @@ text-shadow: 1px 1px 1px #b6470d;
     color: black; 
     text-shadow: 1px 1px 1px blue;
 }
+
+#Millennium h2 {
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+}
