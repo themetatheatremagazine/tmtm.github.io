@@ -74,7 +74,17 @@
     text-align: center;
     color: var(--text);
   }
-  
+  @media (max-width: 800px) {
+    .articlestyle div > header h1 {
+    font-size: 250%;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .articlestyle div > header h1{
+    font-size: 200%;
+    }
+    }
   .articlestyle div > header h2, h3, h4 {
     font-family: 'North';
     color: #333333;
@@ -181,9 +191,11 @@
  .articlestyle header .byline {
   font-family: 'North';
   text-align: center;
+  font-size: 7vh;
  }
+
  .articlestyle .byline {
-  font-family: 'North';
+  font-family: 'fiorina';
   text-align: justify;
-  font-size: 2rem;
+  font-size: 2vh;
  }
