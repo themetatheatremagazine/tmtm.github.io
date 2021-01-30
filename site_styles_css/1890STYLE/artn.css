@@ -187,6 +187,10 @@ body{
     font-size: 7vw;
 }
 
+@media (max-width: 480px) {
+    #covertitle { margin-top: 8vw; }
+}
+
 .pagetitle{
     text-align:center;
     font-family: "Edda";

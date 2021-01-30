@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Multicolore';
+    font-family: Multicolore;
     src: url('fonts_Millenium/font_Multicolore/Multicolore.eot');
     src: url('fonts_Millenium/font_Multicolore/Multicolore.eot?#iefix') format('embedded-opentype'),
         url('fonts_Millenium/font_Multicolore/Multicolore.woff2') format('woff2'),
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family: 'Gotham';
+    font-family: Gotham;
     src: url('fonts_Millenium/font_gotham/Gotham-Book.eot');
     src: url('fonts_Millenium/font_gotham/Gotham-Book.eot?#iefix') format('embedded-opentype'),
         url('fonts_Millenium/font_gotham/Gotham-Book.woff2') format('woff2'),
@@ -49,7 +49,7 @@
 }
 
 .home p, .home div p, home div div p {
-    font-family: "Gotham";
+    font-family: Gotham;
 }
 
 body {
@@ -181,14 +181,18 @@ h1, h2, h3 {
 
 #covertitle{
     text-align:center;
-    font-family: "Multicolore";
+    font-family: Multicolore;
     font-size: 7vw;
     text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
 }
 
+@media (max-width: 480px) {
+    #covertitle { margin-top: 8vw; }
+}
+
 .pagetitle{
     text-align:center;
-    font-family: "Multicolore";
+    font-family: Multicolore;
     font-size: 150%;
 }
 
@@ -206,7 +210,7 @@ h1, h2, h3 {
 
 .pagesubtitle{
     text-align:center;
-    font-family: "Multicolore";
+    font-family: Multicolore;
     font-size: 100%;
 }
 
@@ -214,7 +218,7 @@ h1, h2, h3 {
     text-align: center;
     font-size: 3vw;
     align-content: flex-end;
-    font-family: "Multicolore";
+    font-family: Multicolore;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
@@ -268,7 +272,7 @@ p{
 }
 
 .card-title{
-    font-family: "Multicolore";
+    font-family: Multicolore;
     display: inline-block;
     margin: auto;
     display: flex; 
@@ -279,6 +283,7 @@ p{
 
 a {
     color: honeydew;
+    white-space: normal !important;
 }
 a:hover{
     color: #7f3434;
@@ -410,7 +415,7 @@ footer{
 
 .crnotice{
     text-align:center;
-    font-family: "Multicolore";
+    font-family: Multicolore;
     color: honeydew;
     font-size: 85%;
 }

@@ -12,13 +12,13 @@
 }
 
 @font-face {
-    font-family: 'Press Start 2P';
-    src: url('fonts_Televideo/font_pressStart/PressStart2P-Regular.eot');
-    src: url('fonts_Televideo/font_pressStart/PressStart2P-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts_Televideo/font_pressStart/PressStart2P-Regular.woff2') format('woff2'),
-        url('fonts_Televideo/font_pressStart/PressStart2P-Regular.woff') format('woff'),
-        url('fonts_Televideo/font_pressStart/PressStart2P-Regular.ttf') format('truetype'),
-        url('fonts_Televideo/font_pressStart/PressStart2P-Regular.svg#PressStart2P-Regular') format('svg');
+    font-family: 'ModeSeven';
+    src: url('fonts_Televideo/font_mode/ModeSeven.eot');
+    src: url('fonts_Televideo/font_mode/ModeSeven.eot?#iefix') format('embedded-opentype'),
+        url('fonts_Televideo/font_mode/ModeSeven.woff2') format('woff2'),
+        url('fonts_Televideo/font_mode/ModeSeven.woff') format('woff'),
+        url('fonts_Televideo/font_mode/ModeSeven.ttf') format('truetype'),
+        url('fonts_Televideo/font_mode/ModeSeven.svg#ModeSeven') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -367,10 +367,12 @@ p{
     justify-content: center; 
     align-items: center;
     font-size: 25px;
+    white-space: normal;
 }
 
 a {
     color: honeydew;
+    white-space: normal !important;
 }
 a:hover{
     color: #7f3434;

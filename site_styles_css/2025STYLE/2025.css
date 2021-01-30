@@ -347,6 +347,7 @@ btn.stretched-link a{
 
 a {
     color: honeydew;
+    white-space: normal !important;
 }
 a:hover{
     color: #7f3434;

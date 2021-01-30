@@ -263,7 +263,10 @@ body{
     font-family: "KisMiklos";
     font-size: 7vw;
     text-transform: uppercase;
+}
 
+@media (max-width: 480px) {
+    #covertitle { margin-top: 8vw; }
 }
 
 .pagetitle{

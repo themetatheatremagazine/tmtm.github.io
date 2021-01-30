@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Futura Bk BT';
-    src: url('font_Bauhaus/font_futura/FuturaBT-Book.eot');
-    src: url('font_Bauhaus/font_futura/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
-        url('font_Bauhaus/font_futura/FuturaBT-Book.woff2') format('woff2'),
-        url('font_Bauhaus/font_futura/FuturaBT-Book.woff') format('woff'),
-        url('font_Bauhaus/font_futura/FuturaBT-Book.ttf') format('truetype'),
-        url('font_Bauhaus/font_futura/FuturaBT-Book.svg#FuturaBT-Book') format('svg');
+    src: url('fonts_Bauhaus/font_futura/FuturaBT-Book.eot');
+    src: url('fonts_Bauhaus/font_futura/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts_Bauhaus/font_futura/FuturaBT-Book.woff2') format('woff2'),
+        url('fonts_Bauhaus/font_futura/FuturaBT-Book.woff') format('woff'),
+        url('fonts_Bauhaus/font_futura/FuturaBT-Book.ttf') format('truetype'),
+        url('fonts_Bauhaus/font_futura/FuturaBT-Book.svg#FuturaBT-Book') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -17,12 +17,12 @@
 
 @font-face {
     font-family: 'Bauhaus';
-    src: url('font_Bauhaus/fonts_bauhaus_bold/Bauhaus-Bold.eot');
-    src: url('font_Bauhaus/fonts_bauhaus_bold/Bauhaus-Bold.eot?#iefix') format('embedded-opentype'),
-        url('font_Bauhaus/fonts_bauhaus_bold/Bauhaus-Bold.woff2') format('woff2'),
-        url('font_Bauhaus/fonts_bauhaus_bold/Bauhaus-Bold.woff') format('woff'),
-        url('font_Bauhaus/fonts_bauhaus_bold/Bauhaus-Bold.ttf') format('truetype'),
-        url('font_Bauhaus/fonts_bauhaus_bold/Bauhaus-Bold.svg#Bauhaus-Bold') format('svg');
+    src: url('fonts_Bauhaus/font_bauhaus_bold/Bauhaus-Bold.eot');
+    src: url('fonts_Bauhaus/font_bauhaus_bold/Bauhaus-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts_Bauhaus/font_bauhaus_bold/Bauhaus-Bold.woff2') format('woff2'),
+        url('fonts_Bauhaus/font_bauhaus_bold/Bauhaus-Bold.woff') format('woff'),
+        url('fonts_Bauhaus/font_bauhaus_bold/Bauhaus-Bold.ttf') format('truetype'),
+        url('fonts_Bauhaus/font_bauhaus_bold/Bauhaus-Bold.svg#Bauhaus-Bold') format('svg');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -171,6 +171,10 @@ body{
     text-align:center;
     font-family: "Bauhaus";
     font-size: 7vw;
+}
+
+@media (max-width: 480px) {
+    #covertitle { margin-top: 8vw; }
 }
 
 .pagetitle{
