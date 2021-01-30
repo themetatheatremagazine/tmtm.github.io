@@ -146,6 +146,13 @@ margin-right: 10%;
 	background-repeat: no-repeat;
 	background-position: bottom left, bottom right;
   }
+  .articlestyle table {
+    display: inline-block;
+  }
+  .articlestyle table caption {
+    font-family: 'berol';
+    color: black;
+  }
 
 
   .articlestyle table, th, td {
