@@ -24,13 +24,13 @@
 
 #articlebody {
   margin-top: 0;
-  background-image: url(background.jpg);
+  background-image: url(images/background.jpg);
   background-repeat: repeat;
   background-size: 70%;
 }
 
 .articlestyle div {
-  background-image: url(border-leftright.png),  url(border-leftright.png);
+  background-image: url(images/border-leftright.png),  url(images/border-leftright.png);
   background-repeat: repeat-y, repeat-y;
   background-position: left, right;
   background-size: 10%, 10%;
