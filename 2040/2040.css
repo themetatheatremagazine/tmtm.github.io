@@ -8,7 +8,7 @@
   }
 .articlestyle *::selection {
   color: gold; 
-  background: #c8a2c8;
+  background: #E485F8;
 }
 
 .articlestyle html {
@@ -124,7 +124,6 @@
           0.25px 0.25px  var(--shadow);
       }
 .articlestyle article h2, .articlestyle article h3, .articlestyle article h4 {
-display: block;
 font-family: 'Montserrat';
 font-size: 100%;
 font-weight: normal;
@@ -152,62 +151,31 @@ text-shadow:
     font-size: 75%;
 }
 
-#articlebody div {
-    margin: 1% 1%;
-    background: linear-gradient(171deg, #711c91, #ea01d9, #1e95cc, #123e7b, #091933);
-    background-size: 800% 800%;
-    -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 5s ease infinite;
-    animation: AnimationName 5s ease infinite;
+#articlebody  {
+	background: linear-gradient(-45deg,#946ae2, #b675da, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 62%}
-    50%{background-position:100% 39%}
-    100%{background-position:0% 62%}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 62%}
-    50%{background-position:100% 39%}
-    100%{background-position:0% 62%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 62%}
-    50%{background-position:100% 39%}
-    100%{background-position:0% 62%}
-}
-
 /*
-#articlebody div {
-        margin: 1% 1%;
-        background: linear-gradient(-45deg, #711C91, #EA01D9, #123E7B, #091933);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-        /*background: linear-gradient(-45deg, #711C91, #EA01D9, #123E7B, #091933);
-        background-size: 400% 400%;
-        animation: gradient 7s linear infinite;
-    }
-    
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
+    #946ae2, #b675da, #23a6d5, #23d5ab
 */
 /*COLUMNS*/
 .articlestyle article {
     margin: auto; /*
     column-gap: 10%;*/
-    font-family: 'Atami Regular';
+    font-family: 'Roboto';
     font-size: 4vh;
     color: white;
     text-align: justify;    
@@ -239,11 +207,21 @@ text-shadow:
     }
 }
 
-.articlestyle article p, .articlestyle article blockquote, .articlestyle article caption {
+.articlestyle article p, .articlestyle article blockquote{
   display: inline-block;
   position: relative;
   margin: 0 5% 7% 7%;
   /*width: 200px;*/
+}
+
+.articlestyle table {
+    display: inline-block;
+    margin: 0 5% 7% 7%;
+    color: white;
+} 
+
+.articlestyle caption {
+    color: white;
 }
 
 .articlestyle article p:nth-child(odd) {
@@ -295,6 +273,7 @@ text-shadow:
     border-style: solid;
     text-align: justify;
     font-size: 70%;
+    padding: 0;
   }
 .articlestyle #References, .articlestyle #Notes, .articlestyle #Footnote,.articlestyle #pubnote,.articlestyle .biofooter {
     color: white;
@@ -319,20 +298,22 @@ text-shadow:
     text-align: center;
     background-image: url(images/sun.gif);
     background-position: center;
-    background-size: 150%;
+    background-size: 200%;
     background-repeat: no-repeat;
 }
 @media (max-width: 800px) {
     .articlestyle  article .capital:first-letter{
         font-size: 400%;
-        background-size: 150%; 
+        margin-right: 15px;
+        background-size: 200%; 
     }
 }
 
 @media (max-width: 480px) {
     .articlestyle article .capital:first-letter {
         font-size: 300%; 
-        background-size: 100%;
+        margin-right: 15px;
+        background-size: 200%;
     }
 }
 
