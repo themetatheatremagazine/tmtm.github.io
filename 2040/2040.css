@@ -19,6 +19,9 @@
 .articlestyle * {
     cursor: url('dark-matter/darkMatterNormal.cur'), auto;
 }
+#articlebody {
+    overflow: hidden;
+}
 /*TITLE*/
 .articlestyle header {
     background-image: url(images/column.gif), url(images/column.gif), url(images/column.gif) !important;
@@ -48,7 +51,7 @@
         background-position: center;
         background-size: 55%;
         width: auto;
-        height: 55vh;
+        height: auto;
     }
 }
 
@@ -86,7 +89,7 @@
           0.25px 0.25px  var(--shadow);
       }
 
-.articlestyle h2, .articlestyle h3, .articlestyle h4, .articlestyle header p, .articlestyle header > .byline  {
+.articlestyle header h2, .articlestyle header h3, .articlestyle header h4.articlestyle header p, .articlestyle header > .byline  {
         display: block;
         font-family: 'Montserrat';
         font-size: 200%;
@@ -120,8 +123,26 @@
           0.5px 0.5px    var(--shadow),
           0.25px 0.25px  var(--shadow);
       }
-
-
+.articlestyle article h2, .articlestyle article h3, .articlestyle article h4 {
+display: block;
+font-family: 'Montserrat';
+font-size: 100%;
+font-weight: normal;
+color: var(--text);
+text-align: center;
+font-style: normal;
+text-shadow: 
+  2.5px 2.5px    var(--shadow),
+  2.25px 2.25px  var(--shadow),
+  2px 2px        var(--shadow),
+  1.75px 1.75px  var(--shadow),
+  1.5px 1.5px    var(--shadow),
+  1.25px 1.25px  var(--shadow),
+  1px 1px        var(--shadow),
+  0.75px 0.75px  var(--shadow),
+  0.5px 0.5px    var(--shadow),
+  0.25px 0.25px  var(--shadow);
+}
 
 
 .articlestyle .byline, .publicationDate {
@@ -197,24 +218,28 @@
     column-rule-style: dotted;
     column-rule-color: gold;
     overflow: visible;
-
 }
-  
 
 @media (max-width: 800px) {
     .articlestyle article {
     column-count: 1;
-    font-size: 2vh;
+    font-size: 4vh;
+    margin-left: 10%;
+    margin-right: 10%;
     }
 }
 
 @media (max-width: 480px) {
     .articlestyle article {
         overflow: visible;
+        font-size: 2vh;
+        margin-left: 5%;
+        margin-right: 5%;
+
     }
 }
 
-.articlestyle article p, article blockquote {
+.articlestyle article p, .articlestyle article blockquote, .articlestyle article caption {
   display: inline-block;
   position: relative;
   margin: 0 5% 7% 7%;
@@ -240,18 +265,29 @@
 }
 
 .articlestyle figure img {
-    width: 75%;
+    width: 40vh;
     transition: transform .5s;
-    margin: 20px; 
-    padding: 5px; 
     border:  5px dotted gold;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+@media (max-width: 800px) {
+    .articlestyle figure img {
+    width: 70vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .articlestyle figure img {
+    width: 50vh;
+    }
 }
 
 .articlestyle figure img:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
   }
 
 .articlestyle table, th, td {
@@ -260,12 +296,10 @@
     text-align: justify;
     font-size: 70%;
   }
-
-.articlestyle #References {
+.articlestyle #References, .articlestyle #Notes, .articlestyle #Footnote,.articlestyle #pubnote,.articlestyle .biofooter {
     color: white;
     text-align: justify; 
     font-size: 80%;
-    margin: 0 10%;
     word-break: break-all;
 }
 
@@ -279,20 +313,46 @@
 	float:left;
     margin-right:5px;
     font-family: 'Montserrat';
-    font-size: 700%;
+    font-size: 500%;
     font-weight: bold;
     color: white;
     text-align: center;
     background-image: url(images/sun.gif);
     background-position: center;
-    background-size: 200%;
+    background-size: 150%;
     background-repeat: no-repeat;
+}
+@media (max-width: 800px) {
+    .articlestyle  article .capital:first-letter{
+        font-size: 400%;
+        background-size: 150%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .articlestyle article .capital:first-letter {
+        font-size: 300%; 
+        background-size: 100%;
+    }
 }
 
 
+
+  
 .articlestyle .footer{
-	background-image: url(images/footer-cat.gif);
+    background-image: url(images/footer-cat.gif);
 	background-size: 60%;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-  }
+  } 
+  @media (max-width: 800px) {
+    .articlestyle .footer {
+        background-size: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .articlestyle .footer {
+        background-image: url();
+    }
+}

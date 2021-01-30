@@ -1,11 +1,37 @@
-/* HEADER AND LOGO */
-.articlestyle h1, h2 {
-  font-family: "Multicolore";
-  color: yellow;
+@font-face {
+  font-family: 'Multicolore';
+  src: url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_Multicolore/Multicolore.eot');
+  src: url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_Multicolore/Multicolore.eot?#iefix') format('embedded-opentype'),
+      url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_Multicolore/Multicolore.woff2') format('woff2'),
+      url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_Multicolore/Multicolore.woff') format('woff'),
+      url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_Multicolore/Multicolore.ttf') format('truetype'),
+      url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_Multicolore/Multicolore.svg#Multicolore') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-.articlestyle h1 {
-   animation-name: flash;
-    animation-duration: 0.2s;
+/* HEADER AND LOGO */
+@font-face {
+  font-family: 'Gotham';
+  src: url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_gotham/Gotham-Book.eot');
+  src: url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_gotham/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+      url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_gotham/Gotham-Book.woff2') format('woff2'),
+      url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_gotham/Gotham-Book.woff') format('woff'),
+      url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_gotham/Gotham-Book.ttf') format('truetype'),
+      url('../site_styles_css/MilleniumSTYLE/fonts_Millenium/font_gotham/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+.articlestyle header h1 {
+    font-family: 'Multicolore';
+    font-size: 3rem;
+    animation-name: flash;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -17,155 +43,153 @@
     to {color: black;}
 }
 
-@font-face {
-  font-family: 'Multicolore';
-  src: url('Multicolore.eot');
-  src: url('Multicolore.eot?#iefix') format('embedded-opentype'),
-      url('Multicolore.woff2') format('woff2'),
-      url('Multicolore.woff') format('woff'),
-      url('Multicolore.ttf') format('truetype'),
-      url('Multicolore.svg#Multicolore') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
+.articlestyle header h2, .articlestyle header h3, .articlestyle header h4, .articlestyle header p {
+  font-family: 'Gotham';
+  font-size: 2rem; 
+  color: white; 
+  text-align: center;
+  text-shadow: 2px 2px 2px #dcf900;
+} 
+
 
 .articlestyle header {
+  padding: 1% 4%; 
   background-color: black;
   text-align: center;
   background-image : url("images/logo3.png");
   background-size: contain;
   background-repeat: no-repeat;
-
-}
-.articlestyle div {
-  background-color: #dcf900;
-}
-
-/*  PARALLAX AND VISIBILITY */
-.articlestyle #articlebody {
-
-  background-color: #dcf900}
-
-
-
-
-
-#articlebody {
-  font-family: 'Gotham';
-  background-color: #dcf900;
-
-
-
-}
-@font-face {
-    font-family: 'Gotham';
-    src: url('Gotham-Book.eot');
-    src: url('Gotham-Book.eot?#iefix') format('embedded-opentype'),
-        url('Gotham-Book.woff2') format('woff2'),
-        url('Gotham-Book.woff') format('woff'),
-        url('Gotham-Book.ttf') format('truetype'),
-        url('Gotham-Book.svg#Gotham-Book') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-/*.article {
-  -webkit-columns: 2 200px;
-  -moz-columns: 2 200px;
-  columns: 2 200px;
-  column-fill: auto;
-}*/
-/*COLUMNS*/
-.articlestyle article {
-    /*margin: 5%;
-    column-gap: 10%;*/
-    font-weight: bold;
-    color: black;
-    text-align: justify;
-    column-count: 2;
-    column-fill: auto;
-    column-rule-width: 10px;
-    column-rule-style: solid;
-    column-rule-color: white;
-    column-span: all;
-    overflow-x: hidden;
-    word-break: break-word;
+  background-position: left;
 }
 
 @media screen and (max-width: 800px) {
-  .articlestyle article {
-    column-count: 1;
-  }
- }
+  .articlestyle header {
+  background-position: center;  
+}
+}
 
-.articlestyle div {
-  font-family: 'Gotham';
+#articlebody {
   background-color: #dcf900;
+  margin: 2%; 
 }
+
+@media screen and (max-width: 800px) {
+  #articlebody {
+    margin: 1%;}
+}
+.articlestyle article {
+  font-family: 'Gotham';
+  color: black;
+  text-align: justify;
+  column-count: 2;
+  column-fill: auto;
+  column-rule-width: 5px;
+  column-rule-style: double;
+  column-rule-color: white;
+  column-span: all;
+  overflow-x: hidden;
+  word-break: break-word;
+  border: 5px double white; 
+  padding: 3%; 
+}
+
+@media screen and (max-width: 800px) {
+.articlestyle article {
+  column-count: 1;
+  padding: 5%; 
+
+}
+}
+
 .articlestyle article p {
-  display: inline-block;
-  position: relative;
-  border-bottom: 5px solid black;
-  margin: 2% 7%;
-  /*width: 200px;*/
+display: inline-block;
+text-align: justify;
+border-bottom: 5px solid black;
+margin: 2% 7%;
 }
-/*FIGURES*/
+
+.articlestyle article h2, .articlestyle article h3, .articlestyle article h4 {
+  font-family: 'Gotham';
+  font-size: 2rem; 
+  color: white; 
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+} 
+
+
+
+/*****************************************************/
 .articlestyle figure {
     display: inline-block;
-    text-align: left;
-
 }
 
 .articlestyle figcaption {
   display: transparent;
   font-size: 80%;
   font-style: italic;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+
 }
 
 .articlestyle img {
     width: 75%;
     transition: transform 5s;
     background-color: #dcf900;
-
-}
-.articlestyle img:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
-
-  }
-
-.articlestyle img {
-  background-color: #dcf900;
-  float:left;
+    float:left;
 }
 
 .articlestyle footer{
-  background-color: black;
   background-size: cover;
-  font-family: 'Millenium Bug';
-  font-size: 50px;
-  color: yellow;
+  font-size: 1.2rem;
   text-align: center;
   border-top: solid 5px black;
   border-bottom: solid 5px black;
   padding: 3%;
   padding-left: 5%;
   padding-top: 5%;
-} @font-face {
-    font-family: 'Millenium Bug';
-    src: url('MilleniumBug.eot');
-    src: url('MilleniumBug.eot?#iefix') format('embedded-opentype'),
-        url('MilleniumBug.woff2') format('woff2'),
-        url('MilleniumBug.woff') format('woff'),
-        url('MilleniumBug.ttf') format('truetype'),
-        url('MilleniumBug.svg#MilleniumBug') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+} 
+
 .articlestyle footer::after {
-  content: "TURN OFF YOUR COMPUTER BEFORE 12/31/1999"
+  font-family: 'Multicolore';
+  color: red;
+  font-size: 3rem;
+  content: "TURN OFF YOUR COMPUTER BEFORE 12/31/1999";
+  text-shadow: 1px 1px 1px black;
+  animation-name: flash;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+.articlestyle table {
+  border: 3px solid black;
+}
+
+.articlestyle tr, .articlestyle th {
+  border: 3px solid black;
+
+}
+.articlestyle table, .articlestyle caption, .articlestyle caption p{
+  font-size: 1.2rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  display: inline-block;
+  color: black;
+}
+
+@media (max-width: 500px){
+  .articlestyle table{
+      font-size: 0.6;
+      width: 100%;
+  }
+  .articlestyle caption{
+      font-size: 0.6;
+      max-width:100%
+  }
+  .articlestyle caption p{
+      font-size: 0.6;
+  }
 }

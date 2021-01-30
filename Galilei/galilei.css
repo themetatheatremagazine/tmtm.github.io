@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'JMH Legajo';
     src: url('font_Legajo/JMHLegajo-BoldItalic.eot');
@@ -24,8 +23,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-/*'ITC Galliard Std', The Missus Hand, Garamond usata come base per le miniature*/
 
 @font-face {
     font-family: 'Monog';
@@ -53,46 +50,81 @@
     font-style: normal;
     font-display: swap;
 }
-/*
-@font-face {
-    font-family: 'Title';
-    src: url('font_KisMiklos/KisMiklos.eot');
-    src: url('font_KisMiklos/KisMiklos.eot?#iefix') format('embedded-opentype'),
-        url('font_KisMiklos/KisMiklos.woff2') format('woff2'),
-        url('font_KisMiklos/KisMiklos.woff') format('woff'),
-        url('font_KisMiklos/KisMiklos.ttf') format('truetype'),
-        url('font_KisMiklos/KisMiklos.svg#KisMiklos') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}*/
 
 @font-face {
 	font-family: 'KisMiklos';
-	src: url("font_KisMiklos/KisMiklos.woff2") format("woff2"), 
+	src: url("font_KisMiklos/KisMiklos.woff2") format("woff2"),
 	url("font_KisMiklos/KisMiklos.woff") format("woff");
 	font-weight: normal;
     font-style: normal; }
-    
 
-/*button { cursor: url('pointer.cur'), auto; }*/
 .articlestyle ::selection {
 background: #940F04;
 color: white;
+}
+
+#articlebody {
+  padding: 1em;
+  padding-bottom: 10vw;
+  background-image: url(images/paginavuotasncancellata.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+.articlestyle p{
+    font-family: "JMH Legajo";
+    font-weight: bold;
+    font-style: italic;
+    background-color: #FBF9C9;
+    font-size: 2vw;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: #666154;
+    display: block;
+}
+
+
+@media (max-width: 480px){
+    .articlestyle p{
+        font-size: 14px;
+    }}
+
+#articlebody div{
+    text-align: justify;
+    width: 65%;
+    margin-left: 21%;
+    margin-right: 14%;
+}
+
+@media (max-width: 480px){
+    #articlebody > div {
+        font-size: 14px;
+        width: 75%;
+        margin-left: 16%;
+        margin-right: 9%;
+    }
+}
+
+.articlestyle em{
+   font-style: normal;
 }
 
 .articlestyle *{
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" style="font-size: 20px;"><text y="15">✵</text></svg>'), auto;
 }
 
-
-.articlestyle em{
-   font-style: normal;
+.articlestyle  article {
+font-family: 'JMH Legajo;
+color:#666154;
+text-align: justify;
+word-break: break-word;
+overflow-x: hidden;
+font-weight: bold;
+font-style: italic;
 }
-/*lettera fatta con generatore di font esterno - calligraphr, basata su font del 1500,garamond. La riquadratura era negessaria a dare forma quadrangolare alle miniature.l'immagine di sfondo è ripresa da mix di miniatura del sidereus nuncius, a cui sono stati sottratti il putto e il drago. per decorazione e come tributo,la miniatura è stata arricchita con il calco di una costellazione illustrata nel sidereus nuncius */
 
 .articlestyle .capital:first-letter {
-    font-size: 21vw; /*deve occupare un terzo della colonna di testo, quindi un terzo di 64, ovvero un valore compreso tra 21 e 22vw*/
+    font-size: 21vw;
     float: left;
     font-family: 'Monog';
     font-weight: normal;
@@ -105,22 +137,6 @@ color: white;
     padding-bottom:0px;
     background-size: contain;
 }
-
-.articlestyle #Intro > *:first-child:first-letter {
-    font-size: 21vw; /*deve occupare un terzo della colonna di testo, quindi un terzo di 64, ovvero un valore compreso tra 21 e 22vw*/
-    float: left;
-    font-family: 'Monog';
-    font-weight: normal;
-    font-style: normal;
-    margin-top:2px;
-    margin-right: 4px;
-    margin-bottom: -1px;
-    background-clip:content-box;
-    background-image: url(images/monogrammabg.png);
-    padding-bottom:0px;
-    background-size: contain;
-}
-
 
 .articlestyle figure figcaption {
   width: 14vw;
@@ -133,19 +149,25 @@ color: white;
   font-family: "JMH Legajo";
   font-weight: bold;
   font-style: normal;
-  font-size: 2vw; 
+  font-size: 2vw;
   color: #666154;
   background-color: transparent;
 }
 
-/*ridondante, ma serve a coprire tutti i casi*/
 .articlestyle figure figcaption p{
-  font-family: "JMH Legajo";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 2vw; 
-  color: #666154;
-  background-color: transparent;
+    font-family: "JMH Legajo";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2vw;
+    color: #666154;
+    background-color: transparent;
+    font-size: 14px;
+    transform: translateY(0%) translateX(0%);
+    position: relative;
+    width: inherit;
+    padding-left: 0px;
+    line-height: 100%;
+    word-break:break-word;
 }
 
 @media (max-width: 480px){
@@ -159,138 +181,59 @@ color: white;
         padding-bottom: 10px;
         line-height: 100%;
         word-break:break-word;
-    }
-    .articlestyle figure figcaption p{
-        font-size: 14px;
-        transform: translateY(0%) translateX(0%);
-        position: relative;
-        width: inherit;
-        padding-left: 0px;
-        line-height: 100%;
-        word-break:break-word;
-    }
-}
-/*@media (min-width: 1281px)
-@media (min-width: 481px) and (max-width: 767px) 
- 
-*/
+    }}
 
 .articlestyle figure{
     margin:0px;
+    max-width: 100%;
 }
 
 .articlestyle img{
     align-content: center;
     display: block;
     align-self: center;
-    width: 100%;
-    padding-top:3px; /*per evitare che le immagini si tocchino tra loro nel caso ce ne siano due di fila*/
+    max-width: 100%;
+    max-height:inherit;
+    padding-top:3px;
     padding-bottom:3px;
     filter: grayscale(85%) sepia(50%);
     -webkit-filter: grayscale(85%) sepia(50%);
     -moz-filter: grayscale(85%) sepia(50%);
-    /*generato con filter generator cssgenerator.org/filter-css-generator*/
 }
 
-
-#articlebody  {
-    background-color: #E6DAC0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(images/paginavuotasncancellata.jpg);
-}
-
-#articlebody div {
-    width: 65%;
-    margin-left: 21%;
-    margin-right: 14%;
-}
-@media (max-width: 480px){
-    #articlebody > div {
-        font-size: 14px;
-        width: 75%;
-        margin-left: 16%; 
-        margin-right: 9%;
-    }
-}
-/*
-#articlebody .articlestyle h1 {
-    font-family: 'KisMiklos';
-    text-align: center;
-    font-size: 6vw;
-    text-transform: uppercase;
-    font-style: reset;
-    color: #8e1616;
-    margin-top: 2em;
-    border-top: 2em solid transparent;
-    display: block;
-    border-image: url(images/saggiatorecornice-removebg-preview.png) 174 round stretch;
-    letter-spacing: 10px;
-    word-wrap: break-word;
-    padding-top: 10px;
-}
-    
-@media (max-width: 480px) {​​​​
-    #articlebody > div > header > h1 {​​​​
-        font-size: 22px;
-        letter-spacing: 5px;
-    }​​​​
-}*/
-
-#articlebody div header h1 {
-    font-family: 'KisMiklos';
-    text-align: center;
-    font-size: 4vw;
-    text-transform: uppercase;
-    color: #8e1616;
-    /*margin-top: 2em;*/
-    border-top: 2em solid transparent;
-    display: block;
-    border-image: url(images/saggiatorecornice-removebg-preview.png) 174 round stretch;
-    letter-spacing: 10px;
-    word-wrap: break-word;
-    padding-top: 10px;
-}
-
-@media (max-width: 480px){​​​​
-    #articlebody div header h1 {​​​​
-        font-size: 1vw;
-        letter-spacing: 5px;
-    }​​​​
-}
-
-/*lasciato simbolicamente spazio dei margini anche se ridotti entrambi del 5% aumentando il corpo del 10*/
-
-.articlestyle p{
+.articlestyle blockquote{
     font-family: "JMH Legajo";
     font-weight: bold;
-    font-style: italic;
+    font-style:normal;
     background-color: #FBF9C8;
     font-size: 2vw;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    color: #666154;
-    display: block;   
+    }
+.articlestyle blockquote p{
+    font-family: "JMH Legajo";
+    font-weight: bold;
+    font-style:normal;
+    background-color: #FBF9C9;
+    font-size: 2vw;
 }
- 
+
 @media (max-width: 480px){
-    .articlestyle p{
+    .articlestyle blockquote p{
+        font-size: 14px;
+    }}
+
+@media (max-width: 480px){
+    .articlestyle blockquote {
         font-size: 14px;
     }
 }
-/*@media (min-width: 1281px)
-@media (min-width: 481px) and (max-width: 767px) 
-*/ 
-
 
 .articlestyle aside p{
     font-size: 2vw;
     padding: 0em;
     margin-top: 0em;
-    color: #8E1616;
+    color: #940F04;
     display: block;
-    margin:4vw;   
+    margin:4vw;
 }
 
 @media (max-width: 480px){
@@ -306,17 +249,10 @@ color: white;
         word-break:break-word;
     }
 }
-/*@media (min-width: 1281px)
-@media (min-width: 481px) and (max-width: 767px) 
-
-/*73 charact in a line, I have to indent 3. --> 3:73=x:100*/
-
-
 
 .articlestyle section p:not(:first-child){
     text-indent: 4%;
 }
-
 
 .articlestyle section p:first-of-type{
     text-indent: 0%;
@@ -326,15 +262,39 @@ color: white;
     text-indent: 4%;
 }
 
+.articlestyle #Notes p:first-of-type{
+    text-indent: 4%;
+}
+    
 .articlestyle #References p:first-of-type{
     text-indent: 4%;
 }
 
-.articlestyle table, .articlestyle td, .articlestyle th{
+.articlestyle table{
     width: 100%;
     border: 2px solid #937970;
+    font-size: 70%;
     color: #524D42;
-    border-collapse: collapse;   
+    border-collapse: collapse;
+    font-family: "JMH Legajo";
+    font-weight: bold;
+    font-style: normal;
+}
+
+#articlebody div header h1{
+    font-family: 'KisMiklos';
+    text-align: center;
+    font-size: 4vw; 
+    text-transform: uppercase;
+    color: #8e1616;
+    margin-top: 2em;
+    border-top: 2em solid transparent;
+    display: block;
+    border-image: url(images/saggiatorecornice-removebg-preview.png) 174 round stretch;
+    letter-spacing: 10px; 
+    word-wrap: break-word;
+    padding-top: 10px;
+
 }
 
 .articlestyle table{
@@ -345,7 +305,7 @@ color: white;
     align-content: flex-start;
     font-family: "JMH Legajo";
 }
-    
+
 @media (max-width: 480px){
     .articlestyle table, .articlestyle td,.articlestyle th{
         font-size: 13px!important;
@@ -353,25 +313,25 @@ color: white;
 }
 
 .articlestyle th{
-    color: #8E1616;
+    color: #940F04;
     font-family: "Grit Primer";
     text-transform: uppercase;
     font-size: 2vw;
+    border: 1px solid #E6DAC0;
+    text-align: left;
 }
-
-/*@media (min-width: 1281px)
-@media (min-width: 481px) and (max-width: 767px) 
-@media (max-width: 480px)*/ 
 
 .articlestyle td{
     font-size: 2vw;
-   
+    border: 1px solid #524D42;
+    text-align: center;
+
 }
 
-/*@media (min-width: 1281px)
-@media (min-width: 481px) and (max-width: 767px) 
-@media (max-width: 480px)*/ 
+.articlestyle tr:nth-child(odd){
+color: #666154 ;
 
+}
 .articlestyle table caption {
   width: 14vw;
   word-break:break-all;
@@ -382,7 +342,7 @@ color: white;
   font-family: "JMH Legajo";
   font-weight: bold;
   font-style: normal;
-  font-size: 2vw; 
+  font-size: 2vw;
   padding-left: 1em;
   padding-right: 0em;
   margin-left: 0em;
@@ -403,6 +363,8 @@ color: white;
   color: #666154;
   background-color: transparent;
 }
+
+
 
 @media (max-width: 480px){
     .articlestyle table caption {
@@ -426,59 +388,74 @@ color: white;
          word-break:break-word;
     }
 }
-    
+
 
 
 .articlestyle a:hover{
      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" style="font-size: 20px;"><text y="15">✸</text></svg>'), auto;
 }
-    
+
 
 .articlestyle a{
-    color: #8e1616;
+    color: #940F04;
     text-decoration: none;
 }
 
+.articlestyle header{
+    margin-bottom: 7vw;
+    
+}
 
 .articlestyle header .subtitle{
     text-align:center;
-    font-family: "Title";
+    font-family: "KisMiklos";
     font-weight: bold;
     font-style: normal;
     background-color: transparent;
     text-transform: uppercase;
-    font-size:4vw;
+    font-size:3vw;
     letter-spacing: 3px;
     margin: 2vh;
     padding: 0em;
     border-bottom: none;
     /*da rivedere*/
 }
-    
+
 @media (max-width: 480px){
     .articlestyle header .subtitle{
         font-size: 18px;
-        letter-spacing: 3px; 
+        letter-spacing: 3px;
     }}
 
 #articlebody header .byline{
     text-align:center;
-    font-family: "Title";
+    font-family: "KisMiklos";
     font-weight: bold;
     font-style: normal;
     background-color: transparent;
-    font-size:5vw;
     letter-spacing: 5px;
     text-transform: uppercase;
     padding: 1vh;
     margin: 1vh;
     border-bottom: none;
 }
-    
+
+#articlebody .byline{
+    text-align:center;
+    font-family: "KisMiklos";
+    font-weight: bold;
+    font-style: normal;
+    background-color: transparent;
+    font-size: 3vw;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: none;
+}
+
 @media (max-width: 480px){
     #articlebody header .byline{
         font-size: 18px;
-        letter-spacing: 3px; 
+        letter-spacing: 3px;
     }}
 
 .articlestyle section{
@@ -490,21 +467,43 @@ color: white;
 }
 
 
-.articlestyle h2{
+#articlebody div header h2{
     font-family: "Grit Primer";
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     text-transform: uppercase;
     color: #524D42;
     margin-bottom: -3px;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
 
 }
+
+.articlestyle h3{
+    font-family: "Grit Primer";
+    text-align: center;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #524D42;
+    margin-bottom: -2px;
+
+}
+
+.articlestyle h4{
+    font-family: "Grit Primer";
+    text-align: center;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #524D42;
+    margin-bottom: -3px;
+    letter-spacing: 2px;
+
+}
+
 
 @media (max-width: 480px){
     .articlestyle h2{
         font-size: 18px;
-        letter-spacing: 2px; 
+        letter-spacing: 2px;
     }}
 
 .articlestyle h3{
@@ -519,7 +518,7 @@ color: white;
 @media (max-width: 480px){
     .articlestyle h3{
         font-size: 17px;
-        letter-spacing: 2px; 
+        letter-spacing: 2px;
     }
 }
 
@@ -535,33 +534,9 @@ color: white;
 @media (max-width: 480px){
     .articlestyle h4{
         font-size: 16px;
-        letter-spacing: 2px; 
+        letter-spacing: 2px;
     }
 }
 
-.articlestyle blockquote p{
-    font-family: "JMH Legajo";
-    font-weight: bold;
-    font-style:normal;
-    background-color: #FBF9C8;
-    font-size: 2vw;
-}
 
-.articlestyle blockquote{
-    font-family: "JMH Legajo";
-    font-weight: bold;
-    font-style:normal;
-    background-color: #FBF9C8;
-    font-size: 2vw;
-    }
-
-@media (max-width: 480px){
-    .articlestyle blockquote p{
-        font-size: 14px;
-    }}
-
-@media (max-width: 480px){
-    .articlestyle blockquote {
-        font-size: 14px;
-    }
-}
+ 

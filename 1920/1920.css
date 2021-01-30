@@ -7,13 +7,13 @@
 }
 
 @font-face {
-  font-family: 'Futura Bk BT';
-  src: url('FuturaBT-Book.eot');
-  src: url('FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
-      url('FuturaBT-Book.woff2') format('woff2'),
-      url('FuturaBT-Book.woff') format('woff'),
-      url('FuturaBT-Book.ttf') format('truetype'),
-      url('FuturaBT-Book.svg#FuturaBT-Book') format('svg');
+  font-family: 'Futura';
+  src: url('fonts_Bauhaus/font_futura/FuturaBT-Book.eot');
+  src: url('fonts_Bauhaus/font_futura/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
+      url('fonts_Bauhaus/font_futura/FuturaBT-Book.woff2') format('woff2'),
+      url('fonts_Bauhaus/font_futura/FuturaBT-Book.woff') format('woff'),
+      url('fonts_Bauhaus/font_futura/FuturaBT-Book.ttf') format('truetype'),
+      url('fonts_Bauhaus/font_futura/FuturaBT-Book.svg#FuturaBT-Book') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -35,97 +35,174 @@
   </div>
 </body>
 */
-.articlestyle div {
+#articlebody {
   background-color: #f9f7de;
   border-right: 70px solid #146EAA;
   text-align: justify;
   border-left: 70px solid #E73229;
 }
-
-.articlestyle header {}
-
-.articlestyle article {}
-
-.articlestyle article p {}
-
-.articlestyle article figure {}
-
-.articlestyle article img{}
-
-.articlestyle article ??? {}
-
-
-
-
-
-
-/*
-.articlestyle h1 {
-  font-family: 'Bauhaus';
-  text-align:center;
-  font-size: 2.5em;
+@media (max-width: 800px) {
+  #articlebody {
+    border-right: 25px solid #146EAA;
+    border-left: 25px solid #E73229;
+  }
 }
 
-.articlestyle h2 {
-  text-align: right;
-  font-family: 'bauhaus'
+@media (max-width: 480px) {
+  #articlebody {
+    border-right: 15px solid #146EAA;
+    border-left: 15px solid #E73229;
+  }
+}
+.articlestyle div div {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 2%;
+}
+@media (max-width: 800px) {
+  #articlebody {
+    padding-left: 3% ;
+    padding-right: 1%;
+  }
+}
+
+@media (max-width: 480px) {
+  #articlebody {
+    padding-left: 1% ;
+    padding-right: 1%;
+  }
 }
 
 .articlestyle header {
-    background-image: url("images/logo5def.jpg");
-    background-color: #f9f7de;
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: 100% left;
-    border-top: solid 20px black;
-    border-bottom: solid 40px black;
-    padding: 4%;
+  background-image: url(images/logo5def.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding: 5%;
+  text-align: right;
 }
-.articlestyle body {
-  font-family: 'Futura Bk BT';
-  font-size: 1.2em;
-  padding: 10px 15px;
-  background-color: #f9f7de;
-
-
-}
-.articlestyle article p {
-  border-bottom: 30px solid red
-
-}
-
-
- .articlestyle div {
-  position: relative;
-  border-right: 70px solid #0424cf;
-  text-align: center;
-  border-left: 70px solid #fb4d34;
-
-}
-
-.articlestyle figure {
-    display: inline-block;
-    text-align: left;
-}
-
-.articlestyle figcaption {
-  display: transparent;
-  font-size: 80%;
-  font-style: italic;
-}
-
-.articlestyle img {
-    width: 75%;
-    transition: transform 5s;
-    border-right: 2px solid black;
-}
-.articlestyle img:hover {
-    -ms-transform: scale(1.2); 
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+@media (max-width: 800px) {
+  .articlestyle header {
+    background-size: 60%;
   }
+}
+
+@media (max-width: 480px) {
+  .articlestyle header {
+    background-size: 70%;
+  }
+}
+
+.articlestyle header {
+  border-bottom: 7px solid black; 
+}
+.articlestyle header h1, .articlestyle header p, .articlestyle header h2, .articlestyle header .subtitle, .articlestyle header .byline {
+  font-family: 'bauhaus';
+  font-size: 7vh;
+  color: #000000;
+  text-shadow: 3px 3px  #E73229, 6px 6px  #146EAA, -3px -3px #EFC800;
+  transform: rotate(-5deg);
+}
+@media (max-width: 800px) {
+  .articlestyle header h1, .articlestyle header p, .articlestyle header h2, .articlestyle header .subtitle, .articlestyle header .byline {
+    font-size: 6vh;
+    text-shadow: 1.3px 1.3px  #E73229, 3px 3px  #146EAA, -1.3px -1.3px #EFC800;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .articlestyle header h1, .articlestyle header p, .articlestyle header h2, .articlestyle header .subtitle, .articlestyle header .byline {
+    font-size: 4vh;
+    text-shadow: 1.3px 1.3px  #E73229, 3px 3px  #146EAA, -1.3px -1.3px #EFC800;
+  }
+}
+
+.articlestyle article p:nth-child(odd) {
+  border-left: 7px solid #EFC800;
+  border-top: 7px solid #EFC800;
+  color: black;
+  padding: 2%;
+}
+.articlestyle article p:nth-child(even) {
+  border-right: 7px solid #F08D28;
+  border-bottom: 7px solid #F08D28;
+  color: black;
+  padding: 2%;
+}
+
+.articlestyle article p {
+  font-family: 'Futura';
+  font-size: 1.2rem;
+}
+
+.articlestyle section {
+  font-family: 'Futura';
+  font-size: 1.2rem;
+}
+
+.articlestyle article figure {
+  display: inline-block;
+  border-top: #E73229;
+  border-bottom:  #146EAA;
+  padding: 2%;
+  margin-left: 10%;
+  margin-right: 10%; 
+  text-align: left;
+  font-family: 'bauhaus';
+}
+
+.articlestyle article img{
+  width: 80%;
+  filter: grayscale(100%);
+}
 
 .articlestyle footer{
   border-bottom: solid 50px #ada3a1;
 }
-*/
+
+.articlestyle table, th, td {
+  border-top: 3px solid #E73229;
+  border-bottom: 3px solid #146EAA;
+  border-left: 3px solid #EFC800;
+  border-right: 3px solid #F08D28;
+  border-style: solid;
+  text-align: justify;
+  font-size: inherit;
+}
+@media (max-width: 1000px) {
+  .articlestyle table, th, td {
+    border-top: 1px solid #E73229;
+    border-bottom: 2px solid #146EAA;
+    border-left: 2px solid #EFC800;
+    border-right: 2px solid #F08D28;
+    border-style: solid;
+    text-align: justify;
+    font-size: 80%;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .articlestyle table, th, td {
+    border-top: 1px solid #E73229;
+    border-bottom: 2px solid #146EAA;
+    border-left: 2px solid #EFC800;
+    border-right: 2px solid #F08D28;
+    border-style: solid;
+    text-align: justify;
+    font-size: 70%;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .articlestyle table, th, td {
+    border-top: 1px solid #E73229;
+    border-bottom: 2px solid #146EAA;
+    border-left: 2px solid #EFC800;
+    border-right: 2px solid #F08D28;
+    border-style: solid;
+    text-align: justify;
+    font-size: 50%;
+}

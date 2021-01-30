@@ -1,12 +1,3 @@
-/*overlay background and images, also in phone 
-text overlay 
-footer image repeats and overlays on text
-immagini non centrate 
-768
-fix h2, 3 and 4 in header 
-
-
-*/
 @font-face {
 	font-family: 'camelot';
 	src: url("capFont/camelot-webfont.woff2") format("woff2"), 
@@ -53,36 +44,37 @@ fix h2, 3 and 4 in header
 .articlestyle header {
 	text-align: justify;
 	display: inline-block;
-	margin-top: 4%;
+	margin-top: 2%;
 	margin-left: 25%;
 	margin-right: 25%;
 	margin-bottom: 4%;
 }
-/*
-@media screen and (max-width: 700px) {
-	.articlestyle .backimageheader {
-	margin-top: 5%;
-	margin-left: 30%; 
-	margin-right: 30%;
-	}
-  }
-*/
-@media (max-width: 800px) {
+@media (max-width: 1025px) {
 	.articlestyle header {
-	margin-top: 5%;
-	margin-left: 20%;
-	margin-right: 20%; 
-	margin-bottom: 4%;
+	margin-top: 1%;
+	margin-left: 22%;
+	margin-right: 22%; 
+	margin-bottom: 2%;
+	}
+}
+
+@media (max-width: 880) {
+	.articlestyle header {
+	margin-top: 1%;
+	margin-left: 8%;
+	margin-right: 8%; 
+	margin-bottom: 2%;
 	}
 }
 
 @media (max-width: 700) {
 	.articlestyle header {
+	margin-top: 10%;
 	margin-left: 15%;
 	margin-right: 15%; 
 	}
 }
-@media (max-width: 600) {
+@media (max-width: 400) {
 	.articlestyle header {
 	margin-left: 20%;
 	margin-right: 20%; 
@@ -100,11 +92,44 @@ fix h2, 3 and 4 in header
 /**/
 }
 
-.articlestyle header h2 {
+@media (max-width: 1025px) {
+	.articlestyle header h1{
+	font-size: 350%;
+	}
+}
+
+@media (max-width: 880) {
+	.articlestyle header h1{
+		font-size: 350%;
+
+	}
+}
+
+@media (max-width: 700) {
+	.articlestyle header h1{
+		font-size: 400%;
+
+	}
+}
+@media (max-width: 400) {
+	.articlestyle header h1 {
+		font-size: 378%;
+
+	}
+}
+
+.articlestyle .byline {
+	font-family: 'titlefont';
+	font-weight: lighter;
+	font-size: 60%;
+}
+
+
+.articlestyle header h2, .articlestyle header h3, .articlestyle header h4, .articlestyle header p, .articlestyle header .subtitle {
 	text-align: center;
 	color: #D4AF37;
 	font-family: 'titlefont';
-	font-size: 250%;
+	font-size: 180%;
 	font-weight: lighter;
 	text-shadow: 0 0 3px black, 0 0 5px #440000;}
 
@@ -124,12 +149,12 @@ fix h2, 3 and 4 in header
 
   @media (max-width: 480px) {
 	.articlestyle header h1 {
-	  font-size: 180%;
+	  font-size: 150%;
 	  text-align: center !important;
 
 	}
 	.articlestyle header h2 {
-		font-size: 140%;
+		font-size: 120%;
 		text-align: center !important;
 
 	}
@@ -145,7 +170,6 @@ fix h2, 3 and 4 in header
 	-webkit-column-fill: balance;
 	text-align: justify;    
     word-break: break-word;
-	overflow-x: hidden;
 	font-family: 'onciale', serif;
 	letter-spacing: -1px;
 }
@@ -196,10 +220,9 @@ fix h2, 3 and 4 in header
 
 .articlestyle figure {
 	display: inline-block;
+	margin-left: 1%;
+	margin-right: 1%;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 5%;
 }
 
 .articlestyle figure figcaption {
@@ -209,8 +232,14 @@ fix h2, 3 and 4 in header
   line-height: 0.8;
 }
 
-.articlestyle img {
-width: 70%;
+.articlestyle figure img {
+	width: 80%;
+	border-radius: 15%;
+	border: 20px solid transparent;
+	border-image: url(images/frame.png);
+	border-image-slice: 70;
+	border-image-repeat:round;
+	border-spacing: 1px;
 }
 
 @media(max-width: 500px) {
@@ -226,6 +255,9 @@ width: 70%;
     font-size: 80%;
   }
 
+  .articlestyle caption {
+	  color: black;
+  }
   .articlestyle td {
     border: 2px solid #8b0000;
     border-style: solid;
@@ -238,5 +270,3 @@ width: 70%;
     margin: 0 10%;
     word-break: break-all;
 }
-
-/*border-image 

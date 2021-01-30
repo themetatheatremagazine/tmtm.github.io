@@ -84,14 +84,6 @@ margin-right: 10%;
 margin-bottom: 5%;
 }
 
-/*.block {
-  background-image: url(border.png);
-  background-repeat: no-repeat;
-  background-size: 600px 300px;
-  padding: 50px;
-  text-align: center;
-}*/
-
 .articlestyle  article {
 font-family: 'berol';
 font-weight: bolder;
@@ -114,39 +106,32 @@ margin-right: 10%;
   }
 }
 
-.articlestyle p, .articlestyle blockquote {
+.articlestyle p, .articlestyle blockquote, .articlestyle caption {
   display: inline-block;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 1%;
-  /*background-image: url(mini-border-left.png);
-  background-position: bottom right;*/
+  
 }
 
-/*p {
-  background-image: url(bottom-border-right2.png), url(bottom-border-left.png);
-  background-position: bottom left, bottom right;
-  background-repeat: repeat-y;
-  background-size: 50px;
-}
-*/
 .articlestyle figure {
   display: inline-block;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center;
 }
 
-.articlestyle  img {
+
+.articlestyle figure img {
   border: 15px solid transparent;
   padding: 1px;   
   border-image: url(images/frame2.png);
   border-image-slice: 30;
   border-image-repeat:round;
   border-spacing: 20px;
-    width: 75%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 80%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 5%;    
 }
 
