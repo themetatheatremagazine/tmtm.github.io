@@ -153,10 +153,13 @@ text-shadow:
 
 #articlebody  {
 	background: linear-gradient(-45deg,#946ae2, #b675da, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+    animation: gradient 15s ease infinite;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+/*
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -168,8 +171,7 @@ text-shadow:
 		background-position: 0% 50%;
 	}
 }
-/*
-    #946ae2, #b675da, #23a6d5, #23d5ab
+
 */
 /*COLUMNS*/
 .articlestyle article {
