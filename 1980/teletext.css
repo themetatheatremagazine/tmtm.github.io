@@ -24,6 +24,14 @@
     font-display: swap;
 }
 
+
+.articlestyle {
+    overflow-x: hidden;
+}
+.articlestyle #articlebody div{
+    max-width: 40ch;
+}
+
 .articlestyle em{
     font-style: normal;
 }
@@ -43,13 +51,19 @@
 /*counter position, typically at right*/
 .articlestyle #counter{
     float: right;
-    color: #ffff00; /*from ceefax original*/
+    color: #ffff00;/*from ceefax original*/
+    width: 250px;
+    height: 25px;
+    font-size: 20px;
+    padding: 0;
+    color: yellow;
+    animation: flashing 1.3s steps(5, start) infinite;
 }
 
 @media (max-width: 500px){
     .articlestyle #counter{
-        float: right;
-        font-size: 20px; /*rimane di dimensione costante così non esce dal div*/
+        float: left;
+        font-size: 16px; /*rimane di dimensione costante così non esce dal div*/
 }
 }
 
@@ -84,7 +98,7 @@
     font-family: 'ModeSeven',monospace;
     color: #ffffff;
     background: #000000;
-    font-size: 24px !important;
+    font-size: 24px;
     max-width: 80rem; /*resa migliore rispetto a 40 ch. in caso scrivere che i 40 ch massimi erano dettati da limitazioni del media originale*/
     margin: auto;
     padding: 1rem 1rem;
@@ -94,8 +108,7 @@
 
 @media (max-width: 500px){
     .articlestyle div{
-        font-size: 16px !important;
-        max-width: 100%;
+        font-size: 16px;
         padding:  15px;
     }
 }
@@ -129,9 +142,14 @@
     color: #00ffff;
 }
 
+.articlestyle header h3{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
 .articlestyle blockquote{
     background-color: #ff00ff;
-    margin: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1em;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -149,6 +167,60 @@
 .articlestyle header{
     margin-top: 2em;
     border-bottom: 10px solid #0000ff;
+    border-left: 10px solid #0000ff;
+    border-right: 10px solid #0000ff;
+}
+
+.articlestyle h3{
+    border:transparent;
+}
+
+
+.articlestyle header h2{
+    padding-bottom: 2em;
+    padding-top: 2em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+    font-size: 80%;
+    background-color: transparent;
+    text-align: center;
+    -webkit-transform: scaleY(2);
+    -moz-transform: scaleY(2);
+    animation: flashing 1.3s steps(5, start) infinite;
+    -webkit-animation: flashing 1.3s steps(5, start) infinite;
+    color: #ffff00;
+}
+
+.articlestyle header .subtitle{
+    padding-bottom: 2em;
+    padding-top: 2em;
+    font-size: 80%;
+    background-color: transparent;
+    text-align: center;
+    -webkit-transform: scaleY(2);
+    -moz-transform: scaleY(2);
+    animation: flashing 1.3s steps(5, start) infinite;
+    -webkit-animation: flashing 1.3s steps(5, start) infinite;
+    color: #ffff00;
+}
+
+@media (max-width: 500px){
+    .articlestyle header h2{
+        font-size:16px;
+        white-space: normal;
+        max-width: 100%;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+    
+    .articlestyle header h1{
+        font-size: 30px;
+        max-width:100%;
+        white-space: normal;
+    }
+    .articlestyle table caption p{
+        font-size: 16px;
+    }
 }
 
 .articlestyle section:hover{
@@ -171,20 +243,39 @@
     overflow-x: auto;
     margin-top:1rem;
     margin-bottom:1rem;
+    max-width: inherit;
 }
+
+div h3{
+    border: 10px solid #0000ff;
+    border-top: hidden;
+    overflow-x: auto;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    max-width: inherit;
+}
+
+.articlestyle table{
+    overflow-x: scroll;
+    border-collapse: collapse;
+    display: block;
+    max-width: 100%;
+}
+
 
 @media (max-width: 500px){
     .articlestyle table{
-        font-size: 10px;
+        font-size: 70%;
         width: 100%;
-         display: inline-block;
+        display: inline-block;
+        overflow-x: scroll;
     }
     .articlestyle table caption{
-        font-size: 16px;
+        font-size: 70%;
         max-width:100%
     }
     .articlestyle table caption p{
-        font-size: 16px;
+        font-size: 70%;
     }
 }
 
@@ -203,17 +294,12 @@
     color: #ffffff;    
 }
 
-.articlestyle header{
-    border-left: 10px solid #0000ff;
-    border-right: 10px solid #0000ff;
-}
-
 .articlestyle h1{
     font-family: 'Televideo';
     color: #ffff00;
     background-color: #0000ff;
-    font-size: 300%;
-    line-height: 1;
+    font-size: 200%;
+    white-space: normal;
     text-align: center;
     margin-top: 0em;   
 }
@@ -240,16 +326,6 @@
     color: #ffff00;
 }
 
-.articlestyle header > h2 {
-    text-align: center;
-    -webkit-transform: scaleY(2);
-    -moz-transform: scaleY(2);
-    animation: flashing 1.3s steps(5, start) infinite;
-    -webkit-animation: flashing 1.3s steps(5, start) infinite;
-    color: #ffff00;
-    line-height: 1;
-    background-color: black;
-}
 
 
 @keyframes flashing { to { visibility: hidden; } }
@@ -263,25 +339,28 @@
     background-color: #ffff00;
     color: #0000ff;
     line-height: 1;
-    margin: 2rem 0;
-    padding: 0.5rem 0;
     text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 @media (max-width: 500px){
     .articlestyle h2{
-       margin-bottom: 2rem; /*altrimenti nei h2 da due righe si sovrappone col testo*/
+       margin-bottom: rem;
+        font-size: 16px;
+    }
+    .articlestyle h3{
+       margin-bottom: 2rem;
+       margin-top: 2rem;
+
+        font-size: 16px;
+    }
+    .articlestyle h4{
+       margin-bottom: 2rem;
+       margin-top: 2rem;
+        font-size: 16px;
     }
 }
-
-.articlestyle .byline h2 {
-    background-color: #000000;
-}
-/*
-.articlestyle header .subtitle h2, .articlestyle header .byline h2 {
-
-}
-*/
 
 .articlestyle h3{
     -webkit-transform: scaleY(2);
@@ -289,13 +368,22 @@
     text-transform: uppercase;
     color: #0000ff; 
     background-color: #00ff00;
-    line-height: 1.1;
+    line-height: 1;
+    text-align: center;
 }
 
 .articlestyle h4{
     text-transform: uppercase;
     color: #ffff00;
 }
+
+@media (max-width: 500px){
+    .articlestyle h4{
+    text-transform: uppercase;
+    color: #ffff00;
+}
+}
+
 
 .articlestyle img{
      max-width: 30%;
@@ -363,6 +451,29 @@
     }
 }
 
+
+@media (max-width: 700px){
+    .articlestyle figure {
+        display: inline-block;
+    }
+    .articlestyle img {
+        max-width: 100%;
+    }
+    .articlestyle figcaption {
+        display: inline-block;
+        max-width: 100%;
+    }
+    .articlestyle figure:nth-of-type(even)>figcaption{
+    order: 1;
+    margin-right:0em;
+    margin-top:1em;
+    }
+    .articlestyle figure:nth-of-type(odd)>figcaption{
+    order: 1;
+    margin-left:0em;
+    margin-top:1em;
+    }
+}
 .articlestyle figcaption{
     font-family: 'ModeSeven';
     font-style: normal;
@@ -400,6 +511,10 @@
     text-align:inherit;
 }
 
+.articlestyle table img{
+    border: none;
+    max-width: 100%;
+}
 
 .articlestyle table caption p{
     font-family: 'ModeSeven';
@@ -410,13 +525,6 @@
     background-color: #00ffff;
     color: #0000ff;
     padding-bottom: 0px;
-}
-
-
-@media (max-width: 500px){
-    .articlestyle 1{
-        line-height: 1.2; /*per leggibilità*/
-    }
 }
 
 
@@ -471,10 +579,7 @@
     border: hidden !important;
 }
 
-.articlestyle #counter {
-    width: 350px;
-    height: 25px;
-    padding: 0;
-    color: yellow;
-    animation: flashing 1.3s steps(5, start) infinite;
+.articlestyle h2, .articlestyle h3, .articlestyle h4{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }

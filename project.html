@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-<link id="pagestyle" rel="stylesheet" href="stili.css" type="text/css"> 
+<link rel="stylesheet" href="stili.css" type="text/css"> 
     
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -58,7 +58,7 @@
   </div>
 </div>
 </nav>
-
+<!--
             <div class="col text-center" id="butcontainer">
                 <div class="btn-group flex-wrap row" role="group" id="butrow" data-toggle="buttons">
                   <button type="button" class="btn btn-secondary" onclick="swapStyleSheet('stili.css')">Default</button>
@@ -72,7 +72,7 @@
                   <button type="button" class="btn btn-secondary" onclick="swapStyleSheet('site_styles_css/2040STYLE/20400.css')">2040</button>
                 </div>
             </div>
-    
+          -->
     
 <div class="container-fluid pagetitlecontainer">
     <h1 class="pagetitle">Meta Theatre Magazine Project</h1>
@@ -81,101 +81,279 @@
 <div class="container-fluid" id="item5">
    <div class="container homepage" style="margin: auto">
 
-<!--andrea styles-->
-<h1>Andrea</h1>
-<!--GOSPEL STYLE-->
-<div id="GospelStyle">
-<h2>Slavic Gospels Style - Before 1500</h2>
-<h3>Choice</h3>    
-  <p>The Gospel style is inspired by a family of gospel manuscripts of the slavic orthodox tradition. Of this family, one of the most famous groups are the Ostromir Gospels, beautiful illuminated manuscripts with orthodox-style decorations, mainly concentrated around the title, the first letter of the chapter and the footer.
-  </p>
-  <img src="https://kodeks.uni-bamberg.de/russia/media/Ostromir/OstromirTitel.jpg" alt="Ostromir Gospel">
-  <img src="https://kodeks.uni-bamberg.de/russia/media/Ostromir/OstromirSample3.jpg" alt="Ostromir Gospel">
-  <p>The choice is motivated both by a personal appreciation of these gospels, on which I did my thesis for the bachelor's degree, and by the assignment of creating a web style based on before printing books.
-    One of the main difficulties of recreating this as a web style was finding appropriate and compliant images for the header and the footer: while being easily found in a digitized format, they were not in a shape or quality that could be used in a web page, so we sorted on a different solution, which was trying to recreate the position of the decorations and illuminations, the font and the page layout. 
-  </p>
-<h3>Background</h3>
-<p>The background is just the image of a simple sheet of parchment, repeated x times as the length of the page, which stretches for the whole width of it. The second background fixed on the top of the page is inspired by the decorations around the title of the slavic gospels</p>
-  <img src="Gospel/images/border-left.png" alt="border left">
-  <img src="Gospel/images/ornament.jpg" alt="Slavic ornament">
-  <img src="Gospel/images/footer.png" alt="footer">
-<p>The palette and the kind of ornaments are pretty similar, while the only difference is on the shape of it: older slavic gospels heavily rely on a rectangular decoration, but none of the ones I found where suited for the task of a both readable and responsive header frame: two mirrors of the first image were used, so that they could move alongside the viewport. 
-  A more rectangular frame was used instead for the images:</p>
-  <img src="Gospel/images/dog.png" alt="Alkonost">
-  <img src="Gospel/images/frame.png" alt="flower frame">
-<p>Floral patterns are often used throughout the orthodox, byzantine and slavic decorative tradition, alongside the Rushnik pagan tradition. The problem in using the original frames and the ones found throughout the internet was the lack of vector images or PNGs that could easily be corrected without finer editing skills. 
-  This style heavily influenced the illustrations by Ivan Jakovlevič Bilibin, a XX sec illustrator and artist who painted illustrations for e.g. Puskin fairy tales. One favourite creature often painted by him was the Alkonost, a mithical bird of paradise, and a tribute to this was made in the gryphon-looking monster around the edges of the footer. For the last paragraph of the text a decoration was used as the decorated end of chapter of the gospel. 
-  </p>
-<h3>Fonts and Layout</h3>
-<p>The script used in the gospel manuscripts was a kind of minuscule resembling the uncial byzantine script. Indeed the slavic orthodox tradition relies heavily on the byzantine style, so an uncial latin font was chosen to resemble at best the slavic minuscule. 
-  One of the features that stand out to the eye when looking at the Slavic minuscule is the concentration of abbreviations, terminals, serifs and diacritical marks, which recreate a line of full letters, each almost independent. Trying to recreate this in a latin script was almost impossible, so we sorted to add just a pixel of letter spacing. 
-  </p>
-<p>The font color looks between a red and brown color, so a ‘color: #520404;’ was chosen: 
-  The capital letter instead was simplified for the almost impossibility of finding a font that resembles exactly the beautiful decorated letter, so the proposed solution was to create either a background image with a pattern that could generalize the decoration and then apply on top the letter or to find a general illuminated capital letter. The latter solution seemed more readable and less difficult to look and read at in a web context. For this the ‘Camelot’ font was used. 
-  The title script in the gospel resembled the uncial script but bolder and with more serif, especially in the general family and in later time. For this the Angel Rhapsody font was used, which relies on serif, decorations and an almost gothic look. The color #D4AF37 was used. 
-  </p>
-  <img src="https://www.colorhexa.com/520404.png" alt="brownish red">
-  <img src="https://www.colorhexa.com/d4af37.png" alt="golden yellow">
-<p>For the layout I maintained both the one-column and the two columns layouts, with the latter only for bigger viewports. The gap between the columns was calculated as 3 times the length of a single letter, 1.3 rem.</p>
-<h3>References</h3>
-<ul>
-  <li><a href="https://kodeks.uni-bamberg.de/russia/Texts/OstromirovoEvangelie.htm">Ostromir Evangelie</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Rushnyk">Rushnyk</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Ostromir_Gospels">Ostromir Gospels, Wikipedia</a></li>
-  <li><a href="https://web.archive.org/web/20110716114537/http://character.webzone.ru/ostromir.htm">Ostromir Gospel Images</a></li>
-</ul>
-</div>
-<!--END GOSPELS-->
-
-<!--2040 STYLE-->
-<div id="2040Style">
-  <h2>PostVaporwave - 2040</h2>
-  <h3>Choice</h3>
-  <p>The 2040’s style is not an ideally futuristic style, but is the realizations of what some people, 30 years before, imagined the future to be like. 
-    Vaporwave in itself is a microgenre of electronic music, a visual art style, and an Internet meme that emerged in the 2010s, and keeped its mainstream until now. 
-    One of the heritage of this style are voiceless background music, often packed in playlists, that is listened to “chill” or while working on something else, 
-    often on a personal computer, such as famous youtube playlists “lofi hip hop radio - beats to relax/study to”  and so on.
+<div id = "Documentation">
+  <!--andrea styles-->
+  <h1>Andrea</h1>
+  <!--GOSPEL STYLE-->
+  <div id="GospelStyle">
+  <h2>Slavic Gospels Style - Before 1500</h2>
+  <h3>Choice</h3>    
+    <p>The Gospel style is inspired by a family of gospel manuscripts of the slavic orthodox tradition. Of this family, one of the most famous groups are the Ostromir Gospels, beautiful illuminated manuscripts with orthodox-style decorations, mainly concentrated around the title, the first letter of the chapter and the footer.
     </p>
-  <p>A lot of meme playlist emerged from this style, remarkably in Italy “lofi Alberto Angela mix - beats to relax/quarantine to” , “space lo-fi” and so on. Meme culture has made its way to the mainstream in the last two decades, and it’s not impossible to imagine that this will keep its momentum for decades to come. 
-    During the quarantine of 2020 “vaporwave” like playlists made a comeback with a new style, while a dystopian, apocalyptic and virtual imagery made its way to a wider population. 
-    This style is a combination of all these cultural references, without a solid connection just as the vaporwave style, with an embedded Spotify player with a voiceless playlist and an “easter-egg” in the layout. 
+    <img src="https://kodeks.uni-bamberg.de/russia/media/Ostromir/OstromirTitel.jpg" alt="Ostromir Gospel">
+    <img src="https://kodeks.uni-bamberg.de/russia/media/Ostromir/OstromirSample3.jpg" alt="Ostromir Gospel">
+    <p>The choice is motivated both by a personal appreciation of these gospels, on which I did my thesis for the bachelor's degree, and by the assignment of creating a web style based on before printing books.
+      One of the main difficulties of recreating this as a web style was finding appropriate and compliant images for the header and the footer: while being easily found in a digitized format, they were not in a shape or quality that could be used in a web page, so we sorted on a different solution, which was trying to recreate the position of the decorations and illuminations, the font and the page layout. 
     </p>
   <h3>Background</h3>
-  <p>The whole style is made to relax and please the eyes. 
-    A colored, gradient background which slowly moves is used to represent waves, with a future-funk / vaporwave palette. 
-    The whole palette is based on pastel colors, with white as the text color. The last color, #ffd700, was used for the dotted border and the text selection. The gold is not so often used 
-    in vaporwave, but it's common in the future-funk, cyberpunk styles, also it sitted well with the palette while creating conrast with the actual text.
-  </p>
-  <img src="https://www.colorhexa.com/946ae2.png" alt="color1">
-  <img src="https://www.colorhexa.com/b675da.png" alt="color2">
-  <img src="https://www.colorhexa.com/23a6d5.png" alt="color3">
-  <img src="https://www.colorhexa.com/23d5ab.png" alt="color4">
-  <img src="https://www.colorhexa.com/ffd700.png" alt="gold">
-  <p>The header gifs are kind of staples of the waporwave style: a greek column and a 3-D, silver column made of bodies that becomes visible when hovering. 
-  </p>
-  <img src="2040/images/column.gif" alt="vapor column">
-  <img src="2040/images/peoplecolumn.gif" alt="vapor men column">
-  <img src="2040/images/sun.gif" alt="sun">
-  <p>A sunset gif, another common symbol of vaporwave, was made as background of a capitalized first letter. 
-    The responsive layout of the page is such that on shrinking, the text column becomes one as the greek column on the header. 
+  <p>The background is just the image of a simple sheet of parchment, repeated x times as the length of the page, which stretches for the whole width of it. The second background fixed on the top of the page is inspired by the decorations around the title of the slavic gospels</p>
+    <img src="Gospel/images/border-left.png" alt="border left">
+    <img src="Gospel/images/ornament.jpg" alt="Slavic ornament">
+    <img src="Gospel/images/footer.png" alt="footer">
+  <p>The palette and the kind of ornaments are pretty similar, while the only difference is on the shape of it: older slavic gospels heavily rely on a rectangular decoration, but none of the ones I found where suited for the task of a both readable and responsive header frame: two mirrors of the first image were used, so that they could move alongside the viewport. 
+    A more rectangular frame was used instead for the images:</p>
+    <img src="Gospel/images/dog.png" alt="Alkonost">
+    <img src="Gospel/images/frame.png" alt="flower frame">
+  <p>Floral patterns are often used throughout the orthodox, byzantine and slavic decorative tradition, alongside the Rushnik pagan tradition. The problem in using the original frames and the ones found throughout the internet was the lack of vector images or PNGs that could easily be corrected without finer editing skills. 
+    This style heavily influenced the illustrations by Ivan Jakovlevič Bilibin, a XX sec illustrator and artist who painted illustrations for e.g. Puskin fairy tales. One favourite creature often painted by him was the Alkonost, a mithical bird of paradise, and a tribute to this was made in the gryphon-looking monster around the edges of the footer. For the last paragraph of the text a decoration was used as the decorated end of chapter of the gospel. 
     </p>
   <h3>Fonts and Layout</h3>
-  <p>The fonts used are both sans serif; Montserrat is a plain typeface, regular in dimension and without changes in the stroke width, while Roboto is largely geometric, with open curves and allows letters to be settled into their natural width. Both fonts were chosen to resemble the aesthetic and offer a more natural reading rhythm, such as humanist and serif types
-    The title is bold and has a little reduced letter spacing, to almost make the white of the letters touch, while a dense web of text-shadow of the #E485F8 color creates an almost three-dimensional effect.
+  <p>The script used in the gospel manuscripts was a kind of minuscule resembling the uncial byzantine script. Indeed the slavic orthodox tradition relies heavily on the byzantine style, so an uncial latin font was chosen to resemble at best the slavic minuscule. 
+    One of the features that stand out to the eye when looking at the Slavic minuscule is the concentration of abbreviations, terminals, serifs and diacritical marks, which recreate a line of full letters, each almost independent. Trying to recreate this in a latin script was almost impossible, so we sorted to add just a pixel of letter spacing. 
     </p>
-  <h3>Beyond Visual</h3>
-  <p>To enhance the 2040 style I decided to add a Spotify player via jquery, because music is an essential part of the vaporwave style and connects all the aesthetical references I chose for this style. 
-  </p>
-  <img src="2040/images/Cattura.png">
+  <p>The font color looks between a red and brown color, so a ‘color: #520404;’ was chosen: 
+    The capital letter instead was simplified for the almost impossibility of finding a font that resembles exactly the beautiful decorated letter, so the proposed solution was to create either a background image with a pattern that could generalize the decoration and then apply on top the letter or to find a general illuminated capital letter. The latter solution seemed more readable and less difficult to look and read at in a web context. For this the ‘Camelot’ font was used. 
+    The title script in the gospel resembled the uncial script but bolder and with more serif, especially in the general family and in later time. For this the Angel Rhapsody font was used, which relies on serif, decorations and an almost gothic look. The color #D4AF37 was used. 
+    </p>
+    <img id="palettecolor" src="https://www.colorhexa.com/520404.png" alt="brownish red">
+    <img id="palettecolor" src="https://www.colorhexa.com/d4af37.png" alt="golden yellow">
+  <p>For the layout I maintained both the one-column and the two columns layouts, with the latter only for bigger viewports. The gap between the columns was calculated as 3 times the length of a single letter, 1.3 rem.</p>
   <h3>References</h3>
   <ul>
-    <li><a href="https://ontheaside.com/music/a-brief-history-of-vaporwave/">History of Vaporwave</a></li>
-    <li><a href="https://www.dancemusicnw.com/history-lofi-beats-to-study-relax-with/">Lo-Fi</a></li>
-    <li><a href="https://it.wikipedia.org/wiki/Vaporwave">Vaporwave, Wikipedia</a></li>
-    <li><a href="https://www.pinterest.it/pin/588493876280663822/">Vaporwave Essentials</a></li>
+    <li><a href="https://kodeks.uni-bamberg.de/russia/Texts/OstromirovoEvangelie.htm">Ostromir Evangelie</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Rushnyk">Rushnyk</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Ostromir_Gospels">Ostromir Gospels, Wikipedia</a></li>
+    <li><a href="https://web.archive.org/web/20110716114537/http://character.webzone.ru/ostromir.htm">Ostromir Gospel Images</a></li>
   </ul>
+  </div>
+  <!--END GOSPELS-->
+
+  <!--2040 STYLE-->
+  <div id="Style2040">
+    <h2>PostVaporwave - 2040</h2>
+    <h3>Choice</h3>
+    <p>The 2040’s style is not an ideally futuristic style, but is the realizations of what some people, 30 years before, imagined the future to be like. 
+      Vaporwave in itself is a microgenre of electronic music, a visual art style, and an Internet meme that emerged in the 2010s, and keeped its mainstream until now. 
+      One of the heritage of this style are voiceless background music, often packed in playlists, that is listened to “chill” or while working on something else, 
+      often on a personal computer, such as famous youtube playlists “lofi hip hop radio - beats to relax/study to”  and so on.
+      </p>
+    <p>A lot of meme playlist emerged from this style, remarkably in Italy “lofi Alberto Angela mix - beats to relax/quarantine to” , “space lo-fi” and so on. Meme culture has made its way to the mainstream in the last two decades, and it’s not impossible to imagine that this will keep its momentum for decades to come. 
+      During the quarantine of 2020 “vaporwave” like playlists made a comeback with a new style, while a dystopian, apocalyptic and virtual imagery made its way to a wider population. 
+      This style is a combination of all these cultural references, without a solid connection just as the vaporwave style, with an embedded Spotify player with a voiceless playlist and an “easter-egg” in the layout. 
+      </p>
+    <h3>Background</h3>
+    <p>The whole style is made to relax and please the eyes. 
+      A colored, gradient background which slowly moves is used to represent waves, with a future-funk / vaporwave palette. 
+      The whole palette is based on pastel colors, with white as the text color. The last color, #ffd700, was used for the dotted border and the text selection. The gold is not so often used 
+      in vaporwave, but it's common in the future-funk, cyberpunk styles, also it sitted well with the palette while creating conrast with the actual text.
+    </p>
+    <img id="palettecolor"src="https://www.colorhexa.com/946ae2.png" alt="color1">
+    <img id="palettecolor" src="https://www.colorhexa.com/b675da.png" alt="color2">
+    <img id="palettecolor" src="https://www.colorhexa.com/23a6d5.png" alt="color3">
+    <img id="palettecolor" src="https://www.colorhexa.com/23d5ab.png" alt="color4">
+    <img id="palettecolor" src="https://www.colorhexa.com/ffd700.png" alt="gold">
+    <p>The header gifs are kind of staples of the waporwave style: a greek column and a 3-D, silver column made of bodies that becomes visible when hovering. 
+    </p>
+    <img src="2040/images/column.gif" alt="vapor column">
+    <img src="2040/images/peoplecolumn.gif" alt="vapor men column">
+    <img src="2040/images/sun.gif" alt="sun">
+    <p>A sunset gif, another common symbol of vaporwave, was made as background of a capitalized first letter. 
+      The responsive layout of the page is such that on shrinking, the text column becomes one as the greek column on the header. 
+      </p>
+    <h3>Fonts and Layout</h3>
+    <p>The fonts used are both sans serif; Montserrat is a plain typeface, regular in dimension and without changes in the stroke width, while Roboto is largely geometric, with open curves and allows letters to be settled into their natural width. Both fonts were chosen to resemble the aesthetic and offer a more natural reading rhythm, such as humanist and serif types
+      The title is bold and has a little reduced letter spacing, to almost make the white of the letters touch, while a dense web of text-shadow of the #E485F8 color creates an almost three-dimensional effect.
+      </p>
+    <h3>Beyond Visual</h3>
+    <p>To enhance the 2040 style I decided to add a Spotify player via jquery, because music is an essential part of the vaporwave style and connects all the aesthetical references I chose for this style. 
+    </p>
+    <img src="2040/images/Cattura.png">
+    <h3>References</h3>
+    <ul>
+      <li><a href="https://ontheaside.com/music/a-brief-history-of-vaporwave/">History of Vaporwave</a></li>
+      <li><a href="https://www.dancemusicnw.com/history-lofi-beats-to-study-relax-with/">Lo-Fi</a></li>
+      <li><a href="https://it.wikipedia.org/wiki/Vaporwave">Vaporwave, Wikipedia</a></li>
+      <li><a href="https://www.pinterest.it/pin/588493876280663822/">Vaporwave Essentials</a></li>
+    </ul>
+  </div>
+  <h1>Amanda</h1>
+  <!--GOSPEL STYLE-->
+  <div id="ArtNouveauStyle">
+  <h2>Early Art Nouveau - 1800</h2>
+  <h3>Choice</h3>    
+    <p>In the last decade of the 19th century, Art Nouveau entered the European Art scene. Art Nouveau style was born in the first place as a reaction against the academic art, eclecticism and historicism of the 19th century and reached its greatest popularity between 1890 and 1910.  
+    </p>
+    <p>It can be defined as a multifaceted style, involving many different artistic fields such as: architecture, applied arts and graphic design, in particular decorative arts. 
+      The style stands out for its vital impetus that may be the cause for the popularity it has had in recent times. Some recurrent motifs are clearly recognisable among all the various expression forms of the art style. Just to point out, as an introduction, the ones that are particularly important for our purpose and that, for instance, represent the fundamental structure of this style; we are going to list them.
+      </p>
+    <ul>
+      <li>Naturalistic themes (flowers and animal related inspiration)
+      </li>
+      <li>Use of iconic, stylistic and typological motifs derived from Japanese Art.
+      </li>
+      <li>Linear and chromatic arabesque morphology, rhythms set on the curve and its variants, patterns of spiral and whirls. 
+      </li>
+      <li>Use of cool and transparent colors enriched with gold inserts.
+      </li>
+      <li>Dislike for regular proportions and symmetrical balanced forms.
+      </li>
+      <li>Search for musical rhythms and undulating and sinuous movements.
+      </li>
+      <li>Insistent use of the line, intended as dynamic energy and ornamental value. 
+      </li>
+    </ul>
+    <p>The choice was driven from the highly decorative potential of the style, seen as a breaking point for the entire graphic design panorama of XIX century, and for the impact it had in the French Art movement of XX century which led to the transition from Art Nouveau to Art Decò. 
+      The starting point in the development of the style as an inspiration was the poster for Gismonda (1894) (Fig.1) realized by the painter Alfons Mucha, depicting the Parisian actress Sarah Bernhardt.</p>
+    <p>In particular the painting was taken into consideration in the version accompanied by the decorative leaf motif (Fig. 2). We tried to replicate the vertical movement of the poster. 
+        For this reason we decided to apply the leaf-decorative motif taken from the picture as a lateral background. As for the ultimate realization we have taken inspiration also from other sources. 
+    </p>
+    <figure>
+    <img src="1890/images/WhatsApp Image 2021-01-30 at 21.25.36.jpeg" alt="picture">
+    <figcaption>Fig 1</figcaption>
+    </figure>
+    <figure>
+    <img src="1890/images/WhatsApp Image 2021-01-30 at 21.25.50.jpeg" alt="picture">
+    <figcaption>Fig 2</figcaption>
+    </figure>
+    <h3>Background</h3>
+    <p> For the background of the entire page we took a different source of inspiration able to conciliate the Gismonda poster inspiration and the necessity to represent a text. </p> 
+    <figure>
+      <img src="1890/images/WhatsApp Image 2021-01-30 at 21.26.43.jpeg" alt="back">
+      <figcaption>Fig 3</figcaption>
+    </figure>
+    <p>In particular we took as a reference The Art Nouveau publicité galerie Samuel Bing Paris of 1895 (Fig.3) . And decided to combine the background with the leaf-motif taken from Fig. 2
+      As for the realization of the frame for the title we decided to add a golden frame to enrich the ornamental value of the page in accordance with the decorative motif of Art Nouveau style and to conform to the decorative pattern of the Gismonda poster. At the end we extracted from The Art Nouveau publicité galerie Samuel Bing Paris of 1895 two ornamental images reminiscent of ornamental motifs of Japanese Art. In particular Fig. 4 and Fig. 5 </p>
+      <figure>
+        <img src="1890/images/mini-border-left.png" alt="back">
+        <figcaption>Fig 4</figcaption>
+      </figure>
+      <figure>
+        <img src="1890/images/mini-border-right.png" alt="back">
+        <figcaption>Fig 5</figcaption>
+      </figure>
+      <p>We added them at the four corners of the frame to obtain the effect of the decoration surrounding the text. For the last background decorative motif we used once again a nature-related theme:
+      </p>
+      <figure>
+        <img src="1890/images/footer-left.png" alt="back">
+        <figcaption>Fig 6</figcaption>
+      </figure>
+      <figure>
+        <img src="1890/images/footer-right.png" alt="back">
+        <figcaption>Fig 7</figcaption>
+      </figure>
+      <p>We used two images which are visibly different from each other, even if on the same style to satisfy the style desire for non symmetrical form. The resulting effect is conform with ornamental borders and title pages which were based on the style of medieval manuscripts (from: <a href="http://guity-novin.blogspot.com/2010/05/history-of-graphic-design-birth-of-art.html">Link</a>)</p>
+      <h3>Colors:</h3> 
+      <img id="palettecolor" src="https://www.colorhexa.com/b6470d.png" alt="color">
+      <img id="palettecolor" src="https://www.colorhexa.com/979494.png" alt="color2">
+      <img id="palettecolor" src="https://www.colorhexa.com/83aa6b.png" alt="color3">
+      <h3>Fonts and Layout</h3>
+      <p>For the title we decided to use “Edda” a serif typeface, inspired by Art Nouveau style; while for the body we decided to use “Berolina” an Art Nouveau typeface, originally created by Wilhelm Gronau type foundry.
+        The principle we have followed for the choice of the fonts and the general display is in compliance with Art Nouveau principles regarding readability citing Morris: “should be easy to read and should not dazzle the eye...I found I had to consider chiefly the following things: the paper, the form of the type, the relative spacing of the letters, the words, and the lines; and lastly the position of the printed matter on the page”.
+        All the choices we made regarding fonts and display properties followed this basic principle.
+        In conclusion, the choice for two columns  was made in order to maintain the compactness and vertical display of the Gismonda poster. 
+        </p>
+      <h3>References</h3>
+      <ul>
+        <li><a href="https://www.britannica.com/art/Art-Nouveau">Art Nouveau</a></li>
+        <li><a href="http://guity-novin.blogspot.com/2010/02/history-of-graphic-design.html">History of graphic design</a></li>
+        <li><a href="https://mymodernmet.com/eugene-grasset-art-nouveau-flowers/">Art Nouveau Flowers</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Art_Nouveau">Art Nouveau, wikipedia</a></li>
+      </ul>
+  </div>
+  <!--GOSPEL STYLE-->
+  <div id="Style2025">
+    <h2>Minimalistic 2020's - 2020</h2>
+    <h3>Choice</h3>    
+      <p>Minimalism is one of the top trends that are going to be relevant in the next five years. The tendencies are towards a basic style, ideally projected into an extreme form of essentiality.  The idea behind is to obtain an elegant graphic design by getting all nonessentials off the page. 
+        Removing all the elements that represent a distraction for the eye of the user is the first step, in order to focus the attention on the content. 
+        The purity of the graphic form restores the immediacy of the concept conveyed through the use of neat lines.        
+      </p>
+      <p>The choice was driven from the possibility to explore and imagine a foreseeable future in the light of a retro fashion, modernized by the attention towards the readability of the text.
+        The only real decoration is represented by the use of a sinuous and expressive font. It is a future that recalls a black and white esthetic but it is able to provide new elements as innovations. We decided to combine different inspirations together in order to achieve a consistent design. We are going to list the main ideas we considered for the realization of the design:
+      </p>
+      <ul>
+        <li>Minimalist design
+        </li>
+        <li>Colorless design
+        </li>
+        <li>Combination of different fonts
+        </li>
+        <li>Oversized title
+        </li>
+      </ul>
+      <img src="https://i.pinimg.com/564x/3e/a1/e3/3ea1e395046c3878d36a5afa93c6fea4.jpg" alt="vogue arabia">
+      <p>The first inspiration was taken from a page of the Journal Vogue Arabia, that we took as a reference for the oversize style of the title. We decided not to maintain the display look in two columns, in order to be consistent with the decision of an essential design.  
+      </p>
+      <h3>Background</h3>
+      <p>The background color with code:#f7f7f7 was used in order to create contrast with the colour of the text #333333.
+      </p>
+      <img id="palettecolor" src="https://www.colorhexa.com/f7f7f7.png" alt="whitegray">
+      <img id="palettecolor"src="https://www.colorhexa.com/333333.png" alt="black">
+      <p>The only other element we decided to add is represented by a simple line; inserted as a linear gradient following the color palette: #EEEEEE , #DDDDDD, #CCCCCC, #BBBBBB, #333333
+      </p>
+      <img id="palettecolor" src="https://www.colorhexa.com/eeeeee.png" alt="">
+      <img id="palettecolor" src="https://www.colorhexa.com/dddddd.png" alt="">
+      <img id="palettecolor" src="https://www.colorhexa.com/cccccc.png" alt="">
+      <img id="palettecolor" src="https://www.colorhexa.com/cccccc.png" alt="">
+      <img id="palettecolor" src="https://www.colorhexa.com/333333.png" alt="">
+      <h3>Fonts and Layouts</h3>
+      <p>The fonts reflect the contrast between the extremes (black and white) mediated by lines (figuratively, scales of gray). The font used for the h1 titles is a serif, oversized Ranking Caps, black bold, while the subtitles, h2 and everything else apart from the h1 is in the direct opposite, a small, light cursive-handwritten font called North Avellion. They come together representing a perfect pair of serif and script. 
+        For the body we decided to use Fiorina, a modern Didone-style serif type-face.
+        In order to achieve a full colorless look we decided to apply a grayscale filter over the images and we added as border of the images a linear gradient based on the style of the former: #EEEEEE  #DDDDDD , #CCCCCC , #BBBBBB , #333333
+        </p>
+      <h3>References</h3>
+      <ul>
+        <li>
+          <a href="https://www.pinterest.it/pin/57209857754834227/">Graphic Trends</a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.it/pin/525865693996485913/">Vogue</a>
+        </li>
+        <li>
+          <a href="https://speckyboy.com/over-sized-titles-web-design/">Oversized title</a>
+        </li>
+      </ul> 
+  </div>
+  <!--stili arianna-->
+  <h1>Arianna</h1>
+  <div id="Teletext">
+    <h2>Teletext Style - 1980</h2>
+    <h3>Inspiration</h3>    
+      <p>Inspiration: Golden years of teletext services, in particular BCC’s Ceefax, which was made available to the public in 1973, as the first teletext service all over the world. During the following decade, similar services were developed in many European countries, and 1980’s became the coming-of-age era of teletext and its characteristic aesthetics. </p>
+    <h3>Choice</h3>
+    <p>We primarily chose Teletext as the second half of the 20th century style because of the unmistakable distinctive traits, that makes it immediately recognisable to the most.  In addition, we found interesting the possibility to explore a non-paper-born typographic style, though with digital means that allow to overcome almost all the original settings and technical limitations that determined the characteristic teletext style. </p>
+    <h3>Background</h3>
+    <p>As we wanted to reproduce the main teletext chromatic effect, the body was given the property background-color: #000000; and then all the other colourful elements were customised on it, in order to render the eye-catching colour combinations generally used in teletext services. </p>
+    <h3>Fonts</h3>
+    <p>Fonts and text-styling: In this case, instead of using online OCR tools for font identification and trying to use a font-family as visually close as possible to the 1980s originally adopted ones, we preferred sticking to the BBC adopted a ModeSeven-derived font, based on bitmap fonts of Teletext televisions, 1980s-vintage Videotext terminals and the BBC Micro computer. The character definitions were worked out in 1998 by Andrew Bulhak from a bitmap version of the Teletext font created by James Fidell. ModeSeven is normally displayed at 20 pixels and is characterised by high display quality and light storage trace.</p>  
+    <p>The exact version of the font used in this project is MODE7GX3 (by Galax 2014), and it was selected because the aspect ratio is close to 4:3, and also to Teletext display of a standard vintage TV. The characters are 6 by 10 logical blocks, and the screen is 25 rows of 40 chars. (40*6*1.3)/(25*10)=1.248. So, the aspect ratio of pixels is 30% wider than the height. https://www.fontspace.com/modeseven-font-f2369, https://galax.xyz/TELETEXT/</p>
+    <p><strong>DOUBLE HEIGHT EFFECT:</strong> The typical teletex double height effect is rendered with (-webkit/-moz)-transform: scaleY(2); Used to highlight h2, h3 elements and .subtitle class (even when it is assigned to a p element)</p>
+    <h3>Illustrations, visual effects and motives:</h3>
+    <p><strong>Cover:</strong> header element is inspired by Ceefax homepage. The .subtitle class and h2 element are given a double-height effect, while the title is given an uppercased different font. The colour pattern is the typical eye-catching yellow-on-blue, which was originally proposed by Ceefax and then widely used by other teletext services. When hovering on </p>
+    <p><strong>.byline class:</strong> the colour effect and matching are a tribute to 1987 RAI TELEVIDEO homepage. The rendering of the vertically split colouration was realised with  background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 50%,#00ff00 50%,#00ff00 100%);  -webkit-background-clip: text;  -webkit-text-fill-color: transparent; </p>
+    <p><strong>.label class: .label-classed</strong> elements are given the property text-transform: uppercase and an highlighting text colour, so to reproduce the effect of RAI-TELETEXT 1980s news page.</p>
+    <p><strong>hover effects:</strong>  h1, header and sections, when hovered, display a visual retro TV noise effect either on background or on border(s), so to exploit the technical tools provided by css in order to enhance interactivity of the reading experience. The noise effect is thus provided by setting a noise-effect gif as background image which substitutes the 10px blue border when the section, the h1 or the header are hovered. For the same purpose, a 10px solid red border is added as paragraph frame, so to reproduce the effect of the remote telecommand selection implemented in teletext original pages. https://cleanfeed.thetvroom.com/3552/features/the-history-of-pages-from-ceefax/ </p>
+    <p><strong>Span elements for person, place and entity</strong> are given a specific colour each, so to reproduce the semantic highlighting effect implemented in Ceefax pages. However, the colour is activated only on hover for readability reason, because of the high number of spans element contained in some of the articles of our issues.</p>
+    <p><strong>Separators:</strong> the marked effect of visually well-separated sections is reproduced through bottom-border styling. In particular, the 10 px solid blue bottom-border is used to highlight the separation between sections, while the dashed cyan border visually separates a paragraph from the following one. The reference for the sections pseudo-separator is a screenshot of Electra Teletext, WKRC-TV, Cincinnati, Ohio (1985-01-03). https://it.qaz.wiki/wiki/Teletext </p>
+    <p><strong>Flashing effect:</strong> The teletext flashing effect is realised with animation: flashing 1.3s steps(5, start) infinite; -webkit-animation: flashing 1.3s steps(5, start) infinite;  color: #ffff00; and @keyframes flashing { to { visibility: hidden; } } @-webkit-keyframes flashing { to { visibility: hidden; } }.  (http://www.riscos.com/support/developers/bbcbasic/part2/teletext.html). This effect animates the counter clock imported with js at the top-right corner of the page and the header subtitle.</p>
+    <p><strong>Cursor:</strong> inspired by alien invaders, reproduced with https://www.pixilart.com/draw. It is the only element which is given a colour not included in the original teletext palette, so that it stay visible also when hovering colourful elements (image reproduced via https://www.pixilart.com/draw, resized with  https://www.photoenlarger.com/ and then saved in .cur format). </p>
+    <p><strong>Text body:</strong> The original standard provides a mono spaced 40×24 character grid. https://en.wikipedia.org/wiki/Teletext</p>
+    <p><strong>Images:</strong> For images we adopted a compromise solution. First of all, it was not possible to handle the articles images in the same way we treated the website images for the style switch, both because of storage overload and because of the low resolution of some of the images contained in the articles we chose. At the same time, giving an effective pixelated effect was almost impossible without the usage of complex solutions such as canvas. So, we decided to maintain the alternated displaying positions of the images proposed in the horoscope Rai teletext page (https://www.youtube.com/watch?v=EBItf3UxXWA ) , adding an hyper-saturated filter with 105% brightness level and a 236 degree hue rotation (filter: brightness(105%) hue-rotate(236deg) saturate(1000%); ), in order to realise a mixed effect, summing up the exasperated brightness of first 1980’s music videos and the extreme colour tones of Teletext classic 8-colours palette (filter generated with: https://cssgenerator.org/filter-css-generator.html ).  Moreover, we set the image-rendering to pixelated value, so that -when scaled up- the rendering maintains an effect which reminds to the teletex pixel aesthetics. In conclusion, we added an animated gif as border image, in order to reproduce the vintage television noise effect. </p>
+    <img src="1980/images/doc3.PNG" alt="documentation">
+    <p><a href="https://www.youtube.com/watch?v=Iwuy4hHO3YQ">Video</a></p>
+    <p><a href="https://www.jonicaradio.it/the-buggles-video-killed-the-radio-star-1980/">Video killed the radio star</a></p>
+    <p><a href="https://www.jbhifi.com.au/products/vinyl-reed-lou-blue-mask-the-180gm-vinyl-reissue-lp">Lou Reed</a></p>
+    <h3>Measures:</h3> 
+      <p><strong>Colour Palette:</strong> the whole style was implemented using only the 8-colours teletext classic palette (    000000 0 black,    ff0000 1 red, 00ff00 2 green, ffff00 3 yellow, 0000ff 4 blue, ff00ff 5 magenta, 00ffff 6 cyan, ffffff 7 white). The colour patterns and associations were mainly inspired by the Teletexto TVE (Programaciòn atresmedia page), which provides seven highly-readable bi-colours associations. (https://www.antena3.com/teletexto/home.htm?pag=800 )
+      </p>
+      <p><strong>Tables:</strong> tables style was inspired by the football results tables, where rows colours generally alternate. </p>
+      <p><strong>Lists:</strong> li elements are yellow-coloured, so to emulate the outlook of the directory of teletext selectable pages in 1980s Ceefax layout. </p>
+      <p><strong>Blockquotes, Figcaptions and Captions:</strong>Captions and Blockquotes are highlighted and at the same time separated from the rest of the displayed text with a specific styling associating a background and a text colour which enhance one another. In particular, the visual reference is provided by the Spanish  Teletexto TVE Programaciòn Atresmedia page. In order to provide variation, the figcaptions are styled differently depending on the odd or even number of the associated figures.</p>
+    </div>
 </div>
-</div>
+
+
+
 
 <footer class="row text-center">
     <div class="container-fluid row" id="footerdiv">
