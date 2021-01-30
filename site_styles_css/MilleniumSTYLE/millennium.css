@@ -77,7 +77,7 @@ h1, h2, h3 {
       rgba(0, 0, 0, 0.2)
     ),
     /* bottom, image */
-    url(bug.gif);
+    url(../../images/background_homepage/bug.gif);
     background-repeat: no-repeat;
     background-size:cover;
 }

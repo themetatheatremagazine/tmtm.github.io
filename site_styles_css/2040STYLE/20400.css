@@ -156,7 +156,7 @@ body{
     }
 
 .extracontainer{
-        background-image: url(vwawe.png);
+        background-image: url(../../images/background_homepage/vwawe.png);
         min-height: 450px;
         background-size: cover;
 
