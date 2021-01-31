@@ -254,13 +254,13 @@ text-shadow:
 }
 @media (max-width: 800px) {
     .articlestyle figure img {
-    width: 70vh;
+    width: 30vh;
     }
 }
 
 @media (max-width: 480px) {
     .articlestyle figure img {
-    width: 50vh;
+    width: 25vh;
     }
 }
 
