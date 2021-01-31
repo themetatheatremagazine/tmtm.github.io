@@ -36,22 +36,54 @@
   background-size: 10%, 10%;
 }
 
-.articlestyle h3, .articlestyle h4, .articlestyle h2, .articlestyle header > .byline, .articlestyle header > .subtitle{
-  margin-top: 2%;
+.articlestyle h3, .articlestyle h4, .articlestyle h2, .articlestyle header > .subtitle{
   margin-left: 5%;
   margin-right: 5%;
   color: #b6470d;
   font-family: 'berol';
-  font-size: 200%;
-  text-align: center;
+  font-size: 4vh;
 }
 
 .articlestyle h2 {
   color: #b6470d;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3vh;
 }
-.articlestyle h1 {
+
+@media (max-width: 800px) {
+  .articlestyle h2 {
+font-size: 2vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .articlestyle h2 {
+font-size: 2vh;
+  }
+}
+
+.articlestyle .byline {
+text-align: center!important;
+margin-left: 5%;
+margin-right: 5%;
+color: #b6470d;
+font-family: 'berol';
+font-size: 200%;
+}
+
+@media (max-width: 800px) {
+.articlestyle h2 {
+font-size: 3vh;
+}
+}
+
+@media (max-width: 480px) {
+.articlestyle h2 {
+font-size: 2vh;
+}
+}
+
+.articlestyle header h1 {
 text-align: center;
 color: #83aa6b;
 text-shadow: 3px 3px 3px #808080;
@@ -60,6 +92,18 @@ font-size: 7vh;
 font-weight: bold;
 margin-left: 5%;
 margin-right: 5%;
+}
+
+@media (max-width: 800px) {
+  .articlestyle h1 {
+  font-size: 5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .articlestyle h1 {
+  font-size: 4vh;
+  }
 }
 
 .articlestyle  blockquote {
@@ -82,6 +126,7 @@ border-spacing: 20px;
 margin-left: 10%;
 margin-right: 10%;
 margin-bottom: 5%;
+text-align: center;
 }
 
 .articlestyle  article {
