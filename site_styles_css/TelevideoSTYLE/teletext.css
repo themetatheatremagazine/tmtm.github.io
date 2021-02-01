@@ -13,12 +13,12 @@
 
 @font-face {
     font-family: 'ModeSeven';
-    src: url('fonts_Televideo/font_mode/ModeSeven.eot');
-    src: url('fonts_Televideo/font_mode/ModeSeven.eot?#iefix') format('embedded-opentype'),
-        url('fonts_Televideo/font_mode/ModeSeven.woff2') format('woff2'),
-        url('fonts_Televideo/font_mode/ModeSeven.woff') format('woff'),
-        url('fonts_Televideo/font_mode/ModeSeven.ttf') format('truetype'),
-        url('fonts_Televideo/font_mode/ModeSeven.svg#ModeSeven') format('svg');
+    src: url('fonts_Televideo/font_ModeSeven/ModeSeven.eot');
+    src: url('fonts_Televideo/font_ModeSeven/ModeSeven.eot?#iefix') format('embedded-opentype'),
+        url('fonts_Televideo/font_ModeSeven/ModeSeven.woff2') format('woff2'),
+        url('fonts_Televideo/font_ModeSeven/ModeSeven.woff') format('woff'),
+        url('fonts_Televideo/font_ModeSeven/ModeSeven.ttf') format('truetype'),
+        url('fonts_Televideo/font_ModeSeven/ModeSeven.svg#ModeSeven') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -26,15 +26,15 @@
 
 
 *{
-    font-family: 'Press Start 2P';
-    font-size: 9px;
+    font-family: 'ModeSeven';
+    font-size: 14px;
         
 }
 
 body{
     color: white !important;
     background-color: black !important;
-    font-family: 'Press Start 2P';
+    font-family: 'ModeSeven';
     line-height: 150%;
     padding-top: 20px; 
     overflow-x: hidden;
@@ -55,7 +55,6 @@ body{
     padding-right:5vw;
 }
 
-
 #item{
     min-height:450px;  
     background-size:cover;
@@ -72,9 +71,6 @@ body{
 }
 
 
-
-
-
 .homepage{
     margin: auto;
     column-fill: auto;
@@ -83,17 +79,28 @@ body{
     overflow-x: hidden;
 }
 
+.homepage h2{
+    font-size:20px;
+    background-color: yellow;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.homepage h3{
+    font-size:20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 .homepage p{
-    margin: 25px;
     padding: 10px;
     text-align:justify;
     white-space: normal;
-    line-height:2,5;
-    font-size: 11px;
     border-bottom-width: thick;
     border: 10px solid blue;
     border-top: hidden;
-    
 }
 
 .homepage p:hover{
@@ -103,7 +110,7 @@ body{
 }
 
 /* Tablet in modalità orizzontale */
-@media screen and (min-width: 851px) and (max-width: 1279px) {
+@media screen and (min-width: 851px){
 .homepage {
     column-count: 2;
     font-size: 18px;
@@ -248,29 +255,6 @@ body{
     font-size: 8vw;
 }
 
-.pagetitle{
-    text-align:center;
-    font-family: "Televideo";
-    font-size: 4vw;
-    letter-spacing: .3em;
-    overflow: hidden;
-    border-right: 1em solid #fafafa;
-    white-space: nowrap;
-    margin: auto;
-    animation: 
-        typing 3.5s steps(25, end),
-        blink-caret .5s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #FAFAFA }
-}
 .pagetitlecontainer{
     margin-top: 3em;
     padding-top: 1em;
@@ -283,7 +267,7 @@ body{
     font-size: 30px;
 }
 
-.pagesubtitle{
+.pagetitle{
     text-align:center;
     font-family: "Televideo";
     font-size: 4vw;
@@ -307,10 +291,25 @@ body{
     50% { border-color: #FAFAFA }
 }
 
+@media all and (max-width: 480px) { 
+    .pagetitle {
+    font-size: 24px;
+  } } 
+
 #coversubtitle{
     text-align: center;
     font-size: 4vw;
     align-content: flex-end;
+    animation: flashing 1.3s steps(5, start) infinite;
+    -webkit-animation: flashing .8s steps(5, start) infinite;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+
+
+@keyframes flashing { to { visibility: hidden; } }
+@-webkit-keyframes flashing { to { visibility: hidden; } }
 }
 
 /*non riesco a cambiare il clore del testo nella navbar*/
@@ -360,7 +359,7 @@ p{
 
 .card-title a{
     font-family: "Televideo";
-    color:#DFEE14;
+    color: black;
     display: inline-block;
     margin: auto;
     display: flex; 
@@ -371,59 +370,19 @@ p{
 }
 
 a {
-    color: honeydew;
+    color: #ffffff;
     white-space: normal !important;
 }
 a:hover{
-    color: #7f3434;
-}
-
-#cardUT{
-    padding: 1em;
-    margin: 1em;
-    color: black;
-    background-color: #00ffff;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-    
-}
-
-#cardLTS{
-    padding: 1em;
-    margin: 1em;
-    color: #D8CAC2;
-    background-color: #0000ff;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardAS{
-    padding: 1em;
-    margin: 1em;
-    color: black;
-    background-color: #00ff00;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardCT{
-    padding: 1em;
-    margin: 1em;
-    color: #CBD4DA;
-    background-color: #FF00FF;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
+    color: yellow;
 }
 
 #cardAndrea{
     padding: 1em;
     margin: 1em;
     color: black;
-    background-color: #00FFFF;
+    color: #ffffff;
+    background-color: #FF00FF;
     border-radius: 0px;
     
 }
@@ -431,7 +390,7 @@ a:hover{
 #cardArianna{
     padding: 1em;
     margin: 1em;
-    color: #D8CAC2;
+    color: #ffffff;
     background-color: #0000ff;
     border-radius: 0px;
     
@@ -450,8 +409,8 @@ a:hover{
 #cardAmanda{
     padding: 1em;
     margin: 1em;
-    color: #CBD4DA;
-    background-color: #FF00FF;
+    color: #000000;
+    background-color: #00FFFF;
     border-radius: 0px;
     
 }
@@ -485,7 +444,9 @@ footer a{
 }
 
 .footercoltext{
-    font-size: 85%
+    font-size: 85%;
+    white-space: normal;
+    word-break: break-all;
 }
 
 
@@ -523,35 +484,7 @@ footer{
     padding-top:20px;    
 }
 
-.pagination {
-    display: inline-block;
-    margin: auto;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-}
 
-.pagination a {
-  color: black;
-  float:left;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.pagination a.active {
-  background-color: #0000ff;
-  color: white;
-}
-
-.pagination a:hover:not(.active) {background-color: #EDCABD;}
-
-.pagination a {
-  border-radius: 0px;
-}
-
-.pagination a.active {
-  border-radius: 0px;
-}
 
 .card-body{
     padding:0.25rem;
