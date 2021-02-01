@@ -1,9 +1,4 @@
 
-body{
-    padding-top: 20px;
-    overflow-x: hidden;
-}
-
 
 #item{
     min-height:450px; 
@@ -130,7 +125,8 @@ body{
     font-size: 6vw;
 }
 
-.pagetitle{
+
+.pagetitle {
     text-align:center;
     font-family: 'Satisfy', cursive;
     font-size: 150%;
@@ -140,6 +136,7 @@ body{
     margin-top: 3em;
     padding-top: 1em;
     font-size: 2em;
+    text-align: center;
 }
 
 .pagesubtitlecontainer{
@@ -483,57 +480,264 @@ a[data-toggle="collapse"] {
 }
 
 #Documentation {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: auto;
     font-size: 1rem; 
 }
 
-#Documentation #palettecolor {
-    width: 10%;
-    margin: 4%;
+#Documentation .palettecolor {
+    max-width: 5%;
+    margin: 2%;
 }
 #Documentation img {
-    margin: 4%;
-    text-align: center;
-    width: 30%;
+    width:100%;
+    height:100%;
+    max-width: 300px; 
+    max-height: auto;
 }
 
 #Documentation figure {
-    margin: 4%;
+    margin: 2%;
     text-align: center;
-    width: 40%;
+    max-width: 30%;
+}
+#Documentation figure figcaption {
+    display: block;
 }
 #Documentation h1, #Documentation h3 {
     text-align: left; 
     color: #CF6F4C;
 }
 
-#GospelStyle h2 {
+.button-displayer {
+    text-align: center;
+    background-color: #CF6F4C;
+    border-radius: 50px;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid black;
+    box-shadow: 5px 5px #B6433E;
+}
+.anchorButton {
+    margin: auto;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    width: 20%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    box-shadow: 5px 4px #B6433E;
+  }
+@media (max-width: 500px) {
+    .anchorButton {
+        width: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+.ButtonGospel {
+    background-color: #e0d1b6;
+    color: #5c2507;
+    transform: translateY(4px);
+}
+.ButtonGospel:hover {
+    background-color: #5c2507 ;
     color: gold;
-    text-shadow: 1px 1px black; 
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
 }
 
-#Style2040 h2 {
-    color: white; 
-    text-shadow: 3px 3px 1px #E485F8;
+/**/
+.Button2040 {
+    background-color: #E485F8;
+    color: white;
+    transform: translateY(4px);
 }
 
-#Style2025 h2 {
+.Button2040:hover {
+    background-color: white ;
+    color: #E485F8;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+/**/
+.ButtonArt {
+    background-color: #83aa6b;
+    color: #b6470d;
+    transform: translateY(4px);
+}
+.ButtonArt:hover {
+    background-color: #b6470d ;
+    color: #83aa6b;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+/**/
+
+.Button2025{
+    background-color: #f7f7f7 ;
+    color: #333333;
+    transform: translateY(4px);
+}
+.Button2025:hover {
+    background-color: #333333 ;
+    color: #f7f7f7;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+.ButtonTele{
+    background-color: blue ;
+    color: black;
+    transform: translateY(4px);
+}
+.ButtonTele:hover {
+    background-color: yellow ;
+    color: red;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+.ButtonGalilei{
+    background-color: #FBF9C9 ;
+    color: #333333;
+    transform: translateY(4px);
+}
+.ButtonGalilei:hover {
+    background-color: #333333 ;
+    color: #FBF9C9;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+.Button1999{
+    background-color: yellow ;
+    color: black;
+    transform: translateY(4px);
+}
+.Button1999:hover {
+    background-color: black ;
+    color: white;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+.ButtonBau{
+    background-color: #006699 ;
+    color: #ffcc00;
+    transform: translateY(4px);
+}
+.ButtonBau:hover {
+    background-color: #ff3333 ;
+    color: #f7f7f7;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+/*DOCUMENTATION BUTTONS*/
+
+
+
+
+#GospelStyle + div h2, #GospelStyle + div h3 {
+    color: gold;
+    font-family: serif;
+}
+
+#Style2040 + div h2, #Style2040 + div h3 {
+    color: #f7f7f7; 
+    text-shadow: 2px 2px 5px #E485F8;
+}
+
+#ArtNouveauStyle + div h2, #ArtNouveauStyle + div h3{
+    font-family: serif;
+    color: #83aa6b;
+    text-shadow: 1px 1px #b6470d;
+}
+#Style2025 + div h2, #Style2025 + div h3{
     color: gray; 
     text-shadow: 1px 1px black;
 }
-
-#ArtNouveauStyle h2 {
-color: #83aa6b;
-text-shadow: 1px 1px 1px #b6470d;
-}
-
-#Teletext h2 {
+#Teletext + div h2, #Teletext + div h3{
     color: black; 
     text-shadow: 1px 1px 1px blue;
 }
-
-#Millennium h2 {
+#Galilei + div h2, #Galilei + div h3{
+    font-family: serif;
+    text-shadow: 1px 1px #333333 ;
+    color: #FBF9C9;
+}
+#Millennium + div h2, #Millennium + div h3{
     color: yellow;
     text-shadow: 1px 1px 1px black;
 }
+#Bauhaus + div h2, #Bauhaus + div h3 {
+    text-shadow: 2px 2px #006699 ;
+    color: #ffcc00;
+}
+
+
+.anchor{
+    display: block;
+    height: 115px; /*same height as header*/
+    margin-top: -115px; /*same height as header*/
+    visibility: hidden;
+  }
+/*BOTTONI PER SALIRE IN CIMA*/
+#button_scroll {
+    display: inline-block;
+    background-image: url(Issue_Styles_JS/button_up.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid gold; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    overflow: visible;
+
+  }
+  #button_scroll::after {
+    font-size: 3em;
+    color: #fff;
+  }
+  #button_scroll:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button_scroll:active {
+    background-color: #555;
+  }
+  #button_scroll.show {
+    opacity: 1;
+    visibility: visible;
+  }
+@media (min-width: 500px) {
+    #button_scroll {
+      margin: 30px;
+      overflow: visible;
+    }
+  }
+
