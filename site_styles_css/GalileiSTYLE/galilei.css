@@ -64,16 +64,21 @@
     font-display: swap;
 }
 
-.home{
-    font-family: JMH Legajo;
-    background-image: url(images/paginavuotasncancellata.jpg); 
-	background-repeat: repeat;
-	background-size: 100%;
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
 }
+
 
 
 *{
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" style="font-size: 20px;"><text y="15">✵</text></svg>'), auto; !important
+}
+
+.home{
+    color:#666154;
+    
 }
 
 a:hover, button a:hover, .card a:hover{
@@ -84,7 +89,9 @@ a:hover, button a:hover, .card a:hover{
     background-image: url(images/paginavuotasncancellata.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     font-size: 20px;
+    font-family: JMH Legajo;
 }
 
 @media (max-width: 480px) {
@@ -95,10 +102,12 @@ a:hover, button a:hover, .card a:hover{
 }
 
 
-
+.homepage{
+   max-width: 65%;
+}
 
 .homepage p:first-of-type:first-letter{
-    font-size: 19vw; /*deve occupare un terzo della colonna di testo, quindi un terzo di 64, ovvero un valore compreso tra 21 e 22vw*/
+    font-size: 100px; /*deve occupare un terzo della colonna di testo, quindi un terzo di 64, ovvero un valore compreso tra 21 e 22vw*/
     float: left;
     font-family: 'Monog';
     font-weight: normal;
@@ -154,6 +163,13 @@ body{
 
 }
 
+.homepage figure,.homepage img{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+}
+
+
 .btn-secondary{
     background-color: #420001 !important;
     border-color: #961D07 !important;
@@ -166,6 +182,51 @@ body{
     margin-right: auto;
     padding-left: 5vw;
     padding-right:5vw;
+}
+
+
+div .dropdown-menu{
+    color: #C2BE9C !important;
+    background-color: #AF200E;}
+
+div .dropdown-menu a{
+    color: #C2BE9C !important;
+}
+
+.menubtn{
+    background-color: #420001;
+    color:#FBF9C8;
+}
+
+
+#item6 div{
+    margin-top: 3em;
+    margin-bottom: 3em;  
+}
+
+#item6 div a{
+    color: #940F04;
+}
+
+#item6 div img{
+    margin-top:1em;
+    margin-bottom: 1em;
+}
+
+#item6 div h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #940F04;
+}
+
+#item6 div h2{
+    text-align: center;
+    color: #524D42;
+}
+
+#item6 div h3{
+    text-align: center;
+    color: #524D42;
 }
 
 
@@ -347,10 +408,6 @@ body{
 }
 .navbar-light{
     color: aliceblue;
-}
-
-.dropdown-menu{
-    color: black;
 }
 
 .nav.navbar-nav li a{

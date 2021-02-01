@@ -46,6 +46,13 @@
     font-style: "Berolina";
 }
 
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+
 .homepage{
     column-count: 2;
 }
@@ -410,6 +417,13 @@ div img {
     height: 100%;
     width: 100%;
 }
+
+.homepage figure,.homepage img{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+}
+
 
 #logo{
     max-height:100px;

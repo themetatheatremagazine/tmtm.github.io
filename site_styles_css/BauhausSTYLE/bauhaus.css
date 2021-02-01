@@ -51,6 +51,20 @@ body{
 
 }
 
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+
+.homepage figure,.homepage img{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+}
+
+
 #item{
     min-height:450px;
     background:
@@ -439,3 +453,4 @@ footer{
 .card-body{
     padding:0.25rem;
 }
+

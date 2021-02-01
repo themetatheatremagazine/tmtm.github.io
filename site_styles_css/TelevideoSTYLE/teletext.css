@@ -31,6 +31,13 @@
         
 }
 
+.homepage figure,.homepage img{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+}
+
+
 body{
     color: white !important;
     background-color: black !important;
@@ -39,6 +46,12 @@ body{
     padding-top: 20px; 
     overflow-x: hidden;
  
+}
+
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
 }
 
 .btn-secondary{

@@ -46,11 +46,20 @@
     font-family: '.';
 }
 
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+
 body{
     padding-top: 20px;
     overflow-x: hidden;
 
 }
+
+
 
 .home h1{
     font-family: "Rankings Caps";
@@ -146,12 +155,15 @@ body{
     font-family: "North Avellion";
     font-weight: bolder;
     text-align: center;
+    font-size: 50px;
 }
 
 .home h3{
     font-family: "North Avellion";
     text-align: center;
     font-weight: bolder;
+    font-size: 40px;
+    
 }
 
 .pagesubtitlecontainer{
@@ -433,6 +445,12 @@ a:hover{
 div img {
     height: 100%;
     width: 100%;
+}
+
+.homepage figure,.homepage img{
+    max-width: 200px;
+    margin: auto;
+    display: block;
 }
 
 #logo{

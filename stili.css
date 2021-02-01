@@ -1,4 +1,9 @@
 
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
 
 #item{
     min-height:450px; 
@@ -462,13 +467,14 @@ a[data-toggle="collapse"] {
     position: relative;
 }
 
-.dropdown-toggle::after {
+/*.dropdown-toggle::after {
     display: block;
     position: absolute;
     top: 50%;
     right: 20px;
-    transform: translateY(-50%);
 }
+*/
+
 
 @media (max-width: 768px) {
     #sidebar {
@@ -741,3 +747,8 @@ a[data-toggle="collapse"] {
     }
   }
 
+.homepage figure,.homepage img{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+}

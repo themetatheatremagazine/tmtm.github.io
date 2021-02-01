@@ -72,6 +72,13 @@ body{
     overflow: visible;
 }
 
+.homepage figure,.homepage img{
+    max-width: 200px;
+    margin: auto;
+    display: block;
+}
+
+
 @media (max-width: 700px) {
     .homepage{
     column-count: 1;
@@ -195,6 +202,13 @@ body{
         min-height: 500px;
     }
 }
+
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
 .home{
     background: linear-gradient(-45deg, #711C91, #EA01D9, #123E7B, #091933);
     background-size: 400% 400%;
