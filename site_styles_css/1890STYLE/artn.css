@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Berolina';
-    src: url('font_1890/fontBerolina/Berolina.eot');
-    src: url('font_1890/fontBerolina/Berolina.eot?#iefix') format('embedded-opentype'),
-        url('font_1890/fontBerolina/Berolina.woff2') format('woff2'),
-        url('font_1890/fontBerolina/Berolina.woff') format('woff'),
-        url('font_1890/fontBerolina/Berolina.ttf') format('truetype'),
-        url('font_1890/fontBerolina/Berolina.svg#Berolina') format('svg');
+    src: url('fonts_1890/fontBerolina/Berolina.eot');
+    src: url('fonts_1890/fontBerolina/Berolina.eot?#iefix') format('embedded-opentype'),
+        url('fonts_1890/fontBerolina/Berolina.woff2') format('woff2'),
+        url('fonts_1890/fontBerolina/Berolina.woff') format('woff'),
+        url('fonts_1890/fontBerolina/Berolina.ttf') format('truetype'),
+        url('fonts_1890/fontBerolina/Berolina.svg#Berolina') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -39,7 +39,22 @@
     padding-right:5vw;
 }
 
+.home{
+    background-image: url(images/background.jpg); 
+	background-repeat: repeat;
+	background-size: 100%;
+    font-style: "Berolina";
+}
 
+.homepage{
+    column-count: 2;
+}
+
+@media (max-width: 480px) {
+    .homepage{
+    column-count: 1;
+}
+}
 
 body{
     padding-top: 20px;
@@ -88,7 +103,14 @@ body{
     align-content: flex-start;
 }
 
+#divfacciata p{
+    font-size:20px;
+}
 
+.homepage p{
+    font-size: 20px;
+    
+}
 
 #divfacciata{
     background-color: #BD94B3;
@@ -185,43 +207,63 @@ body{
     text-align:center;
     font-family: "Edda";
     font-size: 7vw;
+    font-weight: bold;
 }
 
 @media (max-width: 480px) {
-    #covertitle { margin-top: 8vw; }
+    #covertitle { 
+        margin-top: 8vw;
+        font-size: 30px;    
+    }
+}
+
+@media (max-width: 480px) {
+    #coversubtitle { 
+        font-size: 20px !important;    
+    }
 }
 
 .pagetitle{
     text-align:center;
     font-family: "Edda";
-    font-size: 150%;
+    margin-top: 1em;
+    text-align:center;
+    font-family: "Edda";
+    font-weight: bolder;
+    font-size: 35px;
+    color: #B6470D;
+}
+
+.home h2{
+    text-align:center;
+    font-family: "Edda";
+    color: #979494;
+    font-weight: bolder;
+}
+
+.home h3{
+    color: #83AA6B;
+    text-align:center;
+    font-family: "Edda";
+    font-weight: bold;
 }
 
 .pagetitlecontainer{
-    margin-top: 2em;
+    margin-top: 1em;
     padding-top: 1em;
     font-size: 2em;
 }
 
 
-.pagesubtitle{
-    text-align:center;
-    padding-top: 1em;
-    font-family: "Edda";
-    font-weight: bolder;
-    font-size: 35px;
-}
-
-
 #coversubtitle{
     text-align: center;
+    font-style: "Berolina";
     font-size: 3vw;
     align-content: flex-end;
     font-weight: bolder;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
-/*non riesco a cambiare il clore del testo nella navbar*/
 
 .navbar-brand{
     object-position: center;
@@ -259,6 +301,7 @@ p{
 
 .card-text{
     padding: 0em;
+    font-size: 20px !important;
     max-height:inherit;
     margin:0em;
     text-align:center;
@@ -270,11 +313,13 @@ p{
     
 }
 
-.card-title a{
+.card-title{
     font-family:"Edda";
-    color: #fff!important;
-    font-size: 80%!important;
+    color: #000000;
+}
 
+.card-title a{
+    color: #000000 !important;
     font-weight: bolder;
     display: inline-block;
     margin: auto;
@@ -291,46 +336,6 @@ a:hover{
     color: #7f3434;
 }
 
-#cardUT{
-    padding: 1em;
-    margin: 1em;
-    color: #E9D4D8;
-    background-color: #BF7F55;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-    
-}
-
-#cardLTS{
-    padding: 1em;
-    margin: 1em;
-    color: #D8CAC2;
-    background-color: #7D5D4E;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardAS{
-    padding: 1em;
-    margin: 1em;
-    color: #E1DED4;
-    background-color: #BD94B3;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardCT{
-    padding: 1em;
-    margin: 1em;
-    color: #CBD4DA;
-    background-color: #72714E;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
 
 #cardAndrea{
     padding: 1em;
@@ -395,7 +400,8 @@ a:hover{
 }
 
 .footercoltext{
-    font-size: 85%
+    font-size: 85%;
+    word-break: break-all;
 }
 
 

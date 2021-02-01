@@ -66,7 +66,12 @@
 
 .home{
     font-family: JMH Legajo;
+    background-image: url(images/paginavuotasncancellata.jpg); 
+	background-repeat: repeat;
+	background-size: 100%;
 }
+
+
 *{
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" style="font-size: 20px;"><text y="15">✵</text></svg>'), auto; !important
 }
@@ -79,17 +84,27 @@ a:hover, button a:hover, .card a:hover{
     background-image: url(images/paginavuotasncancellata.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 20px;
 }
 
+@media (max-width: 480px) {
+    p {margin: 10px;
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+
+
+
+
 .homepage p:first-of-type:first-letter{
-    font-size: 15vw; /*deve occupare un terzo della colonna di testo, quindi un terzo di 64, ovvero un valore compreso tra 21 e 22vw*/
+    font-size: 19vw; /*deve occupare un terzo della colonna di testo, quindi un terzo di 64, ovvero un valore compreso tra 21 e 22vw*/
     float: left;
     font-family: 'Monog';
     font-weight: normal;
     font-style: normal;
-    margin-top:2px;
-    margin-right: 4px;
-    margin-bottom: -1px;
+    margin-right: 5px;
+    margin-bottom: -10px;
     background-clip:content-box;
     background-image: url(images/monogrammabg.png);
     padding-bottom:0px;
@@ -103,7 +118,23 @@ a:hover, button a:hover, .card a:hover{
 
 .home h1{
     color: #420001;
+    font-family: "KisMiklos";
+    font-weight: bolder;
 }
+
+.home h2{
+    color: #420001;
+    text-transform: uppercase;
+    font-family: "KisMiklos";
+    font-weight: bold;
+}
+
+.home h3{
+    color: #420001;
+    text-transform: uppercase;
+    font-family: "KisMiklos";
+}
+
 
 .card h4{
     font-family: 'Grit Primer';
@@ -255,7 +286,6 @@ body{
     margin-left: 0em;
     padding: 1em;
 
-
 }
 
 #covertitle{
@@ -263,6 +293,7 @@ body{
     font-family: "KisMiklos";
     font-size: 7vw;
     text-transform: uppercase;
+    text-shadow: -1px 0 #F7F7F7, 0 1px #F7F7F7, 1px 0 #F7F7F7, 0 -1px #F7F7F7;
 }
 
 @media (max-width: 480px) {
@@ -272,12 +303,12 @@ body{
 .pagetitle{
     text-align:center;
     font-family: "KisMiklos";
-    font-size: 150%;
+    text-transform: uppercase;
 }
 
 .pagetitlecontainer{
     margin-top: 1em;
-    padding-top: 3em;
+    padding-top: 2em;
     font-size: 2em;
 }
 
@@ -287,16 +318,10 @@ body{
     font-size: 30px;
 }
 
-.pagesubtitle{
-    text-align:center;
-    text-transform: uppercase;
-    font-family: "KisMiklos";
-    font-size: 100%;
-}
 
 
 #coversubtitle{
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
     align-content: flex-end;
     color: #AF200E;
@@ -367,46 +392,7 @@ p{
     word-wrap: break-word;
 }
 
-#cardUT{
-    padding: 1em;
-    margin: 1em;
-    color: #E9D4D8;
-    background-color: #420001;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-    
-}
 
-#cardLTS{
-    padding: 1em;
-    margin: 1em;
-    color: #D8CAC2;
-    background-color: #af200e;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardAS{
-    padding: 1em;
-    margin: 1em;
-    color: #420001;
-    background-color: #C2BE9C;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardCT{
-    padding: 1em;
-    margin: 1em;
-    color: #CBD4DA;
-    background-color: #3d261f;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
 
 #cardAndrea{
     padding: 1em;
@@ -479,7 +465,8 @@ footer a:hover{
 }
 
 .footercoltext{
-    font-size: 85%
+    font-size: 85%;
+    word-break: break-all;
 }
 
 

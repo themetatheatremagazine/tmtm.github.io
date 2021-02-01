@@ -54,7 +54,7 @@ function mantainClicked()
         
         else if (z == "site_styles_css/MilleniumSTYLE/millennium.css"){
             document.getElementById("Unusual").setAttribute("src", "images/curtains/unusualins.jpg");
-            document.getElementById("Living").setAttribute("src", "images/curtains/livingins.jpeg");
+            document.getElementById("Living").setAttribute("src", "images/curtains/livingins.jpg");
             document.getElementById("Auditorium").setAttribute("src", "images/curtains/auditoriumins.jpg");
             document.getElementById("Curtain").setAttribute("src", "images/curtains/curtainins.jpg"); 
         }
@@ -122,7 +122,7 @@ function swapStyleSheet(url){
     }
     else if (x == "site_styles_css/MilleniumSTYLE/millennium.css"){
         document.getElementById("Unusual").setAttribute("src", "images/curtains/unusualins.jpg");
-        document.getElementById("Living").setAttribute("src", "images/curtains/livingins.jpeg");
+        document.getElementById("Living").setAttribute("src", "images/curtains/livingins.jpg");
         document.getElementById("Auditorium").setAttribute("src", "images/curtains/auditoriumins.jpg");
         document.getElementById("Curtain").setAttribute("src", "images/curtains/curtainins.jpg");  
     }

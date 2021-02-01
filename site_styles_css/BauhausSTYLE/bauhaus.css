@@ -60,7 +60,7 @@ body{
       rgba(0, 0, 0, 0.2)
     ),
     /* bottom, image */
-    url(bauh1.gif);
+    url(../../images/background_homepage/bauh1.gif);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -171,16 +171,65 @@ body{
     text-align:center;
     font-family: "Bauhaus";
     font-size: 7vw;
+    text-shadow: 1.3px 1.3px  #E73229, 3px 3px  #146EAA, -1.3px -1.3px #EFC800;
 }
 
 @media (max-width: 480px) {
-    #covertitle { margin-top: 8vw; }
+    #covertitle { 
+        margin-top: 8vw;
+        font-size: 45px;
+    }
+    #coversubtitle { 
+        margin-top: 8vw;
+        font-size: 20px !important;
+    }
 }
 
 .pagetitle{
     text-align:center;
     font-family: "Bauhaus";
-    font-size: 150%;
+    font-size: 6vh;
+    text-shadow: 1.3px 1.3px  #E73229, 3px 3px  #146EAA, -1.3px -1.3px #EFC800;
+}
+
+.home h2{
+    font-family: "Bauhaus";
+}
+
+.home h3{
+    font-family: "Bauhaus";
+}
+
+.home h3:first-child{
+    color:#ADA3A1;
+}
+
+.home h3:nth-child(2){
+    color:#FF3333;
+}
+
+.home h3:nth-child(3){
+    color:#006699;
+}
+
+.home h3:nth-child(4){
+    color:#FFCC00;
+}
+
+.home h3:nth-child(5){
+    color:#FF9933;
+}
+
+.home h3:nth-child(6){
+    color:#ADA3A1;
+}
+
+.home h3:nth-child(7){
+    color:#FF3333;
+}
+
+.home h3:nth-child(8){
+    color:#006699;
 }
 
 .pagetitlecontainer{
@@ -195,11 +244,6 @@ body{
     font-size: 30px;
 }
 
-.pagesubtitle{
-    text-align:center;
-    font-family: 'Bauhaus';
-    font-size: 100%;
-}
 
 #coversubtitle{
     text-align: center;
@@ -272,6 +316,16 @@ p{
     font-size: 25px;
 }
 
+.card-title a{
+    font-family: "Bauhaus";
+    display: inline-block;
+    margin: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 25px;
+}
+
 a {
     color: honeydew;
 }
@@ -279,46 +333,6 @@ a:hover{
     color: #7f3434;
 }
 
-#cardUT{
-    padding: 1em;
-    margin: 1em;
-    color: #000000;
-    background-color: #C3BDBC;
-    border-radius: 10px;
-    height: 7em;
-    width: 80%;
-    
-}
-
-#cardLTS{
-    padding: 1em;
-    margin: 1em;
-    color: #000000;
-    background-color: #253074;
-    border-radius: 10px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardAS{
-    padding: 1em;
-    margin: 1em;
-    color: #000000;
-    background-color: #FAB803;
-    border-radius: 10px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardCT{
-    padding: 1em;
-    margin: 1em;
-    color: #000000;
-    background-color: #E30311;
-    border-radius: 10px;
-    height: 7em;
-    width: 80%;
-}
 
 #cardAndrea{
     padding: 1em;
@@ -335,7 +349,6 @@ a:hover{
     color: #000000;
     background-color: #253074;
     border-radius: 10px;
-    
 }
 
 #cardBenedetta{
@@ -384,6 +397,7 @@ a:hover{
 
 .footercoltext{
     font-size: 85%;
+    word-break: break-all;
 }
 
 

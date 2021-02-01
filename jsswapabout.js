@@ -115,7 +115,7 @@ function swapStyleSheet(url){
         document.getElementById("Ama").setAttribute("src", "images/aboutUsImages/amaan.png");
     }
     else if (x == "site_styles_css/MilleniumSTYLE/millennium.css"){
-        document.getElementById("Andre").setAttribute("src", "images/curtains/andreins.png");
+        document.getElementById("Andre").setAttribute("src", "images/aboutUsImages/andreins.png");
         document.getElementById("Ari").setAttribute("src", "images/aboutUsImages/ariins.png");
         document.getElementById("Betti").setAttribute("src", "images/aboutUsImages/bettiins.png");
         document.getElementById("Ama").setAttribute("src", "images/aboutUsImages/amains.png");

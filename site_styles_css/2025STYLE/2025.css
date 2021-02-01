@@ -1,11 +1,10 @@
-
 /*fiorina = "."*/
 @font-face {
     font-family: '.';
     src: url('fonts_2025/font_1/22b8085d997b509b25f8ac40303b7b85.eot');
     src: url('fonts_2025/font_1/228085d997b509b25f8ac40303b7b85.eot?#iefix') format('embedded-opentype'),
-        url('fonts_2025/font_1/228085d997b509b25f8ac40303b7b85.woff2') format('woff2'),
-        url('fonts_2025/font_1/228085d997b509b25f8ac40303b7b85.woff') format('woff'),
+        url('fonts_2025/font_fiorina/fiorinatext-light.woff2') format('woff2'),
+        url('fonts_2025/font_fiorina/fiorinatext-light.woff') format('woff'),
         url('fonts_2025/font_1/228085d997b509b25f8ac40303b7b85.ttf') format('truetype'),
         url('fonts_2025/font_1/228085d997b509b25f8ac40303b7b85.svg#.') format('svg');
     font-weight: normal;
@@ -29,11 +28,11 @@
 @font-face {
     font-family: 'North Avellion';
     src: url('fonts_2025/NorthAvellion/NorthAvellion-Regular.eot');
-    src: url('fonts_2025/NorthAvellion/NorthAvellion-Regular-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts_2025/NorthAvellion/NorthAvellion-Regular-Regular.woff2') format('woff2'),
-        url('fonts_2025/NorthAvellion/NorthAvellion-Regular-Regular.woff') format('woff'),
-        url('fonts_2025/NorthAvellion/NorthAvellion-Regular-Regular.ttf') format('truetype'),
-        url('fonts_2025/NorthAvellion/NorthAvellion-Regular-Regular.svg#NorthAvellion-Regular') format('svg');
+    src: url('fonts_2025/NorthAvellion/NorthAvellion-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts_2025/NorthAvellion/North-Avellion.woff2') format('woff2'),
+        url('fonts_2025/NorthAvellion/North-Avellion.woff') format('woff'),
+        url('fonts_2025/NorthAvellion/NorthAvellion-Regular.ttf') format('truetype'),
+        url('fonts_2025/NorthAvellion/NorthAvellion-Regular.svg#NorthAvellion-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -67,6 +66,15 @@ body{
 
 }
 
+@media all and (max-width: 580px) {
+    .homepage {
+      background-color: #ededed;
+      color: #343434;
+      align-items: center;
+      justify-content: justify;
+      min-height: 100vh;
+      column-count: 1;
+    }}
 
 
 @media all and (max-width: 650px) { 
@@ -81,7 +89,7 @@ body{
     background-color: aliceblue;
 }
 
-#covertitle h1{
+#covertitle{
     text-align:center;
     font-size: 10vw !important;
     font-family: "Rankings Caps";
@@ -102,14 +110,8 @@ body{
     
 }
 
-#coversubtitle{
-    font-family: 'North Avellion';
-    text-align: center;
-    font-size: 5vw;
-    align-content: flex-end;
-}
 
-#coversubtitle a{
+#coversubtitle {
     font-family: 'North Avellion';
     text-align: center;
     font-size: 5vw;
@@ -128,24 +130,34 @@ body{
 
 
 .pagetitlecontainer{
-    margin-top: 3em;
+    margin-top: 4em;
     padding-top: 1em;
 }
 
 .pagetitle{
     text-align:center;
+    font-family: "Ranking Caps";
+    border-bottom: solid 3px;
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    border-image-slice: 1;
+}
+
+.home h2{
+    font-family: "North Avellion";
+    font-weight: bolder;
+    text-align: center;
+}
+
+.home h3{
+    font-family: "North Avellion";
+    text-align: center;
+    font-weight: bolder;
 }
 
 .pagesubtitlecontainer{
     margin-top: 0em;
     padding-top: 1em;
     font-size: 30px;
-}
-
-.pagesubtitle{
-    text-align:center;
-    font-family: "Ranking Caps";
-    font-size: 100%;
 }
 
 
@@ -292,9 +304,15 @@ p{
     padding-bottom:0px;
 }
 
-h4.card-title {
+@media all and (max-width: 580px) {
+    .homepage p:first-of-type:first-letter{
+    font-size: 20vw} 
+}
+
+
+.card-title {
     font-family: "North Avellion";
-    font-size: 4vw;
+    font-size: 30px;
     display: inline-block;
     margin: auto;
     display: flex; 
@@ -308,16 +326,7 @@ h4.card-title {
 
 h4.card-title a{
     font-family: "North Avellion";
-    font-size: 100%;
-    max-width: inherit;
-    max-height:inherit;
-    margin:0em;
-    text-align:center;
-    font-size: 90%;
-    max-width: inherit;
-    font-stretch: extra-condensed;
-    font-style: normal;
-    flex-wrap: wrap;
+    font-size: 25px;
     color: white;
 }
 
@@ -351,47 +360,6 @@ a {
 }
 a:hover{
     color: #7f3434;
-}
-
-#cardUT{
-    padding: 1em;
-    margin: 1em;
-    color: #E9D4D8;
-    background-color: #111010;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-    
-}
-
-#cardLTS{
-    padding: 1em;
-    margin: 1em;
-    color: #D8CAC2;
-    background-color: #282828;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardAS{
-    padding: 1em;
-    margin: 1em;
-    color: #E1DED4;
-    background-color: #564f4f;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardCT{
-    padding: 1em;
-    margin: 1em;
-    color: #000000;
-    background-color: #D3CDCD;
-    border-radius: 0px;
-    height: 7em;
-    width: 80%;
 }
 
 #cardAndrea{
@@ -457,7 +425,8 @@ a:hover{
 }
 
 .footercoltext{
-    font-size: 85%
+    font-size: 85%;
+    word-break: break-all;
 }
 
 
