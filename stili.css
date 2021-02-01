@@ -750,5 +750,5 @@ a[data-toggle="collapse"] {
 .homepage figure,.homepage img{
     max-width: 200px;
     margin: auto;
-    display: block;
+    overflow-x: hidden;
 }

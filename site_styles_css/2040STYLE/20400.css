@@ -10,14 +10,13 @@
 #covertitle{
     text-align:center;
     font-size: 7vw;
-    { 
         font-family: 'Montserrat';
         font-size: 300%;
         letter-spacing: -5px;
         font-weight: bold;
         color: var(--text);
         text-shadow: 
-          6px 6px        var(--shadow), sii
+          6px 6px        var(--shadow), 
           5.75px 5.75px  var(--shadow), 
           5.5px 5.5px    var(--shadow), 
           5.25px 5.25px  var(--shadow),
@@ -42,7 +41,7 @@
           0.5px 0.5px    var(--shadow),
           0.25px 0.25px  var(--shadow);
       }
-}
+
 
 body{
     padding-top: 20px;
@@ -213,6 +212,7 @@ body{
     background: linear-gradient(-45deg, #711C91, #EA01D9, #123E7B, #091933);
     background-size: 400% 400%;
     animation: gradient 7s linear infinite;
+    overflow-x: hidden;
 }
 
 @keyframes gradient {
@@ -230,7 +230,9 @@ body{
 .extracontainer{
         background-image: url(../../images/background_homepage/vwawe.png);
         min-height: 450px;
-        background-size: cover;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
 }
 
 @media (max-width: 480px) {
