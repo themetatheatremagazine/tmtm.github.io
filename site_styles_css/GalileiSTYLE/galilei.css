@@ -64,25 +64,21 @@
     font-display: swap;
 }
 
-.menucontainer{
-    margin-top: 2em;
-    margin-bottom: 6em;
-    text-align: center;
+html{
+    overflow-x: hidden
 }
-
-
 
 *{
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" style="font-size: 20px;"><text y="15">✵</text></svg>'), auto; !important
 }
 
-.home{
-    color:#666154;
-    
-}
 
 a:hover, button a:hover, .card a:hover{
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" style="font-size: 20px;"><text y="15">✸</text></svg>'), auto !important;
+}
+
+@media (max-width: 480px) {
+    html { overflow-x: hidden; }
 }
 
 .home {
@@ -92,12 +88,20 @@ a:hover, button a:hover, .card a:hover{
     background-attachment: fixed;
     font-size: 20px;
     font-family: JMH Legajo;
+    color:#666154;
 }
 
 @media (max-width: 480px) {
-    p {margin: 10px;
-        padding: 5px;
-        font-size: 16px;
+    .homepage p {margin-top: 10px;
+       margin-bottom: 10px;
+       padding-top: 5px;
+       padding-bottom: 5px;
+       font-size: 18px;
+    }
+}
+@media (max-width: 480px) {
+    li {
+       font-size: 18px;
     }
 }
 
@@ -105,6 +109,11 @@ a:hover, button a:hover, .card a:hover{
 .homepage{
    max-width: 65%;
 }
+
+@media (max-width: 480px) {
+    .homepage{
+   max-width: 90%;
+    }}
 
 .homepage p:first-of-type:first-letter{
     font-size: 100px; /*deve occupare un terzo della colonna di testo, quindi un terzo di 64, ovvero un valore compreso tra 21 e 22vw*/
@@ -129,6 +138,7 @@ a:hover, button a:hover, .card a:hover{
     color: #420001;
     font-family: "KisMiklos";
     font-weight: bolder;
+    letter-spacing: 1px;
 }
 
 .home h2{
@@ -169,21 +179,36 @@ body{
     display: block;
 }
 
+.homepage figure.palettecolor,.homepage img.palettecolor{
+    max-width: 100px;
+    margin: auto;
+    display: inline;
+}
+
+.homepage p:not(:first-of-type){
+    text-indent: 4%;
+}
+
 
 .btn-secondary{
     background-color: #420001 !important;
     border-color: #961D07 !important;
     font-size: 13px !important;
 }
+   
 #butrow{
     margin-top: 35px;
     max-height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5vw;
-    padding-right:5vw;
+    display:inline-table;
+    line-height: 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
 
 div .dropdown-menu{
     color: #C2BE9C !important;
@@ -196,9 +221,21 @@ div .dropdown-menu a{
 .menubtn{
     background-color: #420001;
     color:#FBF9C8;
+    margin:2px;
 }
 
+.btn-group>.btn{
+    border-radius: 0;
+    border:1px solid #AF200E;   
+}
 
+.btn-group>.dropdown-menu{
+    border-radius: 0;
+}
+
+.palettecolor{
+    max-width: 100px;
+}
 #item6 div{
     margin-top: 3em;
     margin-bottom: 3em;  
@@ -217,19 +254,29 @@ div .dropdown-menu a{
     text-transform: uppercase;
     text-align: center;
     color: #940F04;
+    margin-bottom: -1px;
+    line-height: .9;
 }
 
 #item6 div h2{
     text-align: center;
     color: #524D42;
+    line-height: .9;
+    letter-spacing: .4;
+    margin-bottom: 20px;
 }
 
 #item6 div h3{
     text-align: center;
     color: #524D42;
+    line-height: .9;
 }
 
-
+.palettecontainer{
+    display: flex;
+    max-width: inherit;
+    flex-wrap: wrap;
+}
 
 #item{
     min-height:450px; 
@@ -369,7 +416,7 @@ div .dropdown-menu a{
 
 .pagetitlecontainer{
     margin-top: 1em;
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: 2em;
 }
 

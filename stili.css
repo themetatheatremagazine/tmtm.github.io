@@ -1,3 +1,11 @@
+html{
+    overflow-x: hidden;
+}
+
+.home{
+    overflow-x: hidden;
+}
+
 
 .menucontainer{
     margin-top: 2em;
@@ -17,15 +25,15 @@
     border-color: #961D07 !important;
     font-size: 13px !important;
 }
+
 #butrow{
     margin-top: 55px;
     max-height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5vw;
-    padding-right:5vw;
+    display:inline-table;
+    line-height: 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-
 
 .navbar-toggleable-md .navbar-collapse {         
        -webkit-justify-content: flex-end;
@@ -118,8 +126,7 @@
 
 #covertextbox{
     color: honeydew;
-    margin: 5em;
-    margin-left: 0em;
+    margin-top: 2em;
     padding: 1em;
 
 }
@@ -130,6 +137,13 @@
     font-size: 6vw;
 }
 
+@media (max-width: 500px) {
+    #covertitle{
+        font-size: 45px;
+
+}
+  }
+
 
 .pagetitle {
     text-align:center;
@@ -138,8 +152,8 @@
 }
 
 .pagetitlecontainer{
-    margin-top: 3em;
     padding-top: 1em;
+    margin-top: 1em;
     font-size: 2em;
     text-align: center;
 }
@@ -215,6 +229,20 @@ p{
     font-style: normal;
     flex-wrap: wrap;
     
+}
+
+strong{
+    color: #961d07;
+}
+
+a.btn{
+    color: darkred;
+    font-size: 20px;
+}
+
+a.btn:hover{
+    color: black;
+    font-size: 20px;
 }
 
 .card-title{
@@ -657,8 +685,7 @@ a[data-toggle="collapse"] {
 
 /*DOCUMENTATION BUTTONS*/
 
-
-
+/*
 
 #GospelStyle + div h2, #GospelStyle + div h3 {
     color: gold;
@@ -700,10 +727,17 @@ a[data-toggle="collapse"] {
 
 .anchor{
     display: block;
-    height: 115px; /*same height as header*/
-    margin-top: -115px; /*same height as header*/
-    visibility: hidden;
+    height: 115px; /*same height as header*/   
+/*margin-top: -115px;*/
+
+     /*same height as header*/
+/*visibility: hidden;
   }
+
+*/ 
+
+
+
 /*BOTTONI PER SALIRE IN CIMA*/
 #button_scroll {
     display: inline-block;
@@ -751,4 +785,79 @@ a[data-toggle="collapse"] {
     max-width: 200px;
     margin: auto;
     overflow-x: hidden;
+}
+
+
+/*documentation fixing*/
+
+.homepage figure.palettecolor,.homepage img.palettecolor{
+    max-width: 100px;
+    margin: auto;
+    display: inline;
+}
+    
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+div .dropdown-menu{
+    background-color: #FF9370;
+color: #ffffff}
+
+div .dropdown-menu a{
+    color: #ffffff}
+
+.menubtn{
+    background-color: #420001;
+    color:#ffffff;
+}
+
+img.palettecolor{
+    max-width: 100px;
+}
+
+
+#item6 div{
+    margin-top: 3em;
+    margin-bottom: 3em;  
+}
+
+#item6 li{
+    color:#420001;
+}
+
+#item6 div a{
+    color: #CF6F4C;
+    font-weight: bolder;
+}
+
+#item6 div img{
+    margin:1em;
+    border-radius: 5%;
+    margin: auto;
+}
+
+img.palettecolor{
+    border: 1px solid #cf6f4c;
+    margin: 30px;
+}
+
+#item6 div h1{
+    text-align: center;
+    color: #961D07;
+    font-weight: bolder;
+}
+
+#item6 div h2, #item6 div h3{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.palettecontainer{
+    display: flex;
+    max-width: inherit;
+    flex-wrap: wrap;
 }

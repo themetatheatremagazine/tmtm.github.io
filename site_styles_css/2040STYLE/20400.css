@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+html{
+    overflow-x: hidden
+}
+
 :root {
     --text: white; /* Blue */
     --shadow: #E485F8; /* Pink */
@@ -9,11 +13,10 @@
 
 #covertitle{
     text-align:center;
-    font-size: 7vw;
         font-family: 'Montserrat';
-        font-size: 300%;
         letter-spacing: -5px;
-        font-weight: bold;
+        text-align:center;
+        font-weight: bolder;
         color: var(--text);
         text-shadow: 
           6px 6px        var(--shadow), 
@@ -71,10 +74,22 @@ body{
     overflow: visible;
 }
 
+.homepage h1{
+    text-align: center;
+}
+
 .homepage figure,.homepage img{
     max-width: 200px;
     margin: auto;
     display: block;
+
+}
+
+.homepage img{
+    border: 5px dotted gold;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -89,7 +104,15 @@ body{
     color: honeydew;
     
 }
+
+.home h2{
+    text-align: center!important;
+    
+}
+
 .home h1{
+    display: block;
+    margin: auto;
     font-family:"Montserrat";
     letter-spacing: -5px;
         font-weight: bolder;
@@ -126,6 +149,20 @@ body{
     font-family: "Montserrat";
     text-align: left;
 }
+
+.homepage h3{
+    color:#E485F8;
+}
+
+.homepage a{
+    color:gold;
+}
+
+.homepage a:hover{
+    color:#dc04d1;
+}
+
+#dc04d1
 
 .card h4{
     font-family: "Montserrat";
@@ -169,12 +206,27 @@ body{
     
 @media (max-width: 480px) {
  #covertitle{
-    text-align:center;
-    font-weight: bolder;
-    font-style: normal !important;
-    font-size: 40px;
+    font-size: 45px;
     }
 }
+@media (min-width: 481px) and (max-width:870px) {
+ #covertitle{
+    font-size: 70px;
+    }
+}
+
+@media (min-width: 871px) and (max-width:1199px) {
+ #covertitle{
+    font-size: 90px;
+    }
+}
+
+@media (min-width: 1200px){
+ #covertitle{
+    font-size: 110px;
+    }
+}
+
     
 #item{
     min-height:450px; 
@@ -271,16 +323,13 @@ body{
     }
 }
 
-
-
-
 #butrow{
     margin-top: 35px;
     max-height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5vw;
-    padding-right:5vw;
+    display:inline-table;
+    line-height: 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 
@@ -381,18 +430,10 @@ body{
 }
 
 #covertextbox{
-    font-size: 2em;
-    margin: 1em;
+    margin: 2em;
     margin-left: 0em;
     padding: 1em;
-    margin-top:5em;
     }
-
-@media (max-width: 700px) {
-    #covertextbox{
-    margin-top:2em;
-    }
-}
 
 .pagetitlecontainer{
     margin-top: 3em;
@@ -426,10 +467,6 @@ body{
 
 .navbar-light{
     color: aliceblue;
-}
-
-.dropdown-menu{
-    color: black;
 }
 
 .nav.navbar-nav li a{
@@ -466,6 +503,7 @@ p{
 
 .card-title{
     display: inline-block;
+    padding:3px;
     font-family: "Montserrat";
     margin: auto;
     display: flex; 
@@ -473,7 +511,7 @@ p{
     align-items: center;
     font-size: 25px;
     color: #23d5ab;
-}
+    white-space: pre-wrap;}
 
 .card-title a{
     display: inline-block;

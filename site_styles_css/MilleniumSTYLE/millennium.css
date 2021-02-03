@@ -24,6 +24,11 @@
     font-display: swap;
 }
 
+html{
+    overflow-x: hidden
+}
+
+
 .home{
     font-family: Gotham;
 }
@@ -44,10 +49,7 @@
 #butrow{
     margin-top: 35px;
     max-height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5vw;
-    padding-right:5vw;
+    display:inline-table;
 }
 
 
@@ -185,7 +187,6 @@ h1, h2, h3 {
 
 #covertextbox{
     color: honeydew;
-    margin-top:5em;
     margin-left: 0em;
     padding-top: 1em;
 }
@@ -208,7 +209,7 @@ h1, h2, h3 {
 }
 
 .pagetitlecontainer{
-    margin-top: 2em;
+    margin-top: 1em;
     padding-top: 1em;
     font-size: 2em;
 }

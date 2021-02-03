@@ -17,6 +17,10 @@
 	font-weight: normal;
 	font-style: normal; }	  
 
+html{
+    overflow-x: hidden
+}
+
 .home{
     background-image: url(images/oldpaper.jpg); 
 	background-repeat: repeat;
@@ -61,6 +65,11 @@ body{
     margin-top: -20px;
 }
 
+.homepage p{
+    display: inline-block;
+	position: relative;
+}
+
 .home{
     font-family: "onciale";
 }
@@ -84,12 +93,11 @@ body{
 #butrow{
     margin-top: 35px;
     max-height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5vw;
-    padding-right:5vw;
+    display:inline-table;
+    line-height: 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-
 
 
 .navbar-toggleable-md .navbar-collapse {         
@@ -169,10 +177,33 @@ body{
 }
 
 #covertextbox{
-    margin-top: 150px;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
 }
+
+@media (min-width: 1200px) {
+    #covertextbox{
+    margin-top: 290px;
+}}
+
+@media (min-width: 871px) and (max-width: 1199px) {
+    #covertextbox{
+    margin-top: 100px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 870px) {
+    #covertextbox{
+    margin-top: 80px;
+    }
+}
+
+@media (max-width: 481px){
+    #covertextbox{
+    margin-top: 30px;
+    }
+}
+
 
 
 #covertitle{
@@ -183,6 +214,17 @@ body{
     font-weight: lighter;
 	text-shadow: 0 0 3px black, 0 0 5px #440000;
 }
+
+
+@media (max-width: 480px) {
+    #covertitle{
+    font-size: 45px ;
+    }}
+
+@media (min-width: 480px) and (max-width: 870px) {
+    #covertitle{
+    font-size: 60px ;
+    }}
 
 .pagetitle{
     text-align:center;
@@ -204,22 +246,17 @@ body{
 }
 
 .pagetitlecontainer{
-    margin-top: 3em;
+    margin-top: 1em;
     padding-top: 1em;
     font-size: 2em;
 }
 
-.pagesubtitlecontainer{
-    margin-top: 0em;
-    padding-top: 1em;
-    font-size: 30px;
-}
 
 
 #coversubtitle{
     text-align: center;
     font-size: 3vw;
-    padding:8vw;
+    padding:3vw;
     margin:3vw;
     margin:auto;
     display: block;
@@ -369,10 +406,6 @@ a:hover{
     word-break: break-all;
 }
 
-div img {
-    height: 100%;
-    width: 100%;
-}
 
 #logo{
     max-height:100px;
@@ -406,7 +439,6 @@ footer{
 .homepage{
 	text-align: justify;
 	margin-top: 4%;
-    column-count: 2;
     column-fill: balance;
 	text-align: justify;    
     word-break: break-word;
@@ -447,3 +479,134 @@ footer {
 .card-body{
     padding:0.25rem;
 }
+
+
+.homepage figure.palettecolor,.homepage img.palettecolor{
+    max-width: 100px;
+    margin: auto;
+    display: inline;
+}
+ 
+    
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+div .dropdown-menu{
+    background-color: #520404;
+    color: #ffffff;
+}
+
+a.dropdown-item:hover{
+    color: #520404 !important;
+}
+
+.menubtn{
+    background-color: #520404;
+    color:#ffffff;
+}
+
+.btn-group>.btn{
+    border-radius: 0;
+    border:3px solid #d4af37;   
+}
+
+.btn-group>.dropdown-menu{
+    border-radius: 0;
+}
+
+.btn-group>.dropdown-menu a{
+    color: #ffffff;
+}
+
+.palettecolor{
+    max-width: 100px;
+}
+#item6 div{
+    margin-top: 3em;
+    margin-bottom: 3em;  
+}
+
+#item6 li{
+    color:#520404;
+}
+
+#item6 div a{
+    color: #d4af37;
+    text-shadow: 0 0 3px black, 0 0 5px #440000;
+}
+
+#item6 div img{
+    margin-top:1em;
+    margin-bottom: 1em;
+    border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right bottom, #d4af37, #6d5615 );
+  border-image-slice: 1;
+}
+
+#item6 div h1{
+    text-transform: uppercase;
+    color: #520404;
+    margin: auto;
+    
+}
+
+#item6 div h2, #item6 div h3{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#item6 div h2{
+    color: #d4af37;
+    font-weight: lighter;
+	text-shadow: 0 0 3px black, 0 0 5px #440000;
+}
+.palettecontainer{
+    display: flex;
+    max-width: inherit;
+    flex-wrap: wrap;
+}
+
+.homepage {
+	color: #520404;
+	margin-top: 1%;
+	margin-left: 15%;
+	margin-right: 15%;
+	column-count: 2;
+	column-gap: 3.9rem; 
+	column-fill: balance;
+	-moz-column-fill: balance;
+	-webkit-column-fill: balance;
+	text-align: justify;    
+    word-break: break-word;
+	letter-spacing: -1px;
+}
+
+
+@media screen and (max-width: 900px) {
+	.homepage{
+		margin-left: 10%;
+		margin-right: 10%;
+		column-gap: 1rem; 
+	}
+  }
+  @media screen and (max-width: 700px) {
+	.homepage{
+		column-count: 1;
+		margin-top: 7%;
+		margin-left: 13%;
+		margin-right: 13%;
+	}
+  }
+@media screen and (max-width: 500px) {
+	.homepage {
+		column-count: 1;
+		margin-top: 10%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+  }

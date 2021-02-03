@@ -38,7 +38,14 @@
     font-display: swap;
 }
 
+html{
+    overflow-x: hidden;
+}
 
+::selection{
+    background-color: #333333;
+    color: white;
+}
 
 .home{
     background-color: #f7f7f7;
@@ -71,8 +78,9 @@ body{
   align-items: center;
   justify-content: justify;
   min-height: 100vh;
-  column-count: 3;
-
+  margin-left:15%;
+  margin-right:15%;
+  padding: 1em;
 }
 
 @media all and (max-width: 580px) {
@@ -91,13 +99,6 @@ body{
   display:block;
 }} 
 
-
-
-  
-.highlight:hover{
-    background-color: aliceblue;
-}
-
 #covertitle{
     text-align:center;
     font-size: 10vw !important;
@@ -106,10 +107,9 @@ body{
 }
 
 #covertextbox{
-    padding:5vw;
     align-content: center;
     text-align: center;
-    margin: 1em;
+    margin: .5em;
     margin-left: 0em;
     padding-top: 55px;
     margin-top:5em;
@@ -155,14 +155,22 @@ body{
     font-family: "North Avellion";
     font-weight: bolder;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
+}
+
+.homepage h1{
+    font-weight: bolder;
+    border-bottom: solid 3px;
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    border-image-slice: 1;
 }
 
 .home h3{
-    font-family: "North Avellion";
+    font-family: "Ranking Caps";
     text-align: center;
-    font-weight: bolder;
-    font-size: 40px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #333333;
     
 }
 
@@ -181,10 +189,10 @@ body{
 #butrow{
     margin-top: 35px;
     max-height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5vw;
-    padding-right:5vw;
+    display:inline-table;
+    line-height: 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .navbar-toggleable-md .navbar-collapse {         
@@ -259,7 +267,7 @@ body{
 .nav-item.active> a:hover, .dropdown> a:hover {
     color:wheat; /*ma perché sta roba non funziona?*/
     background-color: #111010;
-    
+    color: #EEEEEE;
 }
 
 .dropdown-menu> a:hover{
@@ -304,13 +312,13 @@ p{
 }
 
 .homepage p:first-of-type:first-letter{
-    font-size: 10vw; 
-    float: left;
+    float:left;
+    font-size:500%;
+    margin-right:5px;
+    color: #EEEEEE;
+    text-shadow: 2px 2px 5px #404040;
     font-family: 'Ranking Caps';
-    font-weight: bold;
-    font-style: normal;
     margin-top:-8px;
-    margin-right: 4px;
     margin-bottom: -10px;
     background-clip:content-box;
     padding-bottom:0px;
@@ -338,13 +346,13 @@ p{
 
 h4.card-title a{
     font-family: "North Avellion";
-    font-size: 25px;
+    font-size: 30px;
     color: white;
 }
 
 @media all and (max-width: 580px) {
     h4.card-title a{
-    font-size: 8vw !important;} 
+    font-size: 10vw !important;} 
 }
 
 btn.stretched-link a{
@@ -370,9 +378,7 @@ a {
     color: honeydew;
     white-space: normal !important;
 }
-a:hover{
-    color: #7f3434;
-}
+
 
 #cardAndrea{
     padding: 1em;
@@ -490,4 +496,80 @@ footer h4{
 
 .card-body{
     padding:0.25rem;
+}
+
+.homepage figure.palettecolor,.homepage img.palettecolor{
+    max-width: 100px;
+    margin: auto;
+    display: inline;
+}
+ 
+    
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+/*#EEEEEE , #DDDDDD, #CCCCCC, #BBBBBB, #333333*/
+
+div .dropdown-menu{
+    background-color: #CCCCCC;}
+
+.menubtn{
+    background-color: #333333;
+    color:#EEEEEE;
+}
+
+.btn-group>.btn{
+    border-radius: 0;
+    border:1px solid #333333;   
+}
+
+.btn-group>.dropdown-menu{
+    border-radius: 0;
+}
+
+
+.palettecolor{
+    max-width: 100px;
+}
+#item6 div{
+    margin-top: 3em;
+    margin-bottom: 3em;  
+}
+
+#item6 li{
+    color:#333333;
+}
+
+#item6 div a{
+    color: #333333;
+    font-weight: bolder;
+}
+
+#item6 div img{
+    margin-top:1em;
+    margin-bottom: 1em;
+    border: 5px solid #333333;
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    border-image-slice: 1;
+}
+
+#item6 div h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #333333;
+}
+
+#item6 div h2, #item6 div h3{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.palettecontainer{
+    display: flex;
+    max-width: inherit;
+    flex-wrap: wrap;
 }
