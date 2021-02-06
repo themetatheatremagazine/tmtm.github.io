@@ -60,10 +60,11 @@ html{
 }
 
 .homepage p {
-display: inline-block;
-text-align: justify;
-border-bottom: 5px solid black;
-margin: 2% 7%;
+    display: inline-block;
+    text-align: justify;
+    border-bottom: 5px solid black;
+    margin: 2% 7%;
+    text-shadow: 2px 2px 2px #b1c403 !important;
 }
 
 .homepage li {
