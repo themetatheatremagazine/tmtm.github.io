@@ -25,13 +25,14 @@
 }
 
 html{
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 
 .home{
     font-family: Gotham;
     background-color: #dcf900;
+    overflow-x: hidden;
 }
 
 
