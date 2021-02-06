@@ -110,9 +110,14 @@ a:hover, button a:hover, .card a:hover{
    max-width: 65%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .homepage{
    max-width: 90%;
+    }}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .homepage{
+   max-width: 80%;
     }}
 
 .homepage p:first-of-type:first-letter{
@@ -439,8 +444,6 @@ div .dropdown-menu a{
 #coversubtitle a{
     color: #AF200E !important;
 }
-
-/*non riesco a cambiare il clore del testo nella navbar*/
 
 .navbar-brand{
     object-position: center;

@@ -484,8 +484,6 @@ a:hover{
     word-break: break-all;
 }
 
-
-/*così immagini non superano dimensione loro div*/
 div img {
     height: 100%;
     width: 100%;
@@ -543,6 +541,7 @@ div .dropdown-menu{
 .menubtn{
     background-color: #ff3333;
     color:#212529;
+    margin:2px;
 }
 
 .btn-group>.btn{
@@ -576,7 +575,6 @@ div .dropdown-menu{
 #item6 div img{
     margin-top:1em;
     margin-bottom: 1em;
-
 }
 
 #item6 div h2, #item6 div h3{

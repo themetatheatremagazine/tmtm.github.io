@@ -222,6 +222,14 @@ text-shadow: 1px 1px 1px #979494;
 margin: 0 10%;
 }
 
+#Footnotes {
+  font-family: 'berol';
+font-weight: bolder;
+color: black;
+text-shadow: 1px 1px 1px #979494;
+margin: 0 10%;
+}
+
 
 .articlestyle header .byline {
   font-family: 'edd';

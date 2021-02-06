@@ -30,7 +30,8 @@ html{
 body{
     padding-top: 20px;
     overflow-x: hidden;
-
+    width:100%;
+    overflow-y: hidden;
 }
 
 .menucontainer{
@@ -442,7 +443,6 @@ footer{
     column-fill: balance;
 	text-align: justify;    
     word-break: break-word;
-	overflow-x: hidden;
 	font-family: 'onciale', serif;
 	letter-spacing: -2px;
 	position: relative;
@@ -506,6 +506,7 @@ a.dropdown-item:hover{
 .menubtn{
     background-color: #520404;
     color:#ffffff;
+    margin:2px;
 }
 
 .btn-group>.btn{
@@ -574,6 +575,7 @@ a.dropdown-item:hover{
 .homepage {
 	color: #520404;
 	margin-top: 1%;
+    margin-bottom: 3%;
 	margin-left: 15%;
 	margin-right: 15%;
 	column-count: 2;

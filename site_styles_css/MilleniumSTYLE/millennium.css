@@ -31,7 +31,71 @@ html{
 
 .home{
     font-family: Gotham;
+    background-color: #dcf900;
 }
+
+
+.homepage{
+  font-family: 'Gotham';
+  color: black;
+  text-align: justify;
+  column-count: 2;
+  column-fill: auto;
+  column-rule-width: 5px;
+  column-rule-style: double;
+  column-rule-color: white;
+  column-span: all;
+  overflow-x: hidden;
+  word-break: break-word;
+  border: 5px double white; 
+  padding: 3%; 
+}
+
+@media screen and (max-width: 800px) {
+.homepage {
+  column-count: 1;
+  padding: 5%; 
+
+}
+}
+
+.homepage p {
+display: inline-block;
+text-align: justify;
+border-bottom: 5px solid black;
+margin: 2% 7%;
+}
+
+.homepage li {
+color: red;
+margin: 2% 7%;
+}
+
+.homepage li a{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.homepage li a:hover{
+    color:black;
+    text-decoration: line-through;
+}
+
+
+.homepage h2, .homepage h3, .homepage h4 {
+  font-family: 'Gotham';
+  font-size: 2rem; 
+  color: white; 
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+} 
+h2, h3, h4 {
+  font-family: 'Gotham';
+  font-size: 2rem; 
+  color: white; 
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+} 
 
 .menucontainer{
     margin-top: 2em;
@@ -43,7 +107,7 @@ html{
 .btn-secondary{
     background-color: #000000 !important;
     border: 2px;
-    border-color: yellow!important;
+    border-color: #e0d500 !important;
     font-size: 13px !important;
 }
 #butrow{
@@ -53,28 +117,61 @@ html{
 }
 
 
-.home {
-    background-color: black; 
-}
-
-.home p, .home div p, home div div p {
-    font-family: Gotham;
-}
-
 body {
     padding-top: 20px;
-    overflow-x: hidden;
-
-    background-color: black !important;
-    color: white;
 }
 
-h1, h2, h3 {
-    color: #ffff00 !important;
+.pagetitle {
+    font-family: 'Multicolore';
+    animation-name: flash;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    text-align:center !important;
+    font-family: Multicolore;
+    font-size: 150%;
 }
 
-.homepage p{
-    color: #6C757D;
+.home h1 {
+    font-family: 'Multicolore';
+    animation-name: flash;
+    text-align: center;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+#covertitle{
+    font-family: 'Multicolore';
+    animation-name: flash2;
+    text-align: center;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    
+}
+
+@keyframes flash {
+    from {color: red;}
+    to {color: black;}
+}
+
+@keyframes flash2 {
+    from {color: white;}
+    to {color: yellow;}
+}
+
+.home p {
+  font-family: 'Gotham';
+  color: white ; 
+  text-align: justify;
+  text-shadow: 2px 2px 2px #dcf900;
 }
 
 #item{
@@ -202,16 +299,16 @@ h1, h2, h3 {
     #covertitle { margin-top: 8vw; }
 }
 
-.pagetitle{
-    text-align:center;
-    font-family: Multicolore;
-    font-size: 150%;
-}
-
 .pagetitlecontainer{
     margin-top: 1em;
-    padding-top: 1em;
     font-size: 2em;
+    padding: 1% 4%;
+    background-color: black;
+  text-align: center;
+  background-image : url("../../2000/images/logo3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .pagesubtitlecontainer{
@@ -235,7 +332,7 @@ h1, h2, h3 {
 }
 
 #coversubtitle a{
-    color: yellow;
+    color: #e0d500;
 }
 
 /*non riesco a cambiare il clore del testo nella navbar*/
@@ -285,6 +382,7 @@ p{
 
 .card-title{
     font-family: Multicolore;
+    color:red;
     display: inline-block;
     margin: auto;
     display: flex; 
@@ -293,59 +391,18 @@ p{
     font-size: 25px;
 }
 
-a {
-    color: honeydew;
-    white-space: normal !important;
-}
-a:hover{
-    color: #7f3434;
+.card-title a{
+    color: red;
 }
 
-#cardUT{
-    padding: 1em;
-    margin: 1em;
-    color: #E9D4D8;
-    background-color: #7F7604;
-    border-radius: 10px;
-    height: 7em;
-    width: 80%;
-    
-}
-
-#cardLTS{
-    padding: 1em;
-    margin: 1em;
-    color: #D8CAC2;
-    background-color: #545B62;
-    border-radius: 10px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardAS{
-    padding: 1em;
-    margin: 1em;
-    color: #000000;
-    background-color: #F7FF00;
-    border-radius: 10px;
-    height: 7em;
-    width: 80%;
-}
-
-#cardCT{
-    padding: 1em;
-    margin: 1em;
-    color: #CBD4DA;
-    background-color: #74701C;
-    border-radius: 10px;
-    height: 7em;
-    width: 80%;
+.card-title a:hover{
+    text-decoration: line-through;
+    color:black;
 }
 
 #cardAndrea{
     padding: 1em;
     margin: 1em;
-    color: #E9D4D8;
     background-color: #7F7604;
     border-radius: 10px;
     
@@ -354,7 +411,6 @@ a:hover{
 #cardArianna{
     padding: 1em;
     margin: 1em;
-    color: #D8CAC2;
     background-color: #545B62;
     border-radius: 10px;
     
@@ -363,8 +419,7 @@ a:hover{
 #cardBenedetta{
     padding: 1em;
     margin: 1em;
-    color: #000000;
-    background-color: #F7FF00;
+    background-color: #e0d500;
     border-radius: 10px;
     
 }
@@ -389,7 +444,7 @@ a:hover{
 
 
 #footercol1{
-    align-content: center;
+    align-content: center !important;
 }
 
 #footercol2{
@@ -405,11 +460,11 @@ a:hover{
 }
 
 .footercoltext{
-    font-size: 85%
+    font-size: 85%;
+    text-align: center !important;
+
 }
 
-
-/*così immagini non superano dimensione loro div*/
 div img {
     height: 100%;
     width: 100%;
@@ -426,7 +481,7 @@ footer{
 }
 
 .crnotice{
-    text-align:center;
+    text-align:center !important;
     font-family: Multicolore;
     color: honeydew;
     font-size: 85%;
@@ -445,4 +500,57 @@ footer{
 
 .card-body{
     padding:0.25rem;
+}
+
+.homepage figure {
+    padding: 3em;
+    margin: auto;
+    display: block;
+}
+
+figure figcaption {
+  display: transparent;
+  font-size: 80%;
+  font-style: italic;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+
+}
+
+.homepage img {
+    margin: auto;
+    margin-top:1em;
+    margin-bottom: 1em;
+    display: block;
+    border: 5px double black;
+}
+
+.menubtn{
+    border: 5px double white !important;
+    background-color: #545B62;
+    margin:2px;
+}
+
+.palettecontainer{
+    display: flex;
+    max-width: inherit;
+    flex-wrap: wrap;
+}
+
+strong{
+    color:red;
+}
+
+li a {
+    color:red;
+}
+.palettecolor{
+    max-width: 100px;
+    margin-top:5px !important;
+}
+
+.homepage figure.palettecolor,.homepage img.palettecolor{
+    max-width: 100px;
+    margin: auto;
+    display: inline;
 }

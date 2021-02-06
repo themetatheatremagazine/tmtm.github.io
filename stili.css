@@ -4,6 +4,8 @@ html{
 
 .home{
     overflow-x: hidden;
+    width:100%;
+    overflow-y: hidden;
 }
 
 
@@ -784,7 +786,8 @@ a[data-toggle="collapse"] {
 .homepage figure,.homepage img{
     max-width: 200px;
     margin: auto;
-    overflow-x: hidden;
+    padding: 3px !important;
+    display:block !important;
 }
 
 
@@ -812,6 +815,7 @@ div .dropdown-menu a{
 .menubtn{
     background-color: #420001;
     color:#ffffff;
+    margin:2px;
 }
 
 img.palettecolor{
@@ -861,3 +865,4 @@ img.palettecolor{
     max-width: inherit;
     flex-wrap: wrap;
 }
+

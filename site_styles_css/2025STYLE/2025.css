@@ -63,7 +63,8 @@ html{
 body{
     padding-top: 20px;
     overflow-x: hidden;
-
+    width:100%;
+    overflow-y: hidden;
 }
 
 
@@ -519,6 +520,7 @@ div .dropdown-menu{
 .menubtn{
     background-color: #333333;
     color:#EEEEEE;
+    margin:2px;
 }
 
 .btn-group>.btn{

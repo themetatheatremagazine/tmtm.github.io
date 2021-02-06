@@ -38,7 +38,6 @@ html{
     margin-top: 35px;
     max-height: 25px;
     display:inline-table;
-    line-height: 0;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -50,22 +49,55 @@ html{
     font-style: "Berolina";
 }
 
+.home *::selection {
+  color: white; 
+  background: #83aa6b;
+}
+
 .menucontainer{
     margin-top: 2em;
     margin-bottom: 6em;
     text-align: center;
 }
 
-
-.homepage{
+.columncontainer{
+    width: 80%;
     column-count: 2;
 }
 
-@media (max-width: 480px) {
-    .homepage{
-    column-count: 1;
+@media (max-width: 800px) {
+  .columncontainer {
+  column-count: 1;
+  }
 }
+
+.homepage{
+    column-fill: balance;
+    background-image: url(../../1890/images/border-leftright.png),  url(../../1890/images/border-leftright.png);
+  background-repeat: repeat-y, repeat-y;
+  background-position: left, right;
+  background-size: 10%, 10% !important;
 }
+
+.homepage div{
+    margin: auto;    
+    font-weight: bolder;
+    color: black;
+    text-shadow: 1px 1px 1px #979494;
+    text-align: justify;
+    word-break: break-word;
+}
+
+.homepage h1{
+    max-width: 75%;
+    margin: auto;
+    font-family: "Edda";
+    text-align: center;
+    color: #B6470D;
+    font-weight: bolder;
+}
+
+
 
 body{
     padding-top: 20px;
@@ -75,6 +107,34 @@ body{
     overflow-x: hidden;
 
 }
+
+.homepage figure {
+  display: block;
+    margin: auto;
+  text-align: center;    
+}
+
+
+.homepage img {
+  border: 15px solid transparent;
+  padding: 1px;   
+  border-image: url(../../1890/images/frame2.png);
+  border-image-slice: 30;
+  border-image-repeat:round;
+  border-spacing: 20px;
+    width: 80%;
+    margin-bottom: 5% !important;
+    height: 100%;
+    width: 100%;
+    margin:auto;
+    display: block;
+    max-width: 200px;
+}
+
+.homepage p:first-of-type:first-letter{
+    color: #b6470d;
+}
+
 
 #item{
     min-height:450px; 
@@ -91,16 +151,13 @@ body{
     }
 
 .nav a{
-    color:#fff !important;
+    color:#ffffff !important;
 }
 *{
     font-family: "Berolina"; 
 }
 
 
-.btn-group{
-    margin-top: 40px;
-}
 .navbar-toggleable-md .navbar-collapse { 
        -webkit-justify-content: flex-end;
        justify-content: flex-end;
@@ -124,7 +181,7 @@ body{
 }
 
 #divfacciata{
-    background-color: #BD94B3;
+    background-color: #83AA6B;
 ;
     color: honeydew;
     font-size: 110%;
@@ -197,9 +254,7 @@ body{
 }
 
 .navbar-nav > li > .dropdown-menu {
-    color: #BD94B3;
-;
-    background-color: #BD94B3;}
+    background-color: #83AA6B;}
 
 #covertextbox{
     color: honeydew;
@@ -238,11 +293,35 @@ body{
     font-family: "Edda";
     margin-top: 1em;
     text-align:center;
-    font-family: "Edda";
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 7vh;
     color: #B6470D;
 }
+
+.home h2{
+    font-size: 5vh;
+}
+
+@media (max-width: 800px) {
+  .pagetitle {
+font-size: 5vh;
+  }
+    .home h2{
+        font-size: 4vh;
+    }
+}
+
+@media (max-width: 480px) {
+  .pagetitle {
+font-size: 3vh;
+  }
+    .home h2{
+        font-size: 3vh;
+    }
+}
+
+
+
 
 .home h2{
     text-align:center;
@@ -260,8 +339,20 @@ body{
 
 .pagetitlecontainer{
     margin-top: 1em;
+    margin-bottom: 1em;
     padding-top: 1em;
-    font-size: 2em;
+    background-image: url(../../1890/images/mini-border-left.png), url(../../1890/images/mini-border-left.png), url(../../1890/images/mini-border-right.png), url(../../1890/images/mini-border-right.png);
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 5%;
+    border: 15px solid transparent;
+    padding: 10px;   
+    border-image: url(../../1890/images/frame.png);
+    border-image-slice: 30;
+    border-image-repeat:round;
+    border-spacing: 20px;
+    text-align: center;
+    width: 80% !important;
 }
 
 
@@ -415,18 +506,6 @@ a:hover{
 }
 
 
-/*così immagini non superano dimensione loro div*/
-div img {
-    height: 100%;
-    width: 100%;
-}
-
-.homepage figure,.homepage img{
-    max-width: 200px;
-    margin: auto;
-    display: block;
-}
-
 
 #logo{
     max-height:100px;
@@ -460,3 +539,28 @@ footer{
     padding:0.25rem;
 }
 
+.palettecontainer{
+    display: flex;
+    max-width: inherit;
+    flex-wrap: wrap;
+}
+
+div .dropdown-menu{
+    background-color: #B6470D;}
+
+.menubtn{
+    background-color: #83AA6B;
+    color:#ffffff;
+    border: solid 2px #6F6D46 !important; 
+    margin:2px;
+
+}
+
+
+.btn-group>.btn{
+    border-radius: 0;
+}
+
+.btn-group>.dropdown-menu{
+    border-radius: 0;
+}
