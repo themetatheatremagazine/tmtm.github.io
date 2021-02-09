@@ -21,6 +21,10 @@
 }
 #articlebody {
     overflow: hidden;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, gold 0%, #b675da 25%, gold 50%, #23d5ab 75%, gold 100%);
+    border-image-slice: 1; 
+    
 }
 /*TITLE*/
 .articlestyle header {
@@ -46,19 +50,30 @@
 
 @media (max-width: 800px) {
     .articlestyle header {
-        background-image: url(images/column.gif) !important;
+        background-image: url(images/column.gif);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 55%;
+        background-size: 40%;
         width: auto;
         height: auto;
     }
 }
 
+@media (max-width: 800px) {
+    .articlestyle header:hover {
+        background-image: url(images/peoplecolumn.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 35%;
+        width: auto;
+        height: auto;
+    }
+}
 
-.articlestyle h1 { 
+.articlestyle header h1 { 
+        margin-top: 3%;
         font-family: 'Montserrat';
-        font-size: 300%;
+        font-size: 8vh;
         letter-spacing: -5px;
         font-weight: bold;
         color: var(--text);
@@ -88,11 +103,20 @@
           0.5px 0.5px    var(--shadow),
           0.25px 0.25px  var(--shadow);
       }
-
-.articlestyle header h2, .articlestyle header h3, .articlestyle header h4.articlestyle header p, .articlestyle header > .byline  {
+    @media (max-width: 800px) {
+        .articlestyle header h1 {
+        font-size: 7vh;
+        }
+      }  
+    @media (max-width: 480px) {
+        .articlestyle header h1{
+        font-size: 4vh;
+        }
+      }
+.articlestyle header h2, .articlestyle header h3, .articlestyle header h4.articlestyle header p, .articlestyle header > .byline, .articlestyle header > .subtitle  {
         display: block;
         font-family: 'Montserrat';
-        font-size: 200%;
+        font-size: 6vh;
         font-weight: bold;
         color: var(--text);
         text-align: center;
@@ -123,33 +147,17 @@
           0.5px 0.5px    var(--shadow),
           0.25px 0.25px  var(--shadow);
       }
-.articlestyle article h2, .articlestyle article h3, .articlestyle article h4 {
-font-family: 'Montserrat';
-font-size: 100%;
-font-weight: normal;
-color: var(--text);
-text-align: center;
-font-style: normal;
-text-shadow: 
-  2.5px 2.5px    var(--shadow),
-  2.25px 2.25px  var(--shadow),
-  2px 2px        var(--shadow),
-  1.75px 1.75px  var(--shadow),
-  1.5px 1.5px    var(--shadow),
-  1.25px 1.25px  var(--shadow),
-  1px 1px        var(--shadow),
-  0.75px 0.75px  var(--shadow),
-  0.5px 0.5px    var(--shadow),
-  0.25px 0.25px  var(--shadow);
-}
+@media (max-width: 800px) {
+    .articlestyle header h2, .articlestyle header h3, .articlestyle header h4.articlestyle header p, .articlestyle header > .byline, .articlestyle header > .subtitle  {
+        font-size: 5vh;
+        }
+      }  
+@media (max-width: 480px) {
+    .articlestyle header h2, .articlestyle header h3, .articlestyle header h4.articlestyle header p, .articlestyle header > .byline, .articlestyle header > .subtitle  {
+        font-size: 4vh;
+        }
+      }
 
-
-.articlestyle .byline, .publicationDate {
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 75%;
-}
 
 #articlebody  {
 	background: linear-gradient(-45deg,#946ae2, #b675da, #23a6d5, #23d5ab);
@@ -178,7 +186,7 @@ text-shadow:
     margin: auto; /*
     column-gap: 10%;*/
     font-family: 'Roboto';
-    font-size: 4vh;
+    font-size: 3vh;
     color: white;
     text-align: justify;    
     word-break: break-word;
@@ -193,7 +201,7 @@ text-shadow:
 @media (max-width: 800px) {
     .articlestyle article {
     column-count: 1;
-    font-size: 4vh;
+    font-size: 3vh;
     margin-left: 10%;
     margin-right: 10%;
     }
@@ -202,15 +210,48 @@ text-shadow:
 @media (max-width: 480px) {
     .articlestyle article {
         overflow: visible;
-        font-size: 2vh;
+        font-size: 2.5vh;
         margin-left: 5%;
         margin-right: 5%;
 
     }
 }
+      
+.articlestyle article h2, .articlestyle article h3, .articlestyle article h4,  {
+    font-family: 'Montserrat';
+    font-size: 4.5vh;
+    font-weight: normal;
+    color: var(--text);
+    text-align: center;
+    font-style: normal;
+    text-shadow: 
+      2.5px 2.5px    var(--shadow),
+      2.25px 2.25px  var(--shadow),
+      2px 2px        var(--shadow),
+      1.75px 1.75px  var(--shadow),
+      1.5px 1.5px    var(--shadow),
+      1.25px 1.25px  var(--shadow),
+      1px 1px        var(--shadow),
+      0.75px 0.75px  var(--shadow),
+      0.5px 0.5px    var(--shadow),
+      0.25px 0.25px  var(--shadow);
+    }
+    @media (max-width: 800px) {
+        .articlestyle article h2, .articlestyle article h3, .articlestyle article h4 {
+            font-size: 3.5vh;
 
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .articlestyle article h2, .articlestyle article h3, .articlestyle article h4 {
+            font-size: 3vh;
+
+        }
+    }
+      
+    
 .articlestyle article p, .articlestyle article blockquote{
-  display: inline-block;
   position: relative;
   margin: 0 5% 7% 7%;
   /*width: 200px;*/
@@ -227,8 +268,9 @@ text-shadow:
 }
 
 .articlestyle article p:nth-child(odd) {
-    border-bottom: 5px dotted gold;
-}
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, gold 0%, #b675da 25%, gold 50%, #23d5ab 75%, gold 100%);
+    border-image-slice: 1;  }
 
 
 /*FIGURES*/
@@ -245,41 +287,54 @@ text-shadow:
 }
 
 .articlestyle figure img {
-    width: 40vh;
+    width: 70%;
     transition: transform .5s;
-    border:  5px dotted gold;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, gold 0%, #b675da 25%, gold 50%, #23d5ab 75%, gold 100%);
+    border-image-slice: 1;    
     box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
     margin-left: 10%;
     margin-right: 10%;
 }
 @media (max-width: 800px) {
     .articlestyle figure img {
-    width: 30vh;
+        width: 60%;
     }
 }
-
 @media (max-width: 480px) {
     .articlestyle figure img {
-    width: 25vh;
+        width: 50%;
     }
 }
-
 .articlestyle figure img:hover {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
   }
+@media (max-width: 800px) {
+    .articlestyle figure img:hover {
+        -ms-transform: scale(1.05); /* IE 9 */
+        -webkit-transform: scale(1.05); /* Safari 3-8 */
+        transform: scale(1.05);}
+}
+@media (max-width: 480px) {
+    .articlestyle figure img:hover {
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari 3-8 */
+        transform: scale(1); 
+    }}
 
-.articlestyle table, th, td {
-    border: 2px solid white;
-    border-style: solid;
+.articlestyle table, .articlestyle  th,.articlestyle   td {
+    margin: 2%;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, gold 0%, #b675da 25%, gold 50%, #23d5ab 75%, gold 100%);
+    border-image-slice: 1;  
     text-align: justify;
     font-size: 70%;
     padding: 0;
   }
   
 .articlestyle #References, .articlestyle #Notes, .articlestyle #Footnote,.articlestyle #pubnote,.articlestyle .biofooter {
-    color: white;
     text-align: justify; 
     font-size: 80%;
     word-break: break-all;
@@ -289,7 +344,13 @@ text-shadow:
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 30%;
 }
+@media (max-width: 480px) {
+    .articlestyle div > iframe {
+        width: 70%;
+        }
+      }
 
 .articlestyle article .capital:first-letter{
 	float:left;
@@ -322,21 +383,21 @@ text-shadow:
 
 
 
-  
-.articlestyle .footer{
+/*  
+.articlestyle footer{
     background-image: url(images/footer-cat.gif);
 	background-size: 60%;
 	background-repeat: no-repeat;
 	background-position: bottom center;
   } 
   @media (max-width: 800px) {
-    .articlestyle .footer {
+    .articlestyle footer {
         background-size: 40%;
     }
 }
 
 @media (max-width: 480px) {
-    .articlestyle .footer {
+    .articlestyle footer {
         background-image: url();
     }
-}
+}*/
