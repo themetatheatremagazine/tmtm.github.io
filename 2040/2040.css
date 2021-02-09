@@ -277,6 +277,7 @@ text-shadow:
     font-size: 70%;
     padding: 0;
   }
+  
 .articlestyle #References, .articlestyle #Notes, .articlestyle #Footnote,.articlestyle #pubnote,.articlestyle .biofooter {
     color: white;
     text-align: justify; 
@@ -294,18 +295,18 @@ text-shadow:
 	float:left;
     margin-right:5px;
     font-family: 'Montserrat';
-    font-size: 500%;
+    font-size: 400%;
     font-weight: bold;
     color: white;
     text-align: center;
     background-image: url(images/sun.gif);
     background-position: center;
-    background-size: 200%;
+    background-size: 150%;
     background-repeat: no-repeat;
 }
 @media (max-width: 800px) {
     .articlestyle  article .capital:first-letter{
-        font-size: 400%;
+        font-size: 300%;
         margin-right: 15px;
         background-size: 200%; 
     }

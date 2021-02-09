@@ -28,36 +28,29 @@
     --backcolor: #f7f7f7;
   }
 
+  /*BACKGROUND*/
   .articlestyle *::selection {
     color: var(--backcolor); 
     background: var(--text);
   }
-
-  
   .articlestyle html {
-    margin: 0; 
-    padding: 0;
-  }
-  
-  .articlestyle body {
+      margin: 0; 
+      padding: 0;
+    }
+
+#articlebody {
     background: var(--backcolor);  
-    padding: 5rem;
-    font-size: 50rem;
+    padding: 5% 8%;
   }
-  @media(max-width: 700) {
-    .articlestyle body {
-    padding: 1%;
-    font-size: 20rem;
+@media(max-width: 700) {
+    #articlebody {
+    padding: 5%;
     }
   }
-  .articlestyle div {
-    background: var(--backcolor);  
-    padding: 2%;
-  }
-  
-  .articlestyle header {
-    margin-bottom: 10%;
-    padding-bottom: 3rem;
+
+/*Header and header subelements*/
+.articlestyle header {
+    margin-bottom: 5%;
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
     border-image-slice: 1;
@@ -67,85 +60,78 @@
       margin-bottom: 2%;
     }
   }
-
-  .articlestyle div > header h1 {
+.articlestyle header h1 {
     font-family: 'ranking';
-    font-size: 300%;
+    font-size: 8vh;
     text-align: center;
     color: var(--text);
   }
   @media (max-width: 800px) {
-    .articlestyle div > header h1 {
-    font-size: 250%;
+    .articlestyle header h1 {
+    font-size: 7vh;
     }
+  }  
+  @media (max-width: 480px) {
+    .articlestyle header h1{
+    font-size: 4vh;
     }
-    
-    @media (max-width: 480px) {
-    .articlestyle div > header h1{
-    font-size: 200%;
-    }
-    }
-  .articlestyle div > header h2, h3, h4 {
+  }
+.articlestyle header h2, .articlestyle header h3, .articlestyle header h4, .articlestyle header p, .articlestyle header .byline{
     font-family: 'North';
-    color: #333333;
-    font-size: 300%; 
+    font-size: 6vh; 
     text-align: center;
     color: var(--text);
+  }
+  @media (max-width: 800px) {
+  .articlestyle header h2, .articlestyle header h3, .articlestyle header h4, .articlestyle header p, .articlestyle header .byline{
+    font-size: 5vh;
+    }
+  }  
+  @media (max-width: 480px) {
+  .articlestyle header h2, .articlestyle header h3, .articlestyle header h4, .articlestyle header p, .articlestyle header .byline{
+    font-size: 4vh;
+    }
+  }
+/*article and article subelements*/
+.articlestyle article {
+  font-family: 'fiorina';
+  text-align: justify;
+  font-size: 3vh;
+}
+@media (max-width: 800px) {
+  .articlestyle article{
+    font-size: 3vh;
+    }
+  }  
+  @media (max-width: 480px) {
+    .articlestyle article {
+   font-size: 2vh;
+    }
   }
 
-  .articlestyle header p {
+.articlestyle article  h2,  .articlestyle article  h3, .articlestyle article  h4 {
+    border-bottom: 3px solid transparent; 
+    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
+    border-image-slice: 1;
     font-family: 'North';
-    color: #333333;
-    font-size: 300%; 
+    font-size: 6vh; 
     text-align: center;
     color: var(--text);
+}
+@media (max-width: 480px) {
+  .articlestyle article  h2, .articlestyle article  h3, .articlestyle article h4   {
+  font-size: 4.5vh;
+  }
+}
 
-  }
-  
-  .articlestyle article  h2 {
-    border-top: 3px solid transparent; 
-    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
-    border-image-slice: 1;
-    font-family: 'North';
-    font-size: 300%; 
-    text-align: center;
-    color: var(--text);
-  }
-  .articlestyle article  h4 {
-    border-top: 3px solid transparent; 
-    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
-    border-image-slice: 1;
-    font-family: 'North';
-    font-size: 300%; 
-    text-align: center;
-    color: var(--text);
-  }
-  .articlestyle article  h3 {
-    border-top: 3px solid transparent; 
-    border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
-    border-image-slice: 1;
-    font-family: 'North';
-    font-size: 300%; 
-    text-align: center;
-    color: var(--text);
-  }
-  
-  .articlestyle article {
-    font-family: 'fiorina';
-    text-align: justify;
-    font-size: 1.1rem;
-  }
-    
-  .articlestyle figure {
-    display: inline-block;
-    margin-left: 20%;
-    margin-right: 20%;
+/*IMAGES*/
+.articlestyle figure {
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
 
 }
-  
-  
-  .articlestyle figure figcaption {
+.articlestyle figure figcaption {
     font-size: 80%;
     font-weight: bold;
   }
@@ -158,19 +144,27 @@
     border-image: linear-gradient(to bottom right, #EEEEEE 0%, #DDDDDD 25%, #CCCCCC 50%, #BBBBBB 75%, #333333 100%);
     border-image-slice: 1;
   }
-
-
-  @media(max-width: 700) {
-    .articlestyle figure img {
-    width: 300%;
-    }
-  }
   
-  .articlestyle table, th, td {
+  .articlestyle table, .articlestyle th, .articlestyle td {
+    width: 100%;
     border: 3px solid #BBBBBB;
     border-style: solid;
+    font-size: 3vh;
   }
 
+  @media (max-width: 800px) {
+    .articlestyle table, .articlestyle th, .articlestyle td{
+      border: 3px solid #BBBBBB;
+      font-size: 2.2vh;
+      }
+    }  
+  @media (max-width: 480px) {
+      .articlestyle  table, .articlestyle th, .articlestyle td{
+      border: 3px solid #BBBBBB;        
+      font-size: 1vh;
+      }
+    }
+  
   .articlestyle table caption {
     color: var(--text);
     border: 3px solid transparent;
@@ -178,24 +172,33 @@
     border-image-slice: 1;
   }
   
+
+
+
+
+
+
+
+
+
  .articlestyle .capital:first-letter{
     float:left;
     font-family: 'ranking';
-    margin-bottom:10px;
-    font-size:500%;
+    font-size:450%;
+    margin-bottom: 10px;
     margin-right:5px;
     color: #EEEEEE;
-    text-shadow: 2px 2px 5px #404040;
+    text-shadow: 1px 1px 1px #404040;
   }
+
   
- .articlestyle header .byline {
-  font-family: 'North';
-  text-align: center;
-  font-size: 7vh;
- }
+@media (max-width: 480px) {
+  .articlestyle .capital:first-letter {
+  font-size: 300%;
+  }
+}
+
 
  .articlestyle .byline {
   font-family: 'fiorina';
-  text-align: justify;
-  font-size: 2vh;
  }

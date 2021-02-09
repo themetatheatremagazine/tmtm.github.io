@@ -35,6 +35,12 @@
   background-position: left, right;
   background-size: 10%, 10%;
 }
+@media (max-width: 800px) {
+  .articlestyle div {
+  background-size: 7%, 7%;
+  }
+}
+
 
 .articlestyle h3, .articlestyle h4, .articlestyle h2, .articlestyle header > .subtitle{
   margin-left: 5%;
@@ -44,21 +50,34 @@
   font-size: 4vh;
 }
 
+@media (max-width: 800px) {
+  .articlestyle h2, .articlestyle h4, .articlestyle h3 {
+  font-size: 3vh;
+  }
+}
+  
+  @media (max-width: 480px) {
+  .articlestyle h2, .articlestyle h4, .articlestyle h3 {
+  font-size: 3vh;
+  }
+}
+
+
 .articlestyle header h2 {
   color: #b6470d;
   text-align: center;
-  font-size: 5vh;
+  font-size: 4.5vh;
 }
 
 @media (max-width: 800px) {
   .articlestyle header h2 {
-font-size: 4vh;
+font-size: 3.5vh;
   }
 }
 
 @media (max-width: 480px) {
   .articlestyle header h2 {
-font-size: 3vh;
+font-size: 2.5vh;
   }
 }
 
@@ -71,24 +90,16 @@ font-family: 'berol';
 font-size: 200%;
 }
 
-@media (max-width: 800px) {
-.articlestyle h2 {
-font-size: 3vh;
-}
-}
 
-@media (max-width: 480px) {
-.articlestyle h2 {
-font-size: 2vh;
-}
-}
+
+
 
 .articlestyle header h1 {
 text-align: center;
 color: #83aa6b;
 text-shadow: 3px 3px 3px #808080;
 font-family: 'edd';
-font-size: 7vh;
+font-size: 6vh;
 font-weight: bold;
 margin-left: 5%;
 margin-right: 5%;
@@ -102,7 +113,7 @@ margin-right: 5%;
 
 @media (max-width: 480px) {
   .articlestyle header h1 {
-  font-size: 3vh;
+  font-size: 3.5vh;
   }
 }
 
@@ -128,7 +139,12 @@ margin-right: 10%;
 margin-bottom: 5%;
 text-align: center;
 }
-
+@media (max-width: 800px) {
+  .articlestyle header {
+  margin-left: 7%;
+  margin-right: 7%;
+  }
+}
 .articlestyle article {
 font-family: 'berol';
 font-weight: bolder;
@@ -147,21 +163,20 @@ margin-right: 10%;
 @media (max-width: 800px) {
   .articlestyle article {
   column-count: 1;
+  margin-left: 7%;
+  margin-right: 7%;
   }
 }
 
 .articlestyle p, .articlestyle blockquote, .articlestyle caption {
-  display: inline-block;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 1%;
-  
 }
 
 .articlestyle figure {
   display: inline-block;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 5% 0% 5% 5%;
   text-align: center;
 }
 
@@ -215,7 +230,7 @@ margin: 0 10%;
 }
 
 #Notes {
-  font-family: 'berol';
+font-family: 'berol';
 font-weight: bolder;
 color: black;
 text-shadow: 1px 1px 1px #979494;
@@ -224,17 +239,17 @@ margin: 0 10%;
 
 #Footnotes {
   font-family: 'berol';
-font-weight: bolder;
-color: black;
-text-shadow: 1px 1px 1px #979494;
-margin: 0 10%;
-}
+  font-weight: bolder;
+  color: black;
+  text-shadow: 1px 1px 1px #979494;
+  margin: 0 10%;
+  }
 
 
 .articlestyle header .byline {
   font-family: 'edd';
   text-align: center;
-  font-size: 7vh;
+  font-size: 3vh;
  }
 
  .articlestyle .byline {
