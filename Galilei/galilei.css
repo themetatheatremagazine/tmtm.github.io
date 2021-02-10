@@ -192,7 +192,7 @@ font-style: italic;
     align-content: center;
     display: block;
     align-self: center;
-    max-width: 100%;
+    width: 100%;
     max-height:inherit;
     padding-top:3px;
     padding-bottom:3px;
@@ -429,7 +429,7 @@ color: #666154 ;
 
 #articlebody header .byline{
     text-align:center;
-    font-family: "KisMiklos";
+    font-family: "KisMiklos", "Grit Primer";
     font-weight: bold;
     font-style: normal;
     background-color: transparent;
@@ -478,20 +478,41 @@ color: #666154 ;
 
 }
 
-.articlestyle h3{
-    font-family: "Grit Primer";
+.articlestyle h2{
+    font-family: "KisMiklos";
+    font-weight: 800;
+    font-style: normal;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
     text-transform: uppercase;
     color: #524D42;
-    margin-bottom: -2px;
+    margin-bottom: -4px;
+    letter-spacing: 5px;
+
+}
+
+.articlestyle h3{
+    font-family: "KisMiklos";
+    font-weight: 600;
+    text-align: center;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #524D42;
+    margin-bottom: -3px;
+    letter-spacing: 2px;
+
+        
+
 
 }
 
 .articlestyle h4{
-    font-family: "Grit Primer";
+    font-family: "KisMiklos";
     text-align: center;
-    font-size: 3vw;
+    font-style: normal;
+    font-size: 2vw;
+    font-weight: 500;
     text-transform: uppercase;
     color: #524D42;
     margin-bottom: -3px;

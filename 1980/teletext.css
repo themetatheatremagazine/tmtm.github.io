@@ -24,10 +24,14 @@
     font-display: swap;
 }
 
-
-.articlestyle {
-    overflow-x: hidden;
+::selection{
+    color: #ff00ff;
+    background-color: #00ffff;
 }
+.articlestyle {
+    overflow-x: hidden;   
+}
+
 .articlestyle #articlebody div{
     max-width: 40ch;
 }
@@ -116,12 +120,14 @@
 /*no letter spacing, the stretched effect is already given by the font itself + adding the spacing something goes wrong with the 40ch lenghth of the column*/
 
 .articlestyle p {
-    padding-top: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-top:2em;
     font-family: 'ModeSeven';
     word-wrap:break-word;
     margin:auto; 
-    padding:.3em;
-    margin-bottom: 1em;
+    padding:.5em;
+    margin-bottom: 2em;
     border-bottom: 5px dashed #00ffff;
 }
 
@@ -166,6 +172,7 @@
 
 .articlestyle header{
     margin-top: 2em;
+    margin-bottom: 2em;
     border-bottom: 10px solid #0000ff;
     border-left: 10px solid #0000ff;
     border-right: 10px solid #0000ff;
@@ -240,10 +247,27 @@
 .articlestyle table{
     border: 10px solid #0000ff;
     border-top: hidden;
-    overflow-x: auto;
     margin-top:1rem;
     margin-bottom:1rem;
     max-width: inherit;
+    overflow-x: scroll;
+    border-collapse: collapse;
+    display: block;
+    max-width: 100%;
+}
+
+.articlestyle table::-webkit-scrollbar {
+  width: 16px;               /* width of the entire scrollbar */
+}
+
+.articlestyle table::-webkit-scrollbar-track {
+  background: #ffffff;        /* color of the tracking area */
+}
+
+.articlestyle table::-webkit-scrollbar-thumb {
+  background-color: #00ff00;    /* color of the scroll thumb */
+  border-radius: 0px;       /* roundness of the scroll thumb */
+  border: 4px solid #00ff00;  /* creates padding around scroll thumb */
 }
 
 div h3{
@@ -255,12 +279,7 @@ div h3{
     max-width: inherit;
 }
 
-.articlestyle table{
-    overflow-x: scroll;
-    border-collapse: collapse;
-    display: block;
-    max-width: 100%;
-}
+
 
 
 @media (max-width: 500px){
@@ -387,12 +406,9 @@ div h3{
 
 .articlestyle img{
      max-width: 30%;
-    float: left;
-      width: -webkit-fill-available;
-      border: 20px solid yellow;
-      border-image: url(images/noise2.gif);
-      border-image-slice: 50;
-      margin: auto;
+    margin: auto;
+    padding:.5em;
+    display: block;
       image-rendering: pixelated;
       filter: brightness(105%) hue-rotate(236deg) saturate(1000%);
 -webkit-filter: brightness(105%) hue-rotate(236deg) saturate(1000%);
@@ -401,9 +417,10 @@ div h3{
 
 .articlestyle figure{
     margin: auto;
-    margin-top:1rem;
-    margin-bottom: 1rem;
+    margin-top:4rem;
+    margin-bottom: 4rem; /*aumentato per evitare che si sovrapponesse a h3 o h2 nel caso in cui si trovasse ad essere vicino, per gestire questione della doppia altezza*/
     display:flex;
+    background-image: url(images/noise2.gif);
 }
 .articlestyle figure:nth-of-type(odd)>img{
     order: 1
@@ -415,7 +432,6 @@ div h3{
 
 .articlestyle figure:nth-of-type(odd)>figcaption{
     order: 2;
-    margin-left:1rem;
     background-color: #00ff00;
     color: #0000ff;
 
@@ -423,7 +439,6 @@ div h3{
 
 .articlestyle figure:nth-of-type(even)>figcaption{
     order: 1;
-    margin-right:1rem;
     background-color: #ff0000;
     color: #ffffff;
 }
@@ -431,9 +446,13 @@ div h3{
 @media (max-width: 500px){
     .articlestyle figure {
         display: inline-block;
+        background-image: none;
     }
     .articlestyle img {
         max-width: 100%;
+        border: 20px solid yellow;
+      border-image: url(images/noise2.gif);
+      border-image-slice: 50;
     }
     .articlestyle figcaption {
         display: inline-block;
@@ -455,9 +474,13 @@ div h3{
 @media (max-width: 700px){
     .articlestyle figure {
         display: inline-block;
+        background-image: none;
     }
     .articlestyle img {
         max-width: 100%;
+        border: 20px solid yellow;
+      border-image: url(images/noise2.gif);
+      border-image-slice: 50;
     }
     .articlestyle figcaption {
         display: inline-block;
@@ -578,8 +601,16 @@ div h3{
 .articlestyle #Footnotes p:hover, #References p:hover{
     border: hidden !important;
 }
-
-.articlestyle h2, .articlestyle h3, .articlestyle h4{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.articlestyle h4{
+    background-color: #ff00ff;
+    text-align:center;
+    color: #ffff00;
+    padding-top:1em;
+    padding-bottom:1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.articlestyle h2, .articlestyle h3,{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
