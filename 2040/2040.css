@@ -110,7 +110,7 @@
       }  
     @media (max-width: 480px) {
         .articlestyle header h1{
-        font-size: 4vh;
+        font-size: 5vh;
         }
       }
 .articlestyle header h2, .articlestyle header h3, .articlestyle header h4.articlestyle header p, .articlestyle header > .byline, .articlestyle header > .subtitle  {
@@ -154,7 +154,7 @@
       }  
 @media (max-width: 480px) {
     .articlestyle header h2, .articlestyle header h3, .articlestyle header h4.articlestyle header p, .articlestyle header > .byline, .articlestyle header > .subtitle  {
-        font-size: 4vh;
+        font-size: 4.5vh;
         }
       }
 
@@ -183,7 +183,8 @@
 */
 /*COLUMNS*/
 .articlestyle article {
-    margin: auto; /*
+    display: inline-block;
+    margin: 5% auto; /*
     column-gap: 10%;*/
     font-family: 'Roboto';
     font-size: 3vh;
@@ -217,7 +218,7 @@
     }
 }
       
-.articlestyle article h2, .articlestyle article h3, .articlestyle article h4,  {
+.articlestyle article h2, .articlestyle article h3, .articlestyle article h4 {
     font-family: 'Montserrat';
     font-size: 4.5vh;
     font-weight: normal;
@@ -252,9 +253,7 @@
       
     
 .articlestyle article p, .articlestyle article blockquote{
-  position: relative;
-  margin: 0 5% 7% 7%;
-  /*width: 200px;*/
+    margin: 5% 7%;
 }
 
 .articlestyle table {
@@ -344,13 +343,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
 }
-@media (max-width: 480px) {
-    .articlestyle div > iframe {
-        width: 70%;
-        }
-      }
+
 
 .articlestyle article .capital:first-letter{
 	float:left;
