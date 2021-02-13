@@ -63,6 +63,11 @@ background: #940F04;
 color: white;
 }
 
+.articlestyle a span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #articlebody {
   padding: 1em;
   padding-bottom: 10vw;
@@ -156,6 +161,8 @@ font-style: italic;
 
 .articlestyle figure figcaption p{
     font-family: "JMH Legajo";
+    margin:0px;
+    padding: 0px;
     font-weight: bold;
     font-style: normal;
     font-size: 2vw;
@@ -163,11 +170,7 @@ font-style: italic;
     background-color: transparent;
     font-size: 14px;
     transform: translateY(0%) translateX(0%);
-    position: relative;
-    width: inherit;
-    padding-left: 0px;
     line-height: 100%;
-    word-break:break-word;
 }
 
 @media (max-width: 480px){
@@ -421,11 +424,7 @@ color: #666154 ;
     /*da rivedere*/
 }
 
-@media (max-width: 480px){
-    .articlestyle header .subtitle{
-        font-size: 18px;
-        letter-spacing: 3px;
-    }}
+
 
 #articlebody header .byline{
     text-align:center;
@@ -454,7 +453,19 @@ color: #666154 ;
 
 @media (max-width: 480px){
     #articlebody header .byline{
-        font-size: 18px;
+        font-size: 20px !important;
+        letter-spacing: 3px;
+    }
+    #articlebody header h1{
+        font-size: 20px !important;
+        letter-spacing: 3px;
+    }
+    #articlebody header h2{
+        font-size: 20px !important;
+        letter-spacing: 3px;
+    }
+    #articlebody header .subtitle{
+        font-size: 20px !important;
         letter-spacing: 3px;
     }}
 
@@ -474,6 +485,7 @@ color: #666154 ;
     text-transform: uppercase;
     color: #524D42;
     margin-bottom: -3px;
+    margin-top: 0em;
     letter-spacing: 2px;
 
 }
@@ -487,6 +499,7 @@ color: #666154 ;
     text-transform: uppercase;
     color: #524D42;
     margin-bottom: -4px;
+    margin-top: 2em;
     letter-spacing: 5px;
 
 }
@@ -500,10 +513,8 @@ color: #666154 ;
     font-style: normal;
     color: #524D42;
     margin-bottom: -3px;
+    margin-top: 2em !important;
     letter-spacing: 2px;
-
-        
-
 
 }
 
@@ -516,7 +527,9 @@ color: #666154 ;
     text-transform: uppercase;
     color: #524D42;
     margin-bottom: -3px;
+    margin-top: 2em;
     letter-spacing: 2px;
+    line-height: .7;
 
 }
 
