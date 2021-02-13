@@ -677,3 +677,12 @@
     margin-bottom: 1em;
     margin-top: 1em;
 }
+
+figure.multimg{
+    display:block;   
+}
+
+figure.multimg img{
+    display: -webkit-inline-box;
+    align-self: center;
+}
