@@ -45,15 +45,15 @@
 
 .articlestyle header h2, .articlestyle header h3, .articlestyle header h4, .articlestyle header p {
   font-family: 'Gotham';
-  font-size: 2rem; 
-  color: white; 
+  font-size: 2rem;
+  color: white;
   text-align: center;
   text-shadow: 2px 2px 2px #dcf900;
-} 
+}
 
 
 .articlestyle header {
-  padding: 1% 4%; 
+  padding: 1% 4%;
   background-color: black;
   text-align: center;
   background-image : url("images/logo3.png");
@@ -64,13 +64,13 @@
 
 @media screen and (max-width: 800px) {
   .articlestyle header {
-  background-position: center;  
+  background-position: center;
 }
 }
 
 #articlebody {
   background-color: #dcf900;
-  margin: 2%; 
+  margin: 2%;
 }
 
 @media screen and (max-width: 800px) {
@@ -89,14 +89,14 @@
   column-span: all;
   overflow-x: hidden;
   word-break: break-word;
-  border: 5px double white; 
-  padding: 3%; 
+  border: 5px double white;
+  padding: 3%;
 }
 
 @media screen and (max-width: 800px) {
 .articlestyle article {
   column-count: 1;
-  padding: 5%; 
+  padding: 5%;
 
 }
 }
@@ -110,11 +110,11 @@ margin: 2% 7%;
 
 .articlestyle article h2, .articlestyle article h3, .articlestyle article h4 {
   font-family: 'Gotham';
-  font-size: 2rem; 
-  color: white; 
+  font-size: 2rem;
+  color: white;
   text-align: center;
   text-shadow: 2px 2px 2px black;
-} 
+}
 
 
 
@@ -129,6 +129,7 @@ margin: 2% 7%;
   font-style: italic;
   color: white;
   text-shadow: 1px 1px 1px black;
+  letter-spacing: px; 
 
 }
 
@@ -137,6 +138,7 @@ margin: 2% 7%;
     transition: transform 5s;
     background-color: #dcf900;
     float:left;
+    text-align: center;
 }
 
 .articlestyle footer{
@@ -148,7 +150,7 @@ margin: 2% 7%;
   padding: 3%;
   padding-left: 5%;
   padding-top: 5%;
-} 
+}
 
 .articlestyle footer::after {
   font-family: 'Multicolore';
