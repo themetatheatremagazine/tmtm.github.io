@@ -15,15 +15,23 @@ function extract_tag(tag_name)//, target)
 
 var lastTagName = "";
 
+
 function onClick_tag(e){
   e = e || window.event;
   var target = e.target || e.srcElement;
   //console.log(e.innerHTML);
   var tagName = e.innerHTML;
   var selectTagName = $("span:contains(" + tagName +")");
+  var pointTo = selectTagName[0]; 
+  console.log(pointTo.getBoundingClientRect(), document.body.getBoundingClientRect()); 
+  var rect1 = pointTo.getBoundingClientRect();
+  var rect2 = document.body.getBoundingClientRect();
+  var scrollingElement = (document.scrollingElement || document.body);
+  var targetPosition = rect1.top - rect2.top;
+  scrollingElement.scrollTop = targetPosition; 
   selectTagName.css("background-color", "yellow");
   if (lastTagName != "") {  
-    selectTagName = $("span:contains(" + lastTagName +")");
+    selectTagName = $("span:contains(" + lastTagName +")");  
     selectTagName.css("background-color", "transparent");
   }
   lastTagName = tagName;
@@ -68,7 +76,7 @@ function postArticle(articleName, issueJsonPath) {
           $.each( val, function( key2, val2 ) {
            /* $('#metadataIssueList').append('<li>' + key2 + ': '+ val2 + '</li>');*/
           if (key2 == 'source') {
-            content.push('<p><strong>' + capitalize(key2) + '</strong>: <a href="'+ val2 + '"> Link </a></p>');
+            content.push('<p><strong>' + capitalize(key2) + '</strong>: <a href="'+ val2 + '" target="_blank"> Link </a></p>');
           }
           else {
             content.push('<p><strong>' + capitalize(key2) + '</strong>: '+ val2 + '</p>');

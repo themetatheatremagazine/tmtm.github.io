@@ -295,3 +295,12 @@ button {
     padding: 0 9px;
     font-size: 120%;
 } 
+
+
+#wikibox {
+    position: fixed;
+    top: 50vh;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}

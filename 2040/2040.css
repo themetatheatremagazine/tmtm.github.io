@@ -377,6 +377,10 @@
 
 
 
+.articlestyle a span {
+    text-decoration: underline;
+    cursor: pointer;
+}
 /*  
 .articlestyle footer{
     background-image: url(images/footer-cat.gif);

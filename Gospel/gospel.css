@@ -18,7 +18,7 @@
 	font-style: normal; }	  
 
 .articlestyle *::selection {
-	color: gold; 
+	color: #D4AF37; 
 	background: #8b0000;
   }
 .articlestyle #articlebody {
@@ -266,7 +266,7 @@
 
 
 .articlestyle table, th {
-    border: 2px solid gold;
+    border: 2px solid #D4AF37;
     border-style: solid;
     text-align: justify;
     font-size: 80%;
@@ -286,4 +286,10 @@
     font-size: 80%;
     margin: 0 10%;
     word-break: break-all;
+}
+
+.articlestyle a span {
+    text-decoration: underline;
+	text-decoration-color: #D4AF37;	
+    cursor: pointer;
 }

@@ -202,3 +202,9 @@
  .articlestyle .byline {
   font-family: 'fiorina';
  }
+
+ .articlestyle a span {
+  text-decoration: underline;
+  text-decoration-color: #404040;	
+  cursor: pointer;
+}
