@@ -16,9 +16,11 @@
     padding: 0;
 }
 
-.articlestyle * {
-    cursor: url('dark-matter/darkMatterNormal.cur'), auto;
+
+* {
+    cursor: url('../site_styles_css/2040STYLE/dark-matter/darkMatterNormal.cur'), auto !important;
 }
+
 #articlebody {
     overflow: hidden;
     border: 3px solid transparent;
