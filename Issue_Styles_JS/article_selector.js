@@ -6,7 +6,7 @@ const capitalize = (s) => {
 
 
 //serve a costruire gli elementi <li> da aggiungere nell'accordionEntities 
-function extract_tag(tag_name)//, target) //person, entity or place 
+function extract_tag(tag_name)//, target) //person, entity or place //get trasforma l'obj di map in un'array 
 { var x = $("."+tag_name).map(function(){return this.innerHTML}).get(); //mappa l'html attraverso le classi e ritorna un this.innerHtml nella callback 
   var x_unique = [...new Set(x)]; //spread operator, gli elementi che map ritrova vengono convertiti in un set dalla singola variabile x senza usare un for 
   //set = elimina elementi duplicati 
