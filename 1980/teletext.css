@@ -92,6 +92,11 @@
     color:#ffff00;
 }
 
+.articlestyle a span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .articlestyle p .label{
     text-transform: uppercase;
     color: #00ffff; 
@@ -132,10 +137,7 @@
     border-bottom: 5px dashed #00ffff;
 }
 
-.articlestyle a span {
-    text-decoration: underline;
-    cursor: pointer;
-}
+
 
 .articlestyle p:not(.subtitle):not(.byline){
     margin-bottom: 1em;
