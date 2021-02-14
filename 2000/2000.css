@@ -195,3 +195,7 @@ margin: 2% 7%;
       font-size: 0.6;
   }
 }
+
+.articlestyle article a span {
+  text-decoration: underline;
+}

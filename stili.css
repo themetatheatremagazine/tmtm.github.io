@@ -725,18 +725,12 @@ a[data-toggle="collapse"] {
     text-shadow: 2px 2px #006699 ;
     color: #ffcc00;
 }
+*/
 
-
-.anchor{
+.anchor {
     display: block;
-    height: 115px; /*same height as header*/   
-/*margin-top: -115px;*/
-
-     /*same height as header*/
-/*visibility: hidden;
+    visibility: hidden;
   }
-
-*/ 
 
 
 

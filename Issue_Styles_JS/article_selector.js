@@ -135,10 +135,9 @@ function postArticle(articleName, issueJsonPath) {
         addClock();
       }
 }});};
-
 function addSpotify() {
   $('header').attr('id', 'header');
-  $('#header').after("<iframe id='spotifyFrame' src='https://open.spotify.com/embed/playlist/4pjbEJfUe0OX8c8AAObGXX' width='300' height='380' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>")
+  $('#header').after("<iframe id='spotifyFrame' src='https://open.spotify.com/embed/playlist/4pjbEJfUe0OX8c8AAObGXX' width='300' height='80' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
 }
 
 function addClock() {

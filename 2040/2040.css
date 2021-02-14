@@ -379,7 +379,7 @@
 
 
 
-.articlestyle a span {
+.articlestyle article a span {
     text-decoration: underline;
     cursor: pointer;
 }

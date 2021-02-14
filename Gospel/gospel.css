@@ -288,7 +288,7 @@
     word-break: break-all;
 }
 
-.articlestyle a span {
+.articlestyle article a span {
     text-decoration: underline;
 	text-decoration-color: #D4AF37;	
     cursor: pointer;

@@ -206,3 +206,7 @@
     text-align: justify;
     font-size: 50%;
 }
+
+.articlestyle article a span {
+  text-decoration: underline;
+}

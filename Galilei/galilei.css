@@ -63,7 +63,7 @@ background: #940F04;
 color: white;
 }
 
-.articlestyle a span {
+.articlestyle article a span {
     text-decoration: underline;
     cursor: pointer;
 }

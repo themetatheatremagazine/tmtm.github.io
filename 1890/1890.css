@@ -258,7 +258,7 @@ margin: 0 10%;
   font-size: 2vh;
  }
 
-.articlestyle a span {
+.articlestyle article a span {
   text-decoration: underline;
   text-decoration-color: #b6470d;	
   cursor: pointer;
