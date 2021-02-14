@@ -4,50 +4,54 @@ const capitalize = (s) => {
   return s.charAt(0).toUpperCase() + s.slice(1);
 };
 
-function extract_tag(tag_name)//, target)
-{ var x = $("."+tag_name).map(function(){return this.innerHTML}).get();
-  var x_unique = [...new Set(x)];
+
+//serve a costruire gli elementi <li> da aggiungere nell'accordionEntities 
+function extract_tag(tag_name)//, target) //person, entity or place 
+{ var x = $("."+tag_name).map(function(){return this.innerHTML}).get(); //mappa l'html attraverso le classi e ritorna un this.innerHtml nella callback 
+  var x_unique = [...new Set(x)]; //spread operator, gli elementi che map ritrova vengono convertiti in un set dalla singola variabile x senza usare un for 
+  //set = elimina elementi duplicati 
   var list_inside = x_unique.join('</li><li onclick = "onClick_tag(this)">');
+  //di base: tony de nonno </li> <li> Giuseppino; l'open e il closing tag di list_inside vengono montati nel content 
   content = "<h5>" + capitalize(tag_name) + ":" + '</h5> <li onclick = "onClick_tag(this)">' + list_inside + "</li>";
   //$(target).append(content);
   return content;
 };
 
+
 var lastTagName = "";
-
-
 function onClick_tag(e){
-  e = e || window.event;
-  var target = e.target || e.srcElement;
+  var target = e.target;
   //console.log(e.innerHTML);
-  var tagName = e.innerHTML;
-  var selectTagName = $("span:contains(" + tagName +")");
+  var tagName = e.innerHTML; //prende il contenuto dell'elemento cliccato 
+  var selectTagName = $("span:contains(" + tagName +")"); //selector con il contenuto, crea un'array 
   var pointTo = selectTagName[0]; 
-  console.log(pointTo.getBoundingClientRect(), document.body.getBoundingClientRect()); 
-  var rect1 = pointTo.getBoundingClientRect();
-  var rect2 = document.body.getBoundingClientRect();
-  var scrollingElement = (document.scrollingElement || document.body);
-  var targetPosition = rect1.top - rect2.top;
-  scrollingElement.scrollTop = targetPosition; 
-  selectTagName.css("background-color", "yellow");
-  if (lastTagName != "") {  
-    selectTagName = $("span:contains(" + lastTagName +")");  
-    selectTagName.css("background-color", "transparent");
+  //console.log(pointTo.getBoundingClientRect(), document.body.getBoundingClientRect()); 
+  var rect1 = pointTo.getBoundingClientRect(); //coordinate dell'elemento relative alla viewport 
+  var rect2 = document.body.getBoundingClientRect(); //coordinate della window
+  var scrollingElement = (document.scrollingElement || document.body); //or document.body per essere supportato da IE: è il punto dello scrolling della window quello che in pratica vediamo 
+  var targetPosition = rect1.top - rect2.top; //coordinate dell'elemento - coordinate della window 
+  scrollingElement.scrollTop = targetPosition; //la visuale > posizionala > alla target position 
+  selectTagName.css("background-color", "yellow"); //impone il giallo al tag oltrepassando lo stile 
+  if (lastTagName != "") {  //se lastTagName non è vuoto 
+    selectTagName = $("span:contains(" + lastTagName +")"); //se il lastTagName ha già qualcosa 
+    selectTagName.css("background-color", "transparent"); //diventa transparente 
   }
-  lastTagName = tagName;
+  lastTagName = tagName; //lastTagName è l'ultimo selezionato; in questa maniera, quando la funzione finisce, viene svuotato subito prima; così si cambia sempre il colore 
 };
 
+//parametri: nome dell'articolo, percorso del file json corrispondente 
 function postArticle(articleName, issueJsonPath) {
   $.ajax({url: articleName, 
-    success: function(result){
+    success: function(result){ //articleName è il percorso dato ad ajax, che viene poi messo all'effettivo sotto 
     //prepare html to append metadata 
-    $('#static').empty();
-    $("#filerequest").empty();
-    $("#filerequest").html(result);
-    $("#metadata").empty();
-    $("#metadata").append('<h6>Metadata</h6><ul id="metadataList"></ul> <h6>Class List</h4><div id="accordionEntities"></div> <h6>Metadata Issue</h6><div id="accordion"></div>');
+    $('#static').empty(); //prima svuota #static, che è un div esplicativo 
+    $("#filerequest").empty(); //poi svuota il div dell'articolo 
+    $("#filerequest").html(result); //aggiunge l'ajax result all'interno del div svuotato 
+    $("#metadata").empty(); //svuota il metadata viewer nella navbar 
+    $("#metadata").append('<h6>Metadata</h6><ul id="metadataList"></ul> <h6>Class List</h4><div id="accordionEntities"></div> <h6>Metadata Issue</h6><div id="accordion"></div>'); 
+    //aggiunge gli elementi che faranno da gancio per i metadati e le issue di json 
     $("#metadataList").empty();
-    //get meta tags AFTER article has been loaded 
+    //get meta tags AFTER article has been loaded //i meta tags dell'articolo vengono estratti e messi nella lista a sinistra dell'articolo dentro la navbar 
     var title = $("meta[name='DC.title']").attr('content');
     var creator = $("meta[name='DC.creator']").attr('content');
     var publisher = $("meta[name='DC.publisher']").attr('content');
@@ -59,11 +63,14 @@ function postArticle(articleName, issueJsonPath) {
     $("#metadataList").append("<li> <strong>Publisher:</strong> " + publisher + "</li>");
     $("#metadataList").append("<li> <strong>Date:</strong> " + date + "</li>");
     $("#metadataList").append("<a id='linkToSource' href=" + uri + "> Link to source </a>");
+    //end Metadata div 
+    //Json function; viene compiuta dopo la precedente 
+    //è un for each che prende il parametro precedentemente richiesto 
       $.getJSON(issueJsonPath, function( data ) {
-        $("#accordion").empty();
-        var counter = 1;
-        $.each( data, function( key, val ) {
-          var content = [];
+        $("#accordion").empty(); //bootstrap div coi collapsable buttons 
+        var counter = 1; //il counter viene usato per poter fare lo stesso lavoro su ogni elemento dell'oggetto 
+        $.each( data, function( key, val ) { //data = json obj; key = chiavi, value = effettivi valori delle issue 
+          var content = []; //crea una lista vuota e non appende direttamente i risultati perché 
           //the html is built BEFORE being appended to the #accordion to avoid closing tags automatically
           content.push('<div class="card metadataListStyle">');
           content.push('<div class="card-header" id="heading' + counter + '">');
@@ -94,8 +101,8 @@ function postArticle(articleName, issueJsonPath) {
       //var person = extract_tag('person', "#classList");
       //var entity = extract_tag('entity', "#classList");
       //var place = extract_tag('place', "#classList");
-      namedEntities = ['person', 'entity', 'place'];
-      var counterNames = 0;
+      namedEntities = ['person', 'entity', 'place']; //array con le span classes diverse 
+      var counterNames = 0; //un altro counter che però parte da zero in quanto itera sull'array 
       $.each(namedEntities, function() {
           var contents = [];
           contents.push('<div class="card">');
@@ -107,13 +114,14 @@ function postArticle(articleName, issueJsonPath) {
           contents.push('<div id="collapse' + counterNames + '" class="collapse show" aria-labelledby="heading' + counterNames + '" data-parent="#accordionEntities">')
           contents.push('<div class="card-body">');
           contents.push('<ul>');
-          contents.push(x = extract_tag(namedEntities[counterNames]));
+          contents.push(x = extract_tag(namedEntities[counterNames])); //content fatto dall'<h5>Person</h5> + <ul>con tutto dentro</ul>
           console.log(contents);
-          contents.push('</ul>');
+          contents.push('</ul>'); //viene chiusa e aperta la lista 
           contents.push('</div>');
           contents.push('</div>');
-          contents.push('</div>');
-          $('#accordionEntities').append(contents.join(""));
+          contents.push('</div>'); //chiudiamo i div per lo stesso principio precedente: jquery chiude automaticamente i tag 
+          $('#accordionEntities').append(contents.join("")); //joiniamo tutto in accordionEntities: viene montato il primo collapse 
+          //button, poi i successivi con l'aumento del counter: da Person a Place ad Entity 
               counterNames = counterNames+1;});
       var sheets = $('link');
       var style = sheets[0].href;
@@ -173,14 +181,15 @@ function tick() {
 function toggleTheme(value) {
   //css as a parameter; takes the FIRST link tag, so the switching css anchor must always be on top of the head. 
 
-  var sheets = $('link'); 
-  sheets[0].href = value;
-  $('#spotifyFrame').remove();
+  var sheets = $('link');  //nella pagina corrente, il <link al css non è ovviamente interno all'articolo. 
+  //sheets è pari al tag link; dopodiché viene preso il primo (appositamente messo come primo <link> nell'html)
+  sheets[0].href = value; //e aggiorna l'attributo del link con il valore imposto dal bottone 
+  $('#spotifyFrame').remove(); //rimuove lo spotify frame e l'orologio 
   $('#counter').remove();
-  if (value == "2040/2040.css") {
+  if (value == "2040/2040.css") { //se il valore è 2040, aggiunge l'iframe 
     addSpotify();
   }
-  else if (value.includes("1980/teletext.css")) {
+  else if (value == "1980/teletext.css") { //altrimenti l'orologio 
     addClock();
   }
 }
@@ -190,7 +199,7 @@ function toggleTheme(value) {
 
 //on top button
 var btn = $('#button_scroll');
-
+//bottone di scrolling
 $(window).scroll(function() {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show');
@@ -200,10 +209,11 @@ $(window).scroll(function() {
 });
 
 btn.on('click', function(e) {
-  e.preventDefault();
+  e.preventDefault(); //previene l'attivazione 
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+//Navbar bootstrap 
 /*NAVBAR*/
 $(document).ready(function () {
   $('#sidebarCollapse').on('click', function () {
