@@ -40,6 +40,7 @@
     text-align: center;
 }
 
-.articlestyle .person, .place, .date, .entity {
+.articlestyle a span {
     text-decoration: underline;
+    cursor: pointer;
 }

@@ -251,18 +251,13 @@ style of every dinamic html that is created via js*/
 .styleButtons {
     background-color: #CF6F4C;
     padding: 10px;
-    color: #D3D3D3;
-    text-shadow: 1px 1px 1px  #961D07 ;
+    color: white;
 
-}
-
-    
+}   
 .articleButtons {
     background-color: #CF6F4C;
     padding: 10px;
-    color: #D3D3D3;
-    text-shadow: 1px 1px 1px  #961D07 ;
-
+    color: white;
 }
 
 .sitestyle h2 {
@@ -286,21 +281,13 @@ button {
     text-align: justify;
     padding: 10px;
 }
-#metadataList h6 {
-    text-align: center;
-    display: block;
-}
-
 .list-unstyled h6 {
     padding: 0 9px;
-    font-size: 120%;
-} 
+    font-size: 200%;
+    color: white;
+    text-shadow: 2px 2px  #CF6F4C ;
+}
 
-
-#wikibox {
-    position: fixed;
-    top: 50vh;
-    right: 0;
-    z-index: 1000;
-    display: none;
+.btn {
+    color: #961D07;
 }
