@@ -93,9 +93,25 @@ color: white;
     display: block;
 }
 
+.articlestyle li{
+    font-family: "JMH Legajo";
+    font-weight: bold;
+    font-style: italic;
+    background-color: #FBF9C9;
+    font-size: 2vw;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: #666154;
+    display: list-item;
+}
+
 
 @media (max-width: 480px){
     .articlestyle p{
+        font-size: 14px;
+    }
+    
+    .articlestyle li{
         font-size: 14px;
     }}
 
@@ -105,6 +121,13 @@ color: white;
     margin-left: 21%;
     margin-right: 14%;
 }
+
+#articlebody div div{
+    text-align: justify;
+    width: inherit;
+    margin: 0%;
+}
+
 
 @media (max-width: 480px){
     #articlebody > div {
@@ -215,6 +238,15 @@ font-style: italic;
     font-style:normal;
     background-color: #FBF9C8;
     font-size: 2vw;
+    text-align:center;
+    }
+
+.articlestyle section blockquote{
+    font-family: "JMH Legajo";
+    font-weight: bold;
+    font-style:normal;
+    background-color: #FBF9C8;
+    font-size: 2vw;
     }
 .articlestyle blockquote p{
     font-family: "JMH Legajo";
@@ -226,12 +258,12 @@ font-style: italic;
 
 @media (max-width: 480px){
     .articlestyle blockquote p{
-        font-size: 14px;
+        font-size: 14px !important;
     }}
 
 @media (max-width: 480px){
     .articlestyle blockquote {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 }
 
