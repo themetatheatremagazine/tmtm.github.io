@@ -201,6 +201,7 @@
     margin-bottom: 1em;
 }
 
+
 .articlestyle header .subtitle{
     font-size: 80%;
     background-color: transparent;
@@ -286,22 +287,6 @@
   background-color: #00ff00;    /* color of the scroll thumb */
   border-radius: 0px;       /* roundness of the scroll thumb */
   border: 4px solid #00ff00;  /* creates padding around scroll thumb */
-}
-
-@media (max-width: 500px){
-    .articlestyle table{
-        font-size: 70%;
-        width: 100%;
-        display: inline-block;
-        overflow-x: scroll;
-    }
-    .articlestyle table caption{
-        font-size: 70%;
-        max-width:100%
-    }
-    .articlestyle table caption p{
-        font-size: 70%;
-    }
 }
 
 
@@ -654,40 +639,8 @@
     max-width: 100%;
 }
 
-.articlestyle table caption p{
-    font-family: 'ModeSeven';
-    font-style: normal;
-    word-wrap:break-word;
-    margin:auto; 
-    margin-bottom: 0px !important;
-    background-color: #00ffff;
-    color: #0000ff;
-    padding-bottom: 0px;
-}
-
-
 .articlestyle a {
     text-decoration: none;
-}
-
-/* unvisited link */
-.articlestyle a:link {
-    color: #00ffff;
-}
-
-/* visited link */
-.articlestyle a:visited {
-    color: #00ff00;
-}
-
-/* mouse over link */
-.articlestyle a:hover {
-    color: #ffff00;
-}
-
-/* selected link */
-.articlestyle a:active {
-    color: #ff0000;
 }
 
 /* flashing class*/
@@ -700,6 +653,9 @@
 
 .articlestyle header .byline{
     text-align: center;
+    background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 50%,#00ff00 50%,#00ff00 100%) important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }
 
 @media (max-width: 500px){
@@ -741,4 +697,22 @@ figure.multimg img{
     padding-left: 1em;
     padding-right: 1em;
      
+}
+
+
+@media (max-width: 500px){
+    .articlestyle table{
+        font-size: 70%;
+        width: 100%;
+        display: inline-block;
+        overflow-x: scroll;
+    }
+    .articlestyle table caption{
+        font-size: inherit;
+        max-width:100%
+    }
+    .articlestyle table caption p{
+        font-size: inherit;
+        max-width: 100%;
+    }
 }

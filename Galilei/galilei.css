@@ -63,9 +63,15 @@ background: #940F04;
 color: white;
 }
 
-.articlestyle article a span {
+.articlestyle article a span:hover {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" style="font-size: 20px;"><text y="15">✸</text></svg>'), auto;
+    color: #940F04;
     text-decoration: underline;
-    cursor: pointer;
+}
+
+.articlestyle article a span {
+    color: #2b2821;
+    font-weight: bolder;
 }
 
 #articlebody {
@@ -273,12 +279,29 @@ font-style: italic;
     text-indent: 4%;
 }
 
+::-webkit-scrollbar {
+ width: 3px;
+ height: 5px;
+}
+::-webkit-scrollbar-thumb {
+ background: linear-gradient(13deg, #524d42 14%,#940F04 64%);
+ border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover{
+ background: linear-gradient(13deg, #524d42 14%,#940F04 64%);
+}
+::-webkit-scrollbar-track{
+ background: #e6dac0;
+ border-radius: 0px;
+ box-shadow: inset 7px -30px 12px #E6DAC0;
+}
+
 .articlestyle table{
     width: 100%;
     border: 2px solid #937970;
     font-size: 70%;
     color: #524D42;
-    border-collapse: collapse;
+    display: inline-table;
     font-family: "JMH Legajo";
     font-weight: bold;
     font-style: normal;
@@ -294,17 +317,24 @@ font-style: italic;
     border-top: 2em solid transparent;
     display: block;
     border-image: url(images/saggiatorecornice-removebg-preview.png) 174 round stretch;
-    letter-spacing: 10px; 
-    word-wrap: break-word;
+    letter-spacing: 7px; 
+    word-wrap:normal;
+    white-space:pre-wrap;
     padding-top: 10px;
 
 }
 
 .articlestyle table{
-    margin-top: 5vh; /*!!*/
-    margin-bottom: 5vh;
+    margin-top: 3em; /*!!*/
+    margin-bottom: 3em;
     width: 100%;
     border-collapse: collapse;
+    align-content: flex-start;
+    font-family: "JMH Legajo";
+}
+
+.articlestyle table td,.articlestyle table th, {
+    width: 100%;
     align-content: flex-start;
     font-family: "JMH Legajo";
 }
@@ -312,49 +342,55 @@ font-style: italic;
 @media (max-width: 480px){
     .articlestyle table, .articlestyle td,.articlestyle th{
         font-size: 13px!important;
+        overflow-y: scroll;
+        
     }
 }
 
-.articlestyle th{
+.articlestyle table th{
     color: #940F04;
     font-family: "Grit Primer";
+    line-height: .8;
     text-transform: uppercase;
     font-size: 2vw;
-    border: 1px solid #E6DAC0;
+    padding: 7px;
+    white-space: pre-wrap;
     text-align: left;
 }
 
 .articlestyle td{
     font-size: 2vw;
+    line-height: .8;
     border: 1px solid #524D42;
+    padding: 5px;
     text-align: center;
 
 }
 
-.articlestyle tr:nth-child(odd){
-color: #666154 ;
-
-}
 .articlestyle table caption {
   width: 14vw;
-  word-break:break-all;
+  padding right: 1vw;
+  white-space:pre-wrap;
+  word-break: break-all;
+  overflow-y: scroll;
+  max-height: 300px;
   hyphens: auto;
   line-height: 100%;
   position: absolute;
-  transform: translateY(+100%) translateX(-115%);
+  transform: translateY(0%) translateX(-115%);
   font-family: "JMH Legajo";
   font-weight: bold;
   font-style: normal;
   font-size: 2vw;
-  padding-left: 1em;
-  padding-right: 0em;
-  margin-left: 0em;
+  padding-right: 1em;
+  margin-left: 1em;
   margin-right: 0em;
   color: #666154;
   background-color: transparent;
   padding-bottom: 1em;
     text-align: justify;
 }
+
 
 .articlestyle table caption p{
   font-family: "JMH Legajo";
@@ -399,9 +435,9 @@ color: #666154 ;
 }
 
 
+
 .articlestyle a{
-    color: #940F04;
-    text-decoration: none;
+    font-weight: 1000!important;
 }
 
 .articlestyle header{
@@ -421,7 +457,6 @@ color: #666154 ;
     margin: 2vh;
     padding: 0em;
     border-bottom: none;
-    /*da rivedere*/
 }
 
 
@@ -437,6 +472,20 @@ color: #666154 ;
     padding: 1vh;
     margin: 1vh;
     border-bottom: none;
+    color: #940F04;
+}
+#articlebody header h2 a span{
+    font-weight: bold;  
+    
+}
+
+#articlebody header .byline a span{
+    font-weight: bold;  
+    
+}
+
+#articlebody header h1 a span{
+    font-weight: normal;
 }
 
 #articlebody .byline{
@@ -479,14 +528,17 @@ color: #666154 ;
 
 
 #articlebody div header h2{
-    font-family: "Grit Primer";
-    text-align: center;
-    font-size: 3vw;
+    text-align:center;
+    font-family: "KisMiklos";
+    font-weight: bold;
+    font-style: normal;
+    background-color: transparent;
     text-transform: uppercase;
-    color: #524D42;
-    margin-bottom: -3px;
-    margin-top: 0em;
-    letter-spacing: 2px;
+    font-size:3vw;
+    letter-spacing: 3px;
+    margin: 2vh;
+    padding: 0em;
+    border-bottom: none;
 
 }
 
@@ -495,7 +547,7 @@ color: #666154 ;
     font-weight: 800;
     font-style: normal;
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
     text-transform: uppercase;
     color: #524D42;
     margin-bottom: -4px;
@@ -508,13 +560,18 @@ color: #666154 ;
     font-family: "KisMiklos";
     font-weight: 600;
     text-align: center;
-    font-size: 2vw;
     text-transform: uppercase;
     font-style: normal;
     color: #524D42;
     margin-bottom: -3px;
     margin-top: 2em !important;
     letter-spacing: 2px;
+        font-family: "Grit Primer";
+    text-align: center;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #524D42;
+    margin-bottom: -2px;
 
 }
 
@@ -539,15 +596,6 @@ color: #666154 ;
         font-size: 18px;
         letter-spacing: 2px;
     }}
-
-.articlestyle h3{
-    font-family: "Grit Primer";
-    text-align: center;
-    font-size: 3vw;
-    text-transform: uppercase;
-    color: #524D42;
-    margin-bottom: -2px;
-}
 
 @media (max-width: 480px){
     .articlestyle h3{
