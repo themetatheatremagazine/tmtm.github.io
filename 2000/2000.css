@@ -29,7 +29,7 @@
 
 .articlestyle header h1 {
     font-family: 'Multicolore';
-    font-size: 3rem;
+    font-size: 6vh;
     animation-name: flash;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -45,7 +45,7 @@
 
 .articlestyle header h2, .articlestyle header h3, .articlestyle header h4, .articlestyle header p {
   font-family: 'Gotham';
-  font-size: 2rem;
+  font-size: 5vh;
   color: white;
   text-align: center;
   text-shadow: 2px 2px 2px #dcf900;
@@ -110,7 +110,7 @@ margin: 2% 7%;
 
 .articlestyle article h2, .articlestyle article h3, .articlestyle article h4 {
   font-family: 'Gotham';
-  font-size: 2rem;
+  font-size: 4vh;
   color: white;
   text-align: center;
   text-shadow: 2px 2px 2px black;
@@ -143,7 +143,7 @@ margin: 2% 7%;
 
 .articlestyle footer{
   background-size: cover;
-  font-size: 1.2rem;
+  font-size: 1.5vh;
   text-align: center;
   border-top: solid 5px black;
   border-bottom: solid 5px black;
@@ -155,7 +155,7 @@ margin: 2% 7%;
 .articlestyle footer::after {
   font-family: 'Multicolore';
   color: red;
-  font-size: 3rem;
+  font-size: 5vh;
   content: "TURN OFF YOUR COMPUTER BEFORE 12/31/1999";
   text-shadow: 1px 1px 1px black;
   animation-name: flash;
@@ -167,32 +167,32 @@ margin: 2% 7%;
 }
 
 .articlestyle table {
-  border: 3px solid black;
+  border: 2px solid black;
 }
 
 .articlestyle tr, .articlestyle th {
-  border: 3px solid black;
+  border: 2px solid black;
 
 }
 .articlestyle table, .articlestyle caption, .articlestyle caption p{
-  font-size: 1.2rem;
-  margin-top:1rem;
-  margin-bottom:1rem;
+  font-size: 1.8vh;
+  margin-top:2%;
+  margin-bottom:2%;
   display: inline-block;
   color: black;
 }
 
 @media (max-width: 500px){
   .articlestyle table{
-      font-size: 0.6;
+      font-size: 1.8vh;
       width: 100%;
   }
   .articlestyle caption{
-      font-size: 0.6;
+      font-size: 1vh;
       max-width:100%
   }
   .articlestyle caption p{
-      font-size: 0.6;
+      font: size 1vh;;
   }
 }
 
