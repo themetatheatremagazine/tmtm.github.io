@@ -445,11 +445,12 @@
             </li>
           </ul>
         </div>
-        <!--stili arianna-->        
+        <!--stili arianna-->     
+
         <span class="anchor" id="Teletext"></span>
         <h1>Arianna</h1>
         <div >
-          <h2>Teletext Style - Second Half of 20th Century</h2>
+          <h2> <a id="ari1980">Teletext Style - Second Half of 20th Century</a></h2>
           <h3>Inspiration</h3>
           <p>Inspiration: Golden years of teletext services, in particular BCC’s Ceefax, which was made available to the
             public in 1973, as the first teletext service all over the world. During the following decade, similar
@@ -484,7 +485,7 @@
             6 by 10 logical blocks, and the screen is 25 rows of 40 chars. (40*6*1.3)/(25*10)=1.248. So, the aspect
             ratio of pixels is 30% wider than the height.</p>
 
-          <p><strong>DOUBLE HEIGHT EFFECT</strong> The typical teletex double height effect is rendered with
+          <p><strong>Double height effect:</strong> The typical teletex double height effect is rendered with
             (-webkit/-moz)-transform: scaleY(2); Used to highlight h2, h3 elements and .subtitle class (even when it is
             assigned to a p element)</p>
 
@@ -493,7 +494,7 @@
             <figcaption>Fig. 1</figcaption>
           </figure>
 
-          <h3>Illustrations, visual effects and motives</h3>
+          <h3>Illustrations, visual effects and motives:</h3>
           <p><strong>Cover:</strong> header element is inspired by Ceefax homepage. The .subtitle class and h2 element
             are given a double-height effect, while the title is given an uppercased different font. The colour pattern
             is the typical eye-catching yellow-on-blue, which was originally proposed by Ceefax and then widely used by
@@ -503,8 +504,6 @@
             <img src="1980/images/cover.png">
             <figcaption>Fig. 2</figcaption>
           </figure>
-
-          <p>When hovering on </p>
 
 
           <p><strong>.byline class:</strong> the colour effect and matching are a tribute to 1987 RAI TELEVIDEO
@@ -517,8 +516,7 @@
             <figcaption>Fig. 3</figcaption>
           </figure>
 
-          <p><strong>.label class: .label-classed</strong> elements are given the property text-transform: uppercase and
-            an highlighting text colour, so to reproduce the effect of RAI-TELETEXT 1980s news page.</p>
+          <p><strong>.label class:</strong> .label-classed elements are given the property text-transform: uppercase and an highlighting text colour, so to reproduce the effect of RAI-TELETEXT 1980s news page.</p>
 
           <figure>
             <img src="1980/images/home.png">
@@ -530,11 +528,9 @@
             enhance interactivity of the reading experience. The noise effect is thus provided by setting a noise-effect
             gif as background image which substitutes the 10px blue border when the section, the h1 or the header are
             hovered. For the same purpose, a 10px solid red border is added as paragraph frame, so to reproduce the
-            effect of the remote telecommand selection implemented in teletext original pages.
-            https://cleanfeed.thetvroom.com/3552/features/the-history-of-pages-from-ceefax/ </p>
+            effect of the remote telecommand selection implemented in teletext original pages. </p>
 
-          <p><strong>Span elements for person, place and entity</strong> are given a specific colour each, so to
-            reproduce the semantic highlighting effect implemented in Ceefax pages. However, the colour is activated
+          <p><strong>Span elements for person, place and entity</strong> are given a specific colour each, so to reproduce the semantic highlighting effect implemented in Ceefax pages. However, the colour is activated
             only on hover for readability reason, because of the high number of spans element contained in some of the
             articles of our issues.</p>
 
@@ -542,16 +538,14 @@
             bottom-border styling. In particular, the 10 px solid blue bottom-border is used to highlight the separation
             between sections, while the dashed cyan border visually separates a paragraph from the following one. The
             reference for the sections pseudo-separator is a screenshot of Electra Teletext, WKRC-TV, Cincinnati, Ohio
-            (1985-01-03). https://it.qaz.wiki/wiki/Teletext </p>
+            (1985-01-03). (<a href="https://it.qaz.wiki/wiki/Teletext">https://it.qaz.wiki/wiki/Teletext</a>) </p>
 
           <p><strong>Flashing effect:</strong> The teletext flashing effect is realised with animation: flashing 1.3s
             steps(5, start) infinite; -webkit-animation: flashing 1.3s steps(5, start) infinite; color: #ffff00; and
             @keyframes flashing { to { visibility: hidden; } } @-webkit-keyframes flashing { to { visibility: hidden; }
-            }. (<a href="http://www.riscos.com/support/developers/bbcbasic/part2/teletext.html">link</a>). This effect animates the counter
-            clock imported with js at the top-right corner of the page and the header subtitle.</p>
+            }. (<a href="http://www.riscos.com/support/developers/bbcbasic/part2/teletext.html">www.riscos.com</a>). This effect animates the header's subtitle and the counter clock imported with js at the top-right corner of the page.</p>
 
-          <p><strong>Cursor:</strong> inspired by alien invaders, reproduced with https://www.pixilart.com/draw. It is
-            the only element which is given a colour not included in the original teletext palette, so that it stay
+          <p><strong>Cursor:</strong> inspired by alien invaders, reproduced with https://www.pixilart.com/draw. It is the only element which is given a colour not included in the original teletext palette, so that it stay
             visible also when hovering colourful elements (image reproduced via https://www.pixilart.com/draw, resized
             with https://www.photoenlarger.com/ and then saved in .cur format). </p>
 
@@ -562,11 +556,11 @@
             of storage overload and because of the low resolution of some of the images contained in the articles we
             chose. At the same time, giving an effective pixelated effect was almost impossible without the usage of
             complex solutions such as canvas. So, we decided to maintain the alternated displaying positions of the
-            images proposed in the horoscope Rai teletext page (https://www.youtube.com/watch?v=EBItf3UxXWA ) , adding
+            images proposed in the horoscope Rai teletext page (<a href="https://www.youtube.com/watch?v=EBItf3UxXWA">www.youtube.com/watch?v=EBItf3UxXWA</a>) , adding
             an hyper-saturated filter with 105% brightness level and a 236 degree hue rotation (filter: brightness(105%)
             hue-rotate(236deg) saturate(1000%); ), in order to realise a mixed effect, summing up the exasperated
             brightness of first 1980’s music videos and the extreme colour tones of Teletext classic 8-colours palette
-            (filter generated with: https://cssgenerator.org/filter-css-generator.html ). Moreover, we set the
+            (filter generated with: <a href="https://cssgenerator.org/filter-css-generator.html">https://cssgenerator.org/filter-css-generator.html</a>). Moreover, we set the
             image-rendering to pixelated value, so that -when scaled up- the rendering maintains an effect which reminds
             to the teletex pixel aesthetics. In conclusion, we added an animated gif as border image, in order to
             reproduce the vintage television noise effect. </p>
@@ -582,7 +576,7 @@
 
 
 
-          <h3>Measures</h3>
+          <h3>Measures:</h3>
           <p> We chose to display the body of the text in a 40-characters-width container, ad a tribute to the original
             teletext layout of 24 rows x 40 characters. </p>
 
@@ -592,14 +586,18 @@
             TVE (Programaciòn atresmedia page), which provides seven highly-readable bi-colours associations.
             (https://www.antena3.com/teletexto/home.htm?pag=800 )
           </p>
-          <img class="palettecolor" src="https://www.colorhexa.com/000000.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/ff0000.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/00ff00.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/ffff00.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/ff00ff.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/0000ff.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/00ffff.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/ffffff.png">
+            <div class="palettecontainer">
+                <img class="palettecolor" src="https://www.colorhexa.com/000000.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/ff0000.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/00ff00.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/ffff00.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/ff00ff.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/0000ff.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/00ffff.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/ffffff.png">
+            </div>
+          
+          
 
           <p><strong>Tables:</strong> tables style was inspired by the football results tables, where rows colours
             generally alternate. </p>
@@ -623,29 +621,27 @@
           </figure>
 
           <h3>References</h3>
-          <p><a href="https://www.youtube.com/watch?v=Iwuy4hHO3YQ" target="_blank">www.youtube.com</a></p>
-          <p><a href="https://www.jonicaradio.it/the-buggles-video-killed-the-radio-star-1980/" target="_blank">www.jonicaradio.it</a>
-          </p>
-          <p><a
-              href="https://www.jbhifi.com.au/products/vinyl-reed-lou-blue-mask-the-180gm-vinyl-reissue-lp" target="_blank">www.jbhifi.com</a>
-          </p>
-          <p><a
-              href="https://www.mobygames.com/game/windows/ultimate-soccer-manager-98/screenshots/gameShotId,218397/" target="_blank">www.mobygames.com</a>
-          </p>
-          <p><a
-              href="https://www.dailymail.co.uk/sport/article-2221980/Ceefax-sport-tribute-Time-Twitter-Jeff-Stelling-updates.html" target="_blank">www.dailymail.co</a>
-          </p>
-          <p><a href="https://www.antena3.com/teletexto/home.htm?pag=800" target="_blank">www.antena3.com</a></p>
-          <p><a href="https://www.youtube.com/watch?v=EBItf3UxXWA" target="_blank">www.youtube.com</a></p>
-          <p><a href="https://en.wikipedia.org/wiki/Teletext" target="_blank">en.wikipedia.org</a></p>
-          <p><a href="https://www.pixilart.com/draw" target="_blank">www.pixilart.com</a></p>
-          <p><a href="https://it.qaz.wiki/wiki/Teletext" target="_blank">it.qaz.wiki</a></p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=Iwuy4hHO3YQ">www.youtube.com</a></li>
+                <li><a href="https://www.jonicaradio.it/the-buggles-video-killed-the-radio-star-1980/">www.jonicaradio.it</a></li>
+                <li><a href="https://www.jbhifi.com.au/products/vinyl-reed-lou-blue-mask-the-180gm-vinyl-reissue-lp">www.jbhifi.com</a></li>
+                <li><a href="https://www.mobygames.com/game/windows/ultimate-soccer-manager-98/screenshots/gameShotId,218397/">www.mobygames.com</a></li>
+                <li><a href="https://cleanfeed.thetvroom.com/3552/features/the-history-of-pages-from-ceefax/"></a>www.cleanfeed.com</li>
+                <li><a
+              href="https://www.dailymail.co.uk/sport/article-2221980/Ceefax-sport-tribute-Time-Twitter-Jeff-Stelling-updates.html">www.dailymail.co</a></li>
+                <li><a href="https://www.antena3.com/teletexto/home.htm?pag=800">www.antena3.com</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EBItf3UxXWA">www.youtube.com</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Teletext">en.wikipedia.org</a></li>
+                <li><a href="https://www.pixilart.com/draw">www.pixilart.com</a></li>
+                <li><a href="https://it.qaz.wiki/wiki/Teletext">it.qaz.wiki</a></li>
+            </ul>
+
         </div>
 
 
         <span class="anchor" id="Galilei"></span>
         <div >
-          <h2>Galilei - Between 1500 and 1800</h2>
+            <h2><a id="ari1600">Galilei - Between 1500 and 1800</a></h2>
           <h3>Inspiration</h3>
           <p>Galileo Galiei’s original works, in particular the Sidereus Nuncius, an astronomical pamphlet published in
             1610. </p>
@@ -724,7 +720,7 @@
 
           <figure>
             <img
-              src="https://it.wikipedia.org/wiki/Il_Saggiatore_(trattato)#/media/File:Galilei_-_Saggiatore,_1623_-_214071_Pagina_16.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Galilei_-_Saggiatore%2C_1623_-_214071_Pagina_16.jpg/800px-Galilei_-_Saggiatore%2C_1623_-_214071_Pagina_16.jpg"
               alt="picture">
             <figcaption>Fig 5</figcaption>
           </figure>
@@ -770,12 +766,14 @@
           </figure>
           <p><strong>Colour Palette</strong>For the colour palette selection, we used the Google Plug-in ColorZilla in
             order to extract the main colours from the scansions of the original works. </p>
-          <img class="palettecolor" src="https://www.colorhexa.com/940F04.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/666154.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/E6DAC0.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/524D42.png">
-          <img class="palettecolor" src="https://www.colorhexa.com/FBF9C9.png">
-
+            <div class="palettecontainer">
+                <img class="palettecolor" src="https://www.colorhexa.com/940F04.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/666154.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/E6DAC0.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/524D42.png">
+                <img class="palettecolor" src="https://www.colorhexa.com/FBF9C9.png">
+            </div>
+          
           <p><strong>Blockquotes, lists and tables</strong>since for blockquotes, lists and tables we lacked a
             reference, we decided to implement a visually coherent style drawing inspiration by the material we had.
           </p>
@@ -785,24 +783,17 @@
             section are instead edited by using an online tool to add a pencil-effect filter with raised contrast , that
             we used to reproduce the ink hand-drawing effect. </p>
         <h3>References</h3>
-        <p><a href="https://en.wikipedia.org/wiki/Sidereus_Nuncius" target="_blank">en.wikipedia.org</a></p>
-        <p><a
-            href="https://it.wikipedia.org/wiki/Il_Saggiatore_(trattato)#/media/File:Galilei_-_Saggiatore,_1623_-_214071_Pagina_16.jpg" target="_blank">it.wikipedia.org</a>
-        </p>
-        <p><a
-            href="https://upload.wikimedia.org/wikipedia/commons/d/de/Houghton_IC6.G1333.610s_-_Sidereus_nuncius_1.jpg" target="_blank">upload.wikimedia.org</a>
-        </p>
-        <p><a href="www.calligraphr.com ">www.calligraphr.com</a></p>
-        <p><a
-            href="https://www.pngjoy.com/preview/k9b5p3a6q3e2s2_stars-drawing-galileo-s-drawings-of-the-moon/" target="_blank">www.pngjoy.com</a>
-        </p>
-
-        <p><a
-            href="https://www.alamy.it/search.html?ps=100&pn=1&cbstore=0&qt=nuncius#BHM=foo%3Dbar%26st%3D0%26sortby%3D2%26qt%3Dnuncius%26qt_raw%3Dnuncius%26qn%3D%26lic%3D3%26edrf%3D0%26mr%3D0%26pr%3D0%26aoa%3D1%26creative%3D%26videos%3D%26nu%3D%26ccc%3D%26bespoke%3D%26apalib%3D%26ag%3D0%26hc%3D0%26et%3D0x000000000000000000000%26vp%3D0%26loc%3D0%26ot%3D0%26imgt%3D0%26dtfr%3D%26dtto%3D%26size%3D0xFF%26blackwhite%3D%26cutout%3D%26archive%3D1%26name%3D%26groupid%3D%26pseudoid%3D%26userid%3D%26id%3D%26a%3D%26xstx%3D0%26cbstore%3D0%26resultview%3DsortbyPopular%26lightbox%3D%26gname%3D%26gtype%3D%26apalic%3D%26tbar%3D1%26pc%3D%26simid%3D%26cap%3D1%26vd%3D0%26cid%3D%26pe%3D%26so%3D%26lb%3D%26pl%3D0%26plno%3D%26fi%3D0%26langcode%3Dit%26ispremium%3D1%26flip%3D0%26contributorqt%3D%26plgalleryno%3D%26plpublic%3D0%26viewaspublic%3D0%26isplcurate%3D0%26imageurl%3D%26saveQry%3D%26editorial%3D1%26t%3D0%26customgeoip%3D%26filters%3D0%26ps%3D100%26pn%3D1%26cbstore%3D0" target="_blank">www.alamy.it</a>
-        </p>
-        <p><a
-            href="https://shop.libriproibiti.com/it/scienza-e-meccanica/dialogo-sopra-i-massimi-sistemi-del-mondo-replica-fatta-a-mano-su-edizione-del-1632-di-galileo-galilei-vera-pelle" target="_blank">shop.libriproibiti.com</a>
-        </p>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Sidereus_Nuncius">en.wikipedia.org</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Sidereus_Nuncius">en.wikipedia.org</a></li>
+                <li><a href="https://it.wikipedia.org/wiki/Il_Saggiatore_(trattato)#/media/File:Galilei_-_Saggiatore,_1623_-_214071_Pagina_16.jpg">it.wikipedia.org</a></li>
+                <li><a href="https://upload.wikimedia.org/wikipedia/commons/d/de/Houghton_IC6.G1333.610s_-_Sidereus_nuncius_1.jpg">upload.wikimedia.org</a></li>
+                <li><a href="www.calligraphr.com ">www.calligraphr.com</a></li>
+                <li><a href="https://www.pngjoy.com/preview/k9b5p3a6q3e2s2_stars-drawing-galileo-s-drawings-of-the-moon/">www.pngjoy.com</a></li>
+                <li><a
+            href="https://www.alamy.it/search.html?ps=100&pn=1&cbstore=0&qt=nuncius#BHM=foo%3Dbar%26st%3D0%26sortby%3D2%26qt%3Dnuncius%26qt_raw%3Dnuncius%26qn%3D%26lic%3D3%26edrf%3D0%26mr%3D0%26pr%3D0%26aoa%3D1%26creative%3D%26videos%3D%26nu%3D%26ccc%3D%26bespoke%3D%26apalib%3D%26ag%3D0%26hc%3D0%26et%3D0x000000000000000000000%26vp%3D0%26loc%3D0%26ot%3D0%26imgt%3D0%26dtfr%3D%26dtto%3D%26size%3D0xFF%26blackwhite%3D%26cutout%3D%26archive%3D1%26name%3D%26groupid%3D%26pseudoid%3D%26userid%3D%26id%3D%26a%3D%26xstx%3D0%26cbstore%3D0%26resultview%3DsortbyPopular%26lightbox%3D%26gname%3D%26gtype%3D%26apalic%3D%26tbar%3D1%26pc%3D%26simid%3D%26cap%3D1%26vd%3D0%26cid%3D%26pe%3D%26so%3D%26lb%3D%26pl%3D0%26plno%3D%26fi%3D0%26langcode%3Dit%26ispremium%3D1%26flip%3D0%26contributorqt%3D%26plgalleryno%3D%26plpublic%3D0%26viewaspublic%3D0%26isplcurate%3D0%26imageurl%3D%26saveQry%3D%26editorial%3D1%26t%3D0%26customgeoip%3D%26filters%3D0%26ps%3D100%26pn%3D1%26cbstore%3D0">www.alamy.it</a></li>
+            <li><a href="https://shop.libriproibiti.com/it/scienza-e-meccanica/dialogo-sopra-i-massimi-sistemi-del-mondo-replica-fatta-a-mano-su-edizione-del-1632-di-galileo-galilei-vera-pelle">shop.libriproibiti.com</a></li>
+            </ul>
         </div>
 
 
