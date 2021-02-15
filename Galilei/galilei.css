@@ -299,7 +299,7 @@ font-style: italic;
 .articlestyle table{
     width: 100%;
     border: 2px solid #937970;
-    font-size: 70%;
+    font-size: 70% !important;
     color: #524D42;
     display: inline-table;
     font-family: "JMH Legajo";
@@ -335,13 +335,13 @@ font-style: italic;
 
 .articlestyle table td,.articlestyle table th, {
     width: 100%;
-    align-content: flex-start;
+    align-content:space-around;
     font-family: "JMH Legajo";
 }
 
 @media (max-width: 480px){
     .articlestyle table, .articlestyle td,.articlestyle th{
-        font-size: 13px!important;
+        font-size: 80%;
         overflow-y: scroll;
         
     }
@@ -352,10 +352,11 @@ font-style: italic;
     font-family: "Grit Primer";
     line-height: .8;
     text-transform: uppercase;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 7px;
     white-space: pre-wrap;
     text-align: left;
+    max-width: 25vw;
 }
 
 .articlestyle td{
@@ -474,14 +475,13 @@ font-style: italic;
     border-bottom: none;
     color: #940F04;
 }
-#articlebody header h2 a span{
-    font-weight: bold;  
+#articlebody header h2 a span:hover{
+    text-decoration: underline;
     
 }
 
-#articlebody header .byline a span{
-    font-weight: bold;  
-    
+#articlebody header .byline a span:hover{
+    text-decoration: underline;
 }
 
 #articlebody header h1 a span{
@@ -502,20 +502,21 @@ font-style: italic;
 
 @media (max-width: 480px){
     #articlebody header .byline{
-        font-size: 20px !important;
-        letter-spacing: 3px;
+        font-size: 17px !important;
+        letter-spacing: 2px;
     }
     #articlebody header h1{
         font-size: 20px !important;
+        width: 100%;
         letter-spacing: 3px;
     }
     #articlebody header h2{
-        font-size: 20px !important;
-        letter-spacing: 3px;
+        font-size: 17px !important;
+        letter-spacing: 2px;
     }
     #articlebody header .subtitle{
-        font-size: 20px !important;
-        letter-spacing: 3px;
+        font-size: 17px !important;
+        letter-spacing: 2px;
     }}
 
 .articlestyle section{

@@ -54,6 +54,10 @@ body{
     text-align: center;
 }
 
+.homepage{
+    word-wrap: break-word;
+}
+
 .btn-secondary{
     background-color: #000000 !important;
     border:1px solid;

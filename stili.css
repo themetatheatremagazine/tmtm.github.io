@@ -784,7 +784,9 @@ a[data-toggle="collapse"] {
     display:block !important;
 }
 
-
+.homepage{
+    word-wrap: break-word;
+}
 /*documentation fixing*/
 
 .homepage figure.palettecolor,.homepage img.palettecolor{

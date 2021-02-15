@@ -98,11 +98,14 @@ a:hover, button a:hover, .card a:hover{
        padding-bottom: 5px;
        font-size: 18px;
     }
-}
-@media (max-width: 480px) {
+    figcaption {
+       font-size: 18px;
+    }
+    
     li {
        font-size: 18px;
     }
+    
 }
 
 
@@ -151,19 +154,28 @@ a:hover, button a:hover, .card a:hover{
     text-transform: uppercase;
     font-family: "KisMiklos";
     font-weight: bold;
+    margin-bottom: -4px;
 }
 
 .home h3{
     color: #420001;
     text-transform: uppercase;
     font-family: "KisMiklos";
+    margin-bottom: -3px!;
 }
 
 
 .card h4{
     font-family: 'Grit Primer';
     text-transform: uppercase;
+    margin-bottom: -1px;
+    display:contents;
+    margin: 1em;
+    word-break: break-all;
+    max-width: 90%;
+    font-size: 90%;
 }
+
 
 .card a:hover{
     font-family: 'Grit Primer';
@@ -179,9 +191,13 @@ body{
 }
 
 .homepage figure,.homepage img{
-    max-width: 200px;
+    max-width: 100%;
     margin: auto;
     display: block;
+}
+
+.homepage figure{
+    margin-bottom: 3em;
 }
 
 .homepage figure.palettecolor,.homepage img.palettecolor{
@@ -242,8 +258,10 @@ div .dropdown-menu a{
     max-width: 100px;
 }
 #item6 div{
-    margin-top: 3em;
-    margin-bottom: 3em;  
+    margin-top: 5em;
+    margin-bottom: 5em; 
+    max-width: 100%;
+
 }
 
 #item6 div a{
@@ -255,7 +273,7 @@ div .dropdown-menu a{
     margin-bottom: 1em;
 }
 
-#item6 div h1{
+.home h1{
     text-transform: uppercase;
     text-align: center;
     color: #940F04;
@@ -263,18 +281,68 @@ div .dropdown-menu a{
     line-height: .9;
 }
 
-#item6 div h2{
-    text-align: center;
-    color: #524D42;
-    line-height: .9;
-    letter-spacing: .4;
-    margin-bottom: 20px;
+.home h2{
+    text-align:center;
+    font-family: "KisMiklos";
+    font-weight: bold;
+    font-style: normal;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size:3vw;
+    letter-spacing: 3px;
+    margin: 2vh;
+    padding: 0em;
+    border-bottom: none;
 }
 
-#item6 div h3{
+.home h3{
     text-align: center;
     color: #524D42;
     line-height: .9;
+    font-size:3vw;
+
+}
+
+.homepage{
+    word-wrap: break-word;
+    max-width: 65%;
+    font-size: 2vw;
+}
+
+@media (max-width:480px){
+    .homepage{
+        max-width: 95%;
+    }
+    
+    .homepage p{
+        width:100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    
+    .homepage div{
+        width: 100%;
+    }
+    .home h1{
+        width: 100%;
+    }
+    .home h2{
+        font-size: 18px!important;
+        letter-spacing: 2px;
+    }
+    .home h3{
+        font-size: 17px !important;
+        letter-spacing: 2px;
+    }
+    .home h4{
+        font-size: 16px!important;
+        letter-spacing: 2px;
+    }
+    
+    
 }
 
 .palettecontainer{

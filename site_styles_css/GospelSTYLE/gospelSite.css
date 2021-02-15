@@ -249,7 +249,7 @@ body{
 .pagetitlecontainer{
     margin-top: 1em;
     padding-top: 1em;
-    font-size: 2em;
+    font-size: 200%;
 }
 
 
@@ -445,7 +445,6 @@ footer{
     word-break: break-word;
 	font-family: 'onciale', serif;
 	letter-spacing: -2px;
-	position: relative;
 }
 
 @media (max-width: 480px) {
@@ -473,7 +472,6 @@ footer {
 	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: bottom center;
-	height: 100px;
   }
 
 .card-body{
@@ -555,6 +553,10 @@ a.dropdown-item:hover{
     
 }
 
+.home h1{
+    font-size: 250%;
+}
+
 #item6 div h2, #item6 div h3{
     text-align: center;
     margin-bottom: 1em;
@@ -584,7 +586,7 @@ a.dropdown-item:hover{
 	-moz-column-fill: balance;
 	-webkit-column-fill: balance;
 	text-align: justify;    
-    word-break: break-word;
+    word-wrap: break-word;
 	letter-spacing: -1px;
 }
 
