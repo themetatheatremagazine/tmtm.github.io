@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
 :root {
     --text: white; /* Blue */
     --shadow: #a71344; /* Pink */
@@ -46,15 +47,14 @@ div #static h1 {
       0.25px 0.25px  var(--shadow);
   }
 
+
 div #static p, div #static h2 {
+    font-family: 'Libre Franklin', sans-serif;
     text-align: center;
     font-weight: bolder;
     color: white;
+    text-shadow: 1px 1px white;
     font-size: 4vh;
-    text-shadow: 1px 1px var(--shadow),
-    0.75px 0.75px  var(--shadow),
-    0.5px 0.5px    var(--shadow),
-    0.25px 0.25px  var(--shadow);
 }
 
 @media (max-width: 800px) {
