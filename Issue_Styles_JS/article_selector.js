@@ -44,6 +44,8 @@ function postArticle(articleName, issueJsonPath) {
   $.ajax({url: articleName, 
     success: function(result){ //articleName è il percorso dato ad ajax, che viene poi messo all'effettivo sotto 
     //prepare html to append metadata 
+    var sheets = $('link'); 
+    sheets[4].href = ""; 
     $('#static').empty(); //prima svuota #static, che è un div esplicativo 
     $("#filerequest").empty(); //poi svuota il div dell'articolo 
     $("#filerequest").html(result); //aggiunge l'ajax result all'interno del div svuotato 
@@ -62,7 +64,7 @@ function postArticle(articleName, issueJsonPath) {
     $("#metadataList").append("<li> <strong>Author:</strong> " + creator + "</li>");
     $("#metadataList").append("<li> <strong>Publisher:</strong> " + publisher + "</li>");
     $("#metadataList").append("<li> <strong>Date:</strong> " + date + "</li>");
-    $("#metadataList").append("<a id='linkToSource' href=" + uri + "> Link to source </a>");
+    $("#metadataList").append("<a id='linkToSource' href=" + uri + " + target='_blank'> Link to source </a>");
     //end Metadata div 
     //Json function; viene compiuta dopo la precedente 
     //è un for each che prende il parametro precedentemente richiesto 
@@ -135,6 +137,8 @@ function postArticle(articleName, issueJsonPath) {
         addClock();
       }
 }});};
+
+///
 function addSpotify() {
   $('header').attr('id', 'header');
   $('#header').after("<iframe id='spotifyFrame' src='https://open.spotify.com/embed/playlist/4pjbEJfUe0OX8c8AAObGXX' width='300' height='80' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>");
@@ -179,9 +183,9 @@ function tick() {
 
 function toggleTheme(value) {
   //css as a parameter; takes the FIRST link tag, so the switching css anchor must always be on top of the head. 
-
   var sheets = $('link');  //nella pagina corrente, il <link al css non è ovviamente interno all'articolo. 
   //sheets è pari al tag link; dopodiché viene preso il primo (appositamente messo come primo <link> nell'html)
+  sheets[4].href = ""; 
   sheets[0].href = value; //e aggiorna l'attributo del link con il valore imposto dal bottone 
   $('#spotifyFrame').remove(); //rimuove lo spotify frame e l'orologio 
   $('#counter').remove();

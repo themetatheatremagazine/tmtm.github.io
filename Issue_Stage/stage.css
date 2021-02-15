@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+div #static {
+    background-image: url(cover.jpeg);
+    background-size: cover;
+    height: fit-content;
+    padding: 2% 15%;
+}
+
+div #static h1 {
+    margin-bottom: 5%;
+    color: white;
+    font-size: 6vh;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+  }
+
+div #static p, div #static h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-weight: bolder;
+    color: white;
+    font-size: 4vh;
+    text-shadow: 2px 2px black;
+
+  }
+
+div #static h2 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+
+}
+
+@media (max-width: 800px) {
+    div #static p, div #static h2 {
+    font-size: 3vh;
+    }
+    div #static h1{
+        font-size: 5vh;
+    }
+  }  
+@media (max-width: 480px) {
+    div #static p, div #static h2 {
+        font-size: 2vh;
+        }
+    div #static h1{
+    font-size: 3vh;
+    }
+  }

@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'bauhaus';
+	src: url("../1920/fonts_Bauhaus/font_bauhaus_bold/Bauhaus-Bold.woff2") format("woff2"), 
+	url("../1920/fonts_Bauhaus/font_bauhaus_bold/Bauhaus-Bold.woff") format("woff");
+	font-weight: normal;
+  font-style: normal; 
+}
+
+div #static {
+    background-image: url(cover.jpeg);
+    background-size: cover;
+    height: fit-content;
+    border-top: 20px solid #E73229;
+    border-bottom: 20px solid #146EAA;
+    border-left: 20px solid #EFC800;
+    border-right: 20px solid #F08D28;    
+    padding: 2% 15%;
+}
+
+div #static h1 {
+    margin-bottom: 5%;
+    font-family: 'bauhaus';
+    color: #000000;
+    text-shadow: 3px 3px  #E73229, 6px 6px  #146EAA, -3px -3px #EFC800;
+    transform: rotate(-5deg);    text-align: center;
+    font-size: 6vh;
+    text-align: center;
+  }
+
+div #static p, div #static h2 {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px  #E73229, 4px 4px  #146EAA, -2px -2px #EFC800;
+    font-size: 4vh;
+}
+
+@media (max-width: 800px) {
+    div #static p, div #static h2 {
+    font-size: 3vh;
+    }
+    div #static h1{
+        font-size: 5vh;
+    }
+  }  
+@media (max-width: 480px) {
+    div #static p, div #static h2 {
+        font-size: 2vh;
+        }
+    div #static h1{
+    font-size: 3vh;
+    }
+  }
