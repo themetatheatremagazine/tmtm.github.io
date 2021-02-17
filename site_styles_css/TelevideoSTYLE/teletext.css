@@ -463,12 +463,17 @@ footer a{
     align-content: center;
     padding:1em;
     margin: 1em;
+    word-break: break-all;
 }
 
 #footercol3{
     align-content: center;
     padding:1em;
     margin: 1em;
+}
+
+footer h4{
+    color: #00ff00 !important;
 }
 
 .footercoltext{

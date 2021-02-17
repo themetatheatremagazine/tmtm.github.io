@@ -171,10 +171,6 @@ body{
     align-content: flex-start;
 }
 
-#divfacciata p{
-    font-size:20px;
-}
-
 .homepage p{
     font-size: 20px;
     
@@ -182,13 +178,12 @@ body{
 
 #divfacciata{
     background-color: #83AA6B;
-;
     color: honeydew;
-    font-size: 110%;
+    text-align: center;
+    font-size: 130%;
+    min-height:150px;
     padding-left: 12%;
     padding-right: 12%;
-    text-align: justify;
-    min-height: 150px;
 }
 
 #item1{

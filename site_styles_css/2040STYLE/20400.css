@@ -48,8 +48,6 @@ html{
 
 body{
     padding-top: 20px;
-    overflow-x: hidden;
-
 }
 
 *{
@@ -71,7 +69,7 @@ body{
     column-rule-width: 5px;
     column-rule-style: dotted;
     column-rule-color: gold;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .homepage h1{
@@ -358,7 +356,7 @@ body{
 #divfacciata{
     background-color: honeydew;
     color: honeydew;
-    font-size: 110%;
+    font-size: 130%;
     padding-left: 12%;
     padding-right: 12%;
     text-align: justify;
@@ -594,6 +592,11 @@ a:hover{
     align-content: center;
     padding:1em;
     margin: 1em;
+    word-break: break-all;
+}
+
+#footercol2 a{
+    color: fuchsia;
 }
 
 #footercol3{
@@ -619,10 +622,6 @@ div img {
     max-width: 130px;
 }
 
-}
-footer{
-    max-height: 200px;
-}
 
 .crnotice{
     text-align:center;

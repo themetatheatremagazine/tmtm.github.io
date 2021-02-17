@@ -384,9 +384,8 @@ div .dropdown-menu a{
 
 #divfacciata{
     background-color: #3D261F;
-;
     color: honeydew;
-    font-size: 110%;
+    font-size: 120%;
     padding-left: 12%;
     padding-right: 12%;
     text-align: justify;
@@ -655,11 +654,6 @@ div img {
     max-width: 130px;
 }
 
-}
-footer{
-    max-height: 200px;
-}
-
 .crnotice{
     text-align:center;
     font-family: "KisMiklos";
@@ -682,6 +676,7 @@ footer{
     font-family: 'Grit Primer';
     text-transform: uppercase;
     color: #AA5346;
+    font-size: 27px !important;
     
 }
 

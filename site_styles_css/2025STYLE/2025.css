@@ -108,23 +108,16 @@ body{
 }
 
 #covertextbox{
-    align-content: center;
     text-align: center;
     margin: .5em;
-    margin-left: 0em;
-    padding-top: 55px;
-    margin-top:5em;
+    margin-top:3em;
 }
-#covertitle{
-    font-size: 10vw;
-    
-}
-
 
 #coversubtitle {
     font-family: 'North Avellion';
     text-align: center;
     font-size: 5vw;
+    padding: 10px;
     align-content: flex-end;
     color: dimgray;
 }
@@ -216,7 +209,7 @@ body{
 #divfacciata{
     background-color: #564f4f;
     color: honeydew;
-    font-size: 110%;
+    font-size: 130%;
     padding-left: 12%;
     padding-right: 12%;
     text-align: justify;
@@ -435,6 +428,11 @@ a {
     align-content: center;
     padding:1em;
     margin: 1em;
+    word-break: break-all;
+}
+
+#footercol2 a{
+    color: darkgrey
 }
 
 #footercol3{
@@ -465,9 +463,6 @@ div img {
     max-width: 130px;
 }
 
-footer{
-    max-height: 200px;
-}
 
 footer p{
     color:#EDEDED;

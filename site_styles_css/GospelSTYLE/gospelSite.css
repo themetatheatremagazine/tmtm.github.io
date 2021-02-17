@@ -128,10 +128,11 @@ body{
 #divfacciata{
     background-color: #C8351A;
     color: honeydew;
-    font-size: 110%;
+    text-align: center;
+    font-size: 130%;
+    min-height:150px;
     padding-left: 12%;
     padding-right: 12%;
-    text-align: justify;
     min-height:150px; 
 }
 

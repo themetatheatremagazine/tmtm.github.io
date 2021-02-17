@@ -161,11 +161,10 @@ body{
 }
 
 
-
 #divfacciata{
     background-color: #FAB803;
     color: black;
-    font-size: 110%;
+    font-size: 120%;
     padding-left: 12%;
     padding-right: 12%;
     text-align: justify;
@@ -471,6 +470,7 @@ a:hover{
     align-content: center;
     padding:1em;
     margin: 1em;
+    word-break: break-all;
 }
 
 #footercol3{
@@ -482,6 +482,7 @@ a:hover{
 .footercoltext{
     font-size: 85%;
     word-break: break-all;
+    color: yellow;
 }
 
 div img {
@@ -494,10 +495,6 @@ div img {
     max-width: 130px;
 }
 
-}
-footer{
-    max-height: 200px;
-}
 
 .crnotice{
     text-align:center;

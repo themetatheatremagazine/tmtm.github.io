@@ -211,7 +211,7 @@ body {
 #divfacciata{
     background-color: #6C757D;
     color: honeydew;
-    font-size: 110%;
+    font-size: 120%;
     padding-left: 12%;
     padding-right: 12%;
     text-align: justify;
@@ -454,6 +454,10 @@ p{
     padding:1em;
     margin: 1em;
 }
+#footercol2 a{
+    text-shadow: none;
+    color:yellow;
+}
 
 #footercol3{
     align-content: center;
@@ -475,11 +479,6 @@ div img {
 #logo{
     max-height:100px;
     max-width: 130px;
-}
-
-}
-footer{
-    max-height: 200px;
 }
 
 .crnotice{

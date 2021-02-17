@@ -53,10 +53,10 @@ html{
 #divfacciata{
     background-color: #420001;
     color: honeydew;
-    font-size: 110%;
+    font-size: 130%;
     padding-left: 12%;
     padding-right: 12%;
-    text-align: justify;
+    text-align: center;
     min-height:150px; 
 }
 
@@ -361,6 +361,11 @@ a:hover{
     margin: 1em;
 }
 
+#footercol2 a{
+    color: darkred;
+    word-break: break-all;
+}
+
 #footercol3{
     align-content: center;
     padding:1em;
@@ -381,11 +386,6 @@ div img {
 #logo{
     max-height:100px;
     max-width: 130px;
-}
-
-
-footer{
-    max-height: 200px;
 }
 
 .crnotice{
